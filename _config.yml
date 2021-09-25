@@ -52,9 +52,9 @@ width: large
 # if you don't need "about" or "blog", comment them out below
 # likewise, comment out lists, research, or bookshelf pages
 about: true
+blog: true
 cv: true
 projects: true
-blog: true
 research: false
 bookshelf: false
 
