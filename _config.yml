@@ -49,12 +49,12 @@ width: large
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
 # if you don't need "about" or "blog", comment them out below
 # likewise, comment out lists, research, or bookshelf pages
+projects: false
 about: true
 cv: true
-blog: true
+blog: false
 research: false
 bookshelf: false
 
