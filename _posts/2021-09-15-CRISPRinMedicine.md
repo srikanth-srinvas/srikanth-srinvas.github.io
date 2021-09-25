@@ -8,7 +8,6 @@ tag:
 - medicines
 - therapeutics
 blog: true
-use_math: false
 ---
 ## A brief history of therapeutic modalities
 
