@@ -1,4 +1,4 @@
-Site using Jekyll based on Sergio Koplin's [Indigo theme](https://github.com/sergiokopplin/indigo/fork)
+Site using Jekyll based on Sergio KoPplin's [Indigo theme](https://github.com/sergiokopplin/indigo/fork)
 
 ---
 ## License
