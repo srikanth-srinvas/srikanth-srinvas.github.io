@@ -1,46 +1,19 @@
 ---
 title: About
 layout: page
+permalink: /about/index.html
 ---
-![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
+<img src="{{ site.url }}/{{ site.picture }}" style="width:300px;" />
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+## Hi, I'm Libère.
+#### *Welcome to my page!*
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+I am a PhD Candidate in Medical Biophysics at Keck School of Medicine of USC and graduate research assistant at [USC Michelson Convergent Science Institute in Cancer](https://kuhn.usc.edu/) where I head up a research program in mapping and predicting the spatiotemporal progression of multiple myeloma (a blood cancer) using single cell biology, data science, and computational modeling.
 
-<h2>Skills</h2>
+Before USC, I obtained a Bachelor of Science in Biotechnology from Syracuse University and spent 2 years working in the biopharmaceutical industry developing machine learning models to predict (1) [off-targeting in gene silencing/editing](https://en.calameo.com/read/0041626681a7296f0e0a8) and (2) [drug-target interactions](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5166585/).
 
-<ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
-</ul>
+Outside the lab, I play football (aka soccer), learn about aircrafts and aviation, read philosophy, and explore the multifacated corners of Southern California.
 
-<h2>Projects</h2>
+Recently I joined the [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)'s leadership team.
 
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+Get in touch for anything biotechnology, machine/deep learning, single cell biology, therapeutic bioscience
