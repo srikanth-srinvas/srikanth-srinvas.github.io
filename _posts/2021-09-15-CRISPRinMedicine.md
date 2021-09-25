@@ -8,6 +8,7 @@ tag:
 - medicines
 - therapeutics
 blog: true
+description: "Genome Engineering for Biomedicine"
 ---
 ## A brief history of therapeutic modalities
 
