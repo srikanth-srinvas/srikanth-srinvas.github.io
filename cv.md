@@ -82,8 +82,8 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 
 ## Selected Publications
 
-1. **Ndacayisaba LJ**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter *under review* at *Springer, Circulating Tumor Cells: Advances in Liquid Biopsy Technologies*, Second Edition.<br>
-2. **Ndacayisaba LJ**, et al. (2021). Morphogenomic Detection and Characterization of Circulating Rare Single Cells in Multiple Myeloma. *In preparation*
+1. **Ndacayisaba LJ**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter `under review` at *Springer, Circulating Tumor Cells: Advances in Liquid Biopsy Technologies*, Second Edition.<br>
+2. **Ndacayisaba LJ**, et al. (2021). Morphogenomic Detection and Characterization of Circulating Rare Single Cells in Multiple Myeloma. `In preparation`
 
 ## Selected Presentations
 
@@ -102,19 +102,16 @@ Dec 2016 Co-lecturer: Novartis Postbaccalaureate Scholars qBio Bootcamp. Cambrid
 Taught command line scripting, introductory Python programming, data analysis, and visualization to 8 post-baccalaureate
 students during a 2-day long quantitative biology bootcamp.
 * Jul 2016 Invited Seminar Speaker, Novartis Summer Scholars Weekly Seminar Series. Cambridge, MA
-Topic: Scientific Communication, Chalk Talk. Led an hour long seminar to 22 undergraduate summer scholars on giving an
-effective chalk talk
+Topic: Scientific Communication, Chalk Talk. Led an hour long seminar to 22 undergraduate summer scholars on giving an effective chalk talk
 
 #### Conference & Symposia Presentations
 
 * Poster. New England Science Symposium (NESS) Apr 2017 Boston, MA
 Proteochemometric Machine Learning Models for Predictive Drug Discovery
 * Poster. Annual Winter Q-bio Meeting Feb 2017 Kauai, HI
-Proteochemometric Machine Learning Models for Predictive Drug Discovery, Target Identification, and Polypharmacology
-Deconvolution
+Proteochemometric Machine Learning Models for Predictive Drug Discovery, Target Identification, and Polypharmacology Deconvolution
 * Talk & Poster. ISCB Student Council Symposium at ISMB. Jul 2016 Orlando, FL
-Proteochemometric Machine Learning Models for Predictive Drug Discovery, Target Identification, and Polypharmacology
-Deconvolution
+Proteochemometric Machine Learning Models for Predictive Drug Discovery, Target Identification, and Polypharmacology Deconvolution
 * Poster. New England Science Symposium (NESS) Apr 2016 Boston, MA
 Exploring miRNA Silencing Mechanisms Using Machine Learning Algorithms to Discover Biologically Relevant Pathway Nodes
 * Poster. Annual Biomedical Research Conference for Minority Students (ABRCMS) Nov 2015 Seattle, WA
@@ -150,16 +147,16 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Service to the Profession
 #### Society Membership
-* Jun 2019–Present: Member, Society of Hematology Oncology (SOHO)
-* Jul 2017–Present: Member, American Association for the Advancement of Science (AAAS)
-* Oct 2015–Present: Member, International Society for Computational Biology (ISCB) and ISCB Student Council
-* Dec 2014–Mar 2018: Member, American Society for Pharmacology and Experimental Therapeutics (ASPET)
+* Jun 2019 – Present: Member, Society of Hematology Oncology (SOHO)
+* Jul 2017 – Present: Member, American Association for the Advancement of Science (AAAS)
+* Oct 2015 – Present: Member, International Society for Computational Biology (ISCB) & ISCB Student Council
+* Dec 2014 – Mar 2018: Member, American Society for Pharmacology and Experimental Therapeutics (ASPET)
 
 #### Leadership & Professional Activities
-* Aug 2021–Present: Strategy Lead, [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)
-* May 2020–May 2021: Director of Globalization and Inclusion, Graduate Student Government Executive Board, USC
-* Sept 2017–Present: President and Lecturer at Code On! Lead the team and teach programming to the Keck School of Medicine of USC community
-* Jul 2017–Present: PIBBS Ambassador, Recruitment and interviewing prospective Keck SOM PhD students
-* Oct 2016–Jun 2017: Advisory Committee Member, TutoringPlus of Cambridge. Curriculum development for science and engineering.
-* Aug 2014–Dec 2015: Founding President, TheFirst, Syracuse University’s first generation students organization
-* Oct 2012–Jan 2014 Teaching Assistant for Biotechnology & Biochemistry. Learning Alliance for Bioscience (LAB) program at Ohlone College
+* Aug 2021 – Present: Strategy Lead, [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)
+* May 2020 – May 2021: Director of Globalization and Inclusion, Graduate Student Government Executive Board, USC
+* Sept 2017 – Present: President and Lecturer at Code On! Lead the team and teach programming to the Keck School of Medicine of USC community
+* Jul 2017 – Present: PIBBS Ambassador, Recruitment and interviewing prospective Keck SOM PhD students
+* Oct 2016 – Jun 2017: Advisory Committee Member, TutoringPlus of Cambridge. Curriculum development for science and engineering.
+* Aug 2014 – Dec 2015: Founding President, TheFirst, Syracuse University’s first generation students organization
+* Oct 2012 – Jan 2014 Teaching Assistant for Biotechnology & Biochemistry. Learning Alliance for Bioscience (LAB) program at Ohlone College
