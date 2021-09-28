@@ -159,9 +159,9 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 * Dec 2014–Mar 2018: Member, American Society for Pharmacology and Experimental Therapeutics (ASPET)
 
 #### Leadership & Professional Activities
-* Aug 2021–Present: Strategy Lead, Nucleate Los Angeles
+* Aug 2021–Present: Strategy Lead, [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)
 * May 2020–May 2021: Director of Globalization and Inclusion, Graduate Student Government Executive Board, USC
-* Sept 2017–Present: President and Lecturer at Code On! Lead and teach programming to the Keck SOM community
+* Sept 2017–Present: President and Lecturer at Code On! Lead the team and teach programming to the Keck School of Medicine of USC community
 * Jul 2017–Present: PIBBS Ambassador, Recruitment and interviewing prospective Keck SOM PhD students
 * Oct 2016–Jun 2017: Advisory Committee Member, TutoringPlus of Cambridge. Curriculum development for science and engineering.
 * Aug 2014–Dec 2015: Founding President, TheFirst, Syracuse University’s first generation students organization
