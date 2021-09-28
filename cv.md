@@ -134,7 +134,7 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
 
-* Jul 2021 Schlegel Family Endowed Fellowship Recipient, Awarded by the University for the 2021-2022 academic year
+* Jul 2021 Schlegel Family Endowed Fellowship Recipient, Awarded by the University for 2021-2022
 * 2020 HHMI Gilliam Fellowhip Nominee, One of 2 University-wide nominated student for the 2020 cycle
 * March 2020 2nd place at PIBBS Sci-5, Annual Oral presentation competition for Keck School of Medicine PhD students
 * 2017 PhD GEM Associate Fellow, The National GEM Consortium and University of Southern California
@@ -146,7 +146,7 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 * Feb 2014 LSAMP Scholar, Elected to the Louis Stokes Alliance for Minority Participation program at Syracuse University
 * Nov 2013 Syracuse University Dean’s Scholarship, Merit-based renewable $6,000 annual Scholarship
 * May 2013 Osher Initiative for Community College Scholarship. $1,000 award by Ohlone College
-* Nov 2008 Ohlone Foundation Scholarship & International Students Scholarship, variable award by Ohlone College
+* Nov 2008 Ohlone Foundation Scholarship & International Students Scholarship, variable awards
 
 ## Service to the Profession
 #### Society Membership
