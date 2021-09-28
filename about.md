@@ -3,9 +3,9 @@ title: About
 layout: page
 permalink: /about/index.html
 ---
-<img src="{{ site.url }}/{{ site.picture }}" style="width:300px;" />
+<img src="{{ site.url }}/{{ site.picture }}" style="width:300px;"/>
 
-# `Hi, I'm Libère, Welcome to my site!`
+#`Hi, I'm Libère, Welcome to my site!`
 I am a PhD Candidate in Medical Biophysics at Keck School of Medicine of USC and graduate research assistant at [USC Michelson Convergent Science Institute in Cancer](https://kuhn.usc.edu/) where I head up a research program in mapping and predicting the spatiotemporal progression of multiple myeloma (a blood cancer) using single cell biology, and predictive math modeling.
 
 Before USC, I obtained a Bachelor of Science in Biotechnology from Syracuse University and worked in the biopharmaceutical industry developing machine learning models to predict (1) [off-targeting in gene silencing/editing](https://en.calameo.com/read/0041626681a7296f0e0a8) and (2) [drug-target interactions](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5166585/).
