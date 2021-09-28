@@ -53,7 +53,7 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 * Explored the utility of DSDs as inhibitors of biofilm formation in *in vitro* models of cystic firbosis
 
 **University of California San Francisco, San Francisco, CA, Summer 2014**<br>
-*Undergraduate Researcher, Summer Research and Training Program, Cardiovascular Research Institute*
+*Undergraduate Researcher, Summer Research and Training Program, Cardiovascular Research Institute*<br>
 *Principal Investigator:* Michael Grabe, PhD
 
 * Homology modeled the structure of human sodium-glucose transporters (hSGLTs) based on structure of bacterial homologues
@@ -76,7 +76,7 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 ## Skills
 
 **Experimental Biology**: Single cell assay development, microscopy, molecular biology methods<br>
-**Programming:** Python, R, SQL, LaTeX, Bash, git<br>
+**Programming:** Python, R, SQL, Bash, LaTeX<br>
 **Data Science & Analytics:** Experimental design, linear and non-linear models, multivariate analysis, time series models<br>
 **Machine Learning:** Supervised and unsupervised learning, classification, regression, neural networks<br>
 
