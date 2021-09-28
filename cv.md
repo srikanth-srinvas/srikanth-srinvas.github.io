@@ -3,7 +3,7 @@ title: Vitae
 layout: page
 permalink: /cv/index.html
 ---
-##### `A regularly updated vitae`. *contact me for a pdf copy*
+##### `A regularly updated vitae. Contact me for a pdf copy`
 
 ## Libère Jensen Ndacayisaba
 <!---[nalibere@gmail.com](mailto:nalibere@gmail.com) --->
@@ -12,10 +12,7 @@ Los Angeles, California
 
 ## Preamble
 Health and time are respectively humankind’s most valuable asset and resource. Disease afflicts health and takes away time.
-My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex maladies and my life’s work is in
-developing (1) computational and quantitative approaches applied to complex multimodal data to unravel disease biology in
-normal conditions and under therapeutic perturbation and (2) predictively develop innovative therapeutic modalities and disease
-monitoring technologies with the ultimate goal of preserving health and extending life.
+My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex maladies and my life’s work is in developing (1) computational and quantitative approaches applied to complex multimodal data to unravel disease biology in normal conditions and under therapeutic perturbation and (2) predictively develop innovative therapeutic modalities and disease monitoring technologies with the ultimate goal of preserving health and extending life.
 
 ## Education
 
