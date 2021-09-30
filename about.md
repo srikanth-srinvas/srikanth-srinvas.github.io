@@ -15,9 +15,9 @@ Before USC, I obtained a Bachelor of Science in Biotechnology from Syracuse Univ
 
 Driven by scientific curiosity and humbled by the multiscale complexity of disease biology, I'm constantly inspired by the opportunity to leverage innovative science and technology to develop new medicines for the eradication of maladies and the betterment of human health.
 
-As a champion of the extraordinary potential of biotechnology--genome engineering and synthetic biology--and computational science, I'm passionately committed to making biomedicine and therapeutic science more precise, predictable, and programmable.
+As a champion of the extraordinary potential of biotechnology and AI/machine learning, I'm passionately committed to making biomedicine and therapeutics discovery more precise, predictable, and programmable.
 
-I currently serve a Strategy Lead @ [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/) where we are enabling and empowering the next-generation of biotech founders.
+I currently serve as Strategy Lead @ [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/) where we are enabling and empowering the next-generation of biotech founders.
 
 ---
 
