@@ -5,7 +5,7 @@ permalink: /about/index.html
 ---
 <img src="{{ site.url }}/{{ site.picture }}" style="width:300px;"/>
 
-### Hello, Welcome to my site!
+### Hi, I'm Libère. Glad to see you here!
 
 I am a PhD Candidate in Medical Biophysics at Keck School of Medicine of USC and graduate research assistant at [USC Michelson Convergent Science Institute in Cancer](https://kuhn.usc.edu/) where I head up a research program in mapping and predicting the spatiotemporal progression of multiple myeloma (a blood cancer) using single cell biology, and predictive math modeling.
 
@@ -23,4 +23,6 @@ I currently serve as Strategy Lead @ [Nucleate Los Angeles](https://www.nucleate
 
 When i'm not doing science and research, I like to play football (aka soccer), learn about aircrafts and aviation, read philosophy, and explore vastness of the outdoors.
 
-Get in touch for anything biotechnology, machine/deep learning, therapeutic science, quantum biology
+I also love meeting anyone interested in biotechnology, machine/deep learning, therapeutics science, chaos theory, quantum biology, and game theory
+
+Get in touch if these resonate with you!

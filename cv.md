@@ -54,7 +54,7 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 
 **University of California San Francisco, San Francisco, CA, Summer 2014**<br>
 *Undergraduate Researcher, Summer Research and Training Program, Cardiovascular Research Institute*<br>
-*Principal Investigator:* Michael Grabe, PhD
+<!--- *Principal Investigator:* Michael Grabe, PhD --->
 
 * Homology modeled the structure of human sodium-glucose transporters (hSGLTs) based on structure of bacterial homologues
 * Explored various comformations of hSGLT1 and hSGLT2 structure
@@ -76,7 +76,7 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 ## Skills
 
 **Experimental Biology**: Single cell assay development, microscopy, molecular biology methods<br>
-**Programming:** Python, R, SQL, Bash, LaTeX<br>
+**Programming:** Python, R, SQL, Bash, LaTeX, Visual Studio, Atom<br>
 **Data Science & Analytics:** Experimental design, linear and non-linear models, multivariate analysis, time series models<br>
 **Machine Learning:** Supervised and unsupervised learning, classification, regression, neural networks<br>
 
