@@ -22,7 +22,7 @@ description: "Kunstkabinett"
 ---
 ## 1. Science
 > ### Why are atoms so small?
- - from `What is Life` by Erwin Shroedinger
+ - from *What is Life* by `Erwin Schrödinger`
 
 ---
 ## 2. Philosophy
