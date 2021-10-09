@@ -2,8 +2,6 @@
 title: About
 layout: page
 permalink: /about/index.html
-order: 1
-navigation_weight: 10
 ---
 <img src="{{ site.url }}/{{ site.picture }}" style="width:300px;"/>
 
