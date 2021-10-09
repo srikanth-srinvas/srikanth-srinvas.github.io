@@ -1,7 +1,7 @@
 ---
 title: Kunstkabinett
 layout: post
-date: 2020-11-29
+date: 2021-10-10
 tag:
 - curiosity
 - philosophy
@@ -13,7 +13,7 @@ description: "Kunstkabinett"
 ---
 
 #### A curated collection of thoughts, questions, and curiosities that over which I regularly ponder.
-##### Topics include philosophy, leadership, futurism, and the human race 
+##### Topics include philosophy, leadership, futurism, and the human race
 
 ![Cabinet of curiosities](https://commons.wikimedia.org/wiki/File:Frans_Francken_(II),_Kunst-_und_Rarit%C3%A4tenkammer_(1636).jpg)
 
