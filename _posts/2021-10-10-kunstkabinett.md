@@ -13,8 +13,7 @@ blog: true
 description: "Kunstkabinett"
 ---
 
-# A curated collection of thoughts, questions, and curiosities over which I regularly ponder.
-## Topics include philosophy, leadership, futurism, science, and the human race
+## A collection of questions and curiosities over which I regularly ponder, covering philosophy, leadership, futurism, science, and the human race
 
 ![Cabinet of curiosities](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Frans_Francken_%28II%29%2C_Kunst-_und_Rarit%C3%A4tenkammer_%281636%29.jpg/1024px-Frans_Francken_%28II%29%2C_Kunst-_und_Rarit%C3%A4tenkammer_%281636%29.jpg)
 
