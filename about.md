@@ -5,7 +5,9 @@ permalink: /about/index.html
 ---
 <img src="{{ site.url }}/{{ site.picture }}" style="width:300px;"/>
 
-### Hi, I'm Libère. Glad to see you here!
+### Hi, I'm Libère.
+
+<p align="left"><img width=15%" src="https://github.com/alansmathew/alansmathew/raw/master/lang.gif" alt="lang image here"/></p>
 
 I am a PhD Candidate in Medical Biophysics at Keck School of Medicine of USC and graduate research assistant at [USC Michelson Convergent Science Institute in Cancer](https://kuhn.usc.edu/) where I head up a research program in mapping and predicting the spatiotemporal progression of multiple myeloma (a blood cancer) using single cell biology, and predictive math modeling.
 --
