@@ -3,109 +3,112 @@ title: Vitae
 layout: page
 permalink: /cv/index.html
 ---
-##### `A regularly updated vitae. Contact me for a pdf copy`
-
 ## Libère Jensen Ndacayisaba
 <!---[nalibere@gmail.com](mailto:nalibere@gmail.com) --->
-
 Los Angeles, California
-
 ## Preamble
 Health and time are respectively humankind’s most valuable asset and resource. Disease afflicts health and takes away time.
-My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex maladies and my life’s work is in developing (1) computational and quantitative approaches applied to complex multimodal data to unravel disease biology in normal conditions and under therapeutic perturbation and (2) predictively develop innovative therapeutic modalities and disease monitoring technologies with the ultimate goal of preserving health and extending life.
+My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex maladies and my life’s work is in developing (1) computational and quantitative approaches applied to complex multimodal data to unravel disease biology in normal conditions and under therapeutic perturbation and (2) develop innovative therapeutic modalities and disease monitoring technologies with the ultimate goal of preserving health and extending life.
+
+## Highlights:
+* Experience: ~9 years of computational biology and bioinformatics, ~6 years of machine learning, ~5 years of drug discovery, ~4 years of single cell multiomics
+* Training background: quantitative biosciences with hybrid experimental/bench and computational knowledge and skillsets within biotechnology, biophysics, and therapeutics
 
 ## Education
-
 ***Ph.D. — Medical Biophysics*, Keck School of Medicine of USC**, Los Angeles, CA. 2017 - Present<br>
-
 ***B.Sc. — Biotechnology*, Syracuse University**, Syracuse, NY. 2015<br>
-
 ***Associate's degree - Natural Science: Math & Technology emphasis*, Ohlone College**, Fremont, CA. 2014
 
 ## Experience
-
-**USC Michelson Convergent Science Institute in Cancer, Los Angeles, CA, 2018 - Present**<br>
-*PhD Graduate Research Assistant* <br>
+**USC Michelson Convergent Science Institute in Cancer, Los Angeles, CA, May 2018 - Present**<br>
+***Ph.D. Graduate Research Assistant***, *[Convergent Science Institute in Cancer (CSI-Cancer)](https://kuhn.usc.edu/)*<br>
 *Thesis:* Predictive deconvolution of multiple myeloma progression from precursor disease
 
-* Leading a research team combining computational and experimental methods to map and predict the progression of multiple myeloma from precursor states
-* Developing liquid biopsy assays for single cell detection and morphoproteogenomic characterization of plasma cells
+* Leading a research team combining computational and experimental methods to map and predict the progression of multiple myeloma from precursor disease
+* Leading multiple research projects in predictive math modeling and single cell assay development
+* Developing liquid biopsy immunoassays for single cell detection and morphoproteogenomic characterization of plasma cells and committed B lymphocytes
 * Building machine learning models to predict patient outcomes
 
-**Novatis Institutes for BioMedical Research, Cambridge, MA, Jan 2016 - Jun 2017**<br>
-*Postbacalaureate Scholar, Developmental and Molecular Pathways Dept.*
+**Nucleate, Los Angeles CA, August 2021 - Present** <br>
+***Strategy Lead***, *[Nucleate, Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)*
+* Create a long-lasting strategic vision for enabling the creation and growth of early-stage life science companies in LA
+* Map and connect the LA biontrepreneurial ecosystem to empower the formation of trainee-led bioventures
+* Source promising technologies and facilitate caliber teams for the 1st cohort of Nucleate biotech founders
 
+**USC Graduate Student Government, Los Angeles, CA May 2020 - May 2021**<br>
+***Director of Globalization and Inclusion***, *[USC GSG](https://gsg.usc.edu/)* <br>
+* Served on the executive board of the university-wide governing body for graduate and professional students
+* Oversaw all advocacy initiatives for undocu+ and international graduate students at USC.
+* Worked with university leadership to inact and implement policies that enhance the academic experience of the student body.
+
+**Novatis Institutes for BioMedical Research, Cambridge, MA, January 2016 - Junuary 2017**<br>
+***Postbac Intern, CBT Data Science***, *Data Science Group, Chemical Biology and Therapeutics (CBT)*
 * Developped machine learning proteochemometric models to predict drug target interactions
-* Employed developped models to explore the predictability across the targetable human proteome
-* Explored the polypharmacology of predicted small molecule entities
+* Explored the predictability within protein families across the targetable human proteome
+* Experimentally validated predicted interaction pairs
+* Delineated the polypharmacology of predicted targets and small molecule candidates
 
-**Novatis Institutes for BioMedical Research, Cambridge, MA, Jan 2016 - Jun 2017**<br>
-*Scientific Summer Scholar, Screening Informatics, Developemental and Molecular Pathways Dept.*
-
+**Novatis Institutes for BioMedical Research, Cambridge, MA, January 2016 - June 2017**<br>
+***Intern, Computational Biology***, *Screening Informatics Group, Developemental and Molecular Pathways (DMP)*
 * Developped machine learning classification models to predict siRNA off-targetting
-* Investigated top features that predict off-targetting in RNA interference experiments
+* Investigated top features that predict off target effects in RNA interference experiments
+* Models results infomed experimental design for phenotypic screening in target ID and drug discovery
 
-**Syracuse University, Syracyse, NY, 2014-2015**<br>
-*Undergraduate Researcher, Department of Chemistry*
-
-* Investigated protein targets for novel bisaccharide derivatives
-* Investigated the binding affinity and bioactivity of DSDs to identified adhesion proteins
+**Syracuse University, Syracyse, NY, 2014 - December 2015**<br>
+***Undergraduate Researcher***, [Lab of Yan-Yeung Luk](https://biomaterials.syr.edu/research/luk/), *Department of Chemistry*
+* Investigated protein targets for novel disaccharide derivatives(DSDs)
+* Sampled the protein comformations of identified adhesion proteins and their binding affinity and bioactivity to DSDs
 * Explored the utility of DSDs as inhibitors of biofilm formation in *in vitro* models of cystic firbosis
 
 **University of California San Francisco, San Francisco, CA, Summer 2014**<br>
-*Undergraduate Researcher, Summer Research and Training Program, Cardiovascular Research Institute*<br>
-<!--- *Principal Investigator:* Michael Grabe, PhD --->
-
+***Undergraduate Researcher***, *[Lab of Michael Grabe](https://www.grabelab.org/), Cardiovascular Research Institute*<br>
 * Homology modeled the structure of human sodium-glucose transporters (hSGLTs) based on structure of bacterial homologues
 * Explored various comformations of hSGLT1 and hSGLT2 structure
 * Investigated inhibitors of human SGLTs by molecular docking and computational screening of library of active compounds
 
 **The Wadsworth Center, New York State Department of Health, Albany, NY. Summer 2013**<br>
-*NSF-REU Summer Undergraduate Researcher*
-
+***NSF-REU Undergraduate Researcher***, *[Labs of Nilesh Banavali and Hongmin Li](https://www.wadsworth.org/senior-staff/nilesh-banavali)*
 * Molecular docking and computational screening of small molecule inhibiors of Dengue NS2/NS3 protease complex
 * Culturing and purification of DENV NS2/NS3 protease
-* *In vitro* screening validation of top inhibitors
+* Performed *In vitro* screening and validation of top inhibitors
 
 **University of California Berkeley, Berkeley, CA. Summer 2012**<br>
-*Undergraduate Researcher, ESPM Department*
-
-* Performed DNA extraction and molecular taxonomy analysis
-* Investigated the speciation of Tahitian plant bugs
+***Undergraduate Researcher***, *Environmental Leadership Pathway, [ESPM](https://ourenvironment.berkeley.edu/)*
+* Performed DNA extraction, amplification, and sequencing of two evolutionarily conserved genes
+* Applied Bayesian Inference methods for molecular taxonomy analysis
+* Investigated the speciation of Tahitian plant bugs and identified five candidate new species
 
 ## Skills
-
-**Experimental Biology**: Single cell assay development, microscopy, molecular biology methods<br>
-**Programming:** Python, R, SQL, Bash, LaTeX, Visual Studio, Atom<br>
-**Data Science & Analytics:** Experimental design, linear and non-linear models, multivariate analysis, time series models<br>
+**Programming:** Python, R, SQL, Bash, Visual Studio, Atom, LaTeX<br>
+**Data Science & Analytics:** Linear and non-linear models, multivariate analysis, time series models<br>
 **Machine Learning:** Supervised and unsupervised learning, classification, regression, neural networks<br>
+**Experimental Biology**: Single cell multiomics, microscopy, imaging mass cytometry, molecular biology methods<br>
 
-## Selected Publications
-
-1. **Ndacayisaba LJ**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter `under review` at *Springer, Circulating Tumor Cells: Advances in Liquid Biopsy Technologies*, Second Edition.<br>
-2. **Ndacayisaba LJ**, et al. (2021). Morphogenomic Detection and Characterization of Circulating Rare Single Cells in Multiple Myeloma. `In preparation`
+## Publications
+1. **Ndacayisaba L.J.**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter in *Circulating Tumor Cells: Advances in Liquid Biopsy Technologies, Springer, 2nd Ed.* `In review.`<br>
+2. **Ndacayisaba L.J.**, et al. (2021). Morphogenomic Detection and Characterization of Circulating Rare Single Cells in Multiple Myeloma. `in preparation.`<br>
+3. **Ndacayisaba L.J.**, et al. [Project Tempest manuscript] `in preparation`
+4. **Ndacayisaba L.J.**, et al. [Project Concorde manuscript] `in preparation`
+4. **Ndacayisaba L.J.**, et al. [Project Dragonfly manuscript] `in preparation`
+6. **Ndacayisaba L.J.**, et al. [Project Osprey manuscript] `in preparation`
 
 ## Selected Presentations
-
-#### Invited Talks
-* Jul. 2020 Syracuse University McNair Scholars Symposium Jul 17 2020 Virtual
+#### Invited Talks and Lectures
+* Summer 2019, 2020, & 2021. PIBBS Summer Bootcamps for incoming 1st year PhD students, Los Angeles, CA <br>
+Topics: Programming for Bioscientists. Taught first year PhD students on foundations of computational sciences for bioscientists, with hands-on programming and data visualization in R and Python. ~30 PhD students each summer.
+* Jul. 2020 Syracuse University McNair Scholars Symposium Jul 17 2020 Virtual <br>
 Title: Single Cell Biology and Math Modeling to Delineate the Spatiotemporal Progression of Myeloma
-* Summer 2020. ACE the CURE: Summer Undergraduate Program Jul 2020 Virtual
-Theme: Predictive Math Modeling. Taught a one week-long bootcamp on predictive machine learning to 17 undergraduates
-* Summer 2019 & 2020. PIBBS Summer Bootcamp Aug 2020 Los Angeles, CA
-Programming for Bioscientists. Taught first year PhD students two sessions on foundations of computation sciences,
-programming and data visualization for bioscientists in R and Python
-* Nov. 2019. IMC User Group Meeting at Cedars Sinai: Accelerating Translational Science Through Mass Cytometry. Los Angeles, CA
-Imaging Mass Cytometry in Liquid Biopsy: Proteomic Characterization of Circulating Rare Events in Single Cell Oncology
-* Summer 2019. PIBBS Summer Bootcamp Aug 2019 Los Angeles, CA
-Dec 2016 Co-lecturer: Novartis Postbaccalaureate Scholars qBio Bootcamp. Cambridge, MA
-Taught command line scripting, introductory Python programming, data analysis, and visualization to 8 post-baccalaureate
+* Summer 2020. ACE the CURE: Summer Undergraduate Program Jul 2020 Virtual <br>
+Topics: Predictive Math Modeling. Taught a one week-long bootcamp on predictive machine learning to 17 undergraduates
+* Nov. 2019. IMC User Group Meeting at Cedars Sinai: Accelerating Translational Science Through Mass Cytometry. Los Angeles, CA<br>
+Title: Imaging Mass Cytometry in Liquid Biopsy: Proteomic Characterization of Circulating Rare Events in Single Cell Oncology
+* Dec 2016 Co-lecturer: Novartis Postbaccalaureate Scholars qBio Bootcamp. Cambridge, MA<br>
+Topics: introductory command line Bash scripting, Python programming, data analysis, and visualization (class of 8 post-baccalaureate scholars)
 students during a 2-day long quantitative biology bootcamp.
-* Jul 2016 Invited Seminar Speaker, Novartis Summer Scholars Weekly Seminar Series. Cambridge, MA
+* Jul 2016 Invited Seminar Speaker, Novartis Summer Scholars Weekly Seminar Series. Cambridge, MA <br>
 Topic: Scientific Communication, Chalk Talk. Led an hour long seminar to 22 undergraduate summer scholars on giving an effective chalk talk
 
-#### Conference & Symposia Presentations
-
+#### Conferences & Symposia Presentations
 * Poster. New England Science Symposium (NESS) Apr 2017 Boston, MA
 Proteochemometric Machine Learning Models for Predictive Drug Discovery
 * Poster. Annual Winter Q-bio Meeting Feb 2017 Kauai, HI
@@ -126,21 +129,18 @@ Ligand Discovery from a Crystal Structure and Homology Models of Sodium-glucose 
 Ligand Discovery from a Crystal Structure and Homology Models of Sodium-glucose Co-transporters
 * Talk. NSF-REU Symposium at The Wadsworth Center Aug 2013 Albany, NY
 Identification of Orthosteric Dengue Protease Inhibitors using Computer-aided Drug Design
-* Poster. UC Berkeley ELP Anual Symposium Jul 2012 Berkeley, CA
+* Poster. UC Berkeley ELP Annual Symposium Jul 2012 Berkeley, CA
 Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
-
-* Jul 2021 Schlegel Family Endowed Fellowship Recipient, Awarded by the University for 2021-2022
-* 2020 HHMI Gilliam Fellowhip Nominee, One of 2 University-wide nominated student for the 2020 cycle
-* March 2020 2nd place at PIBBS Sci-5, Annual Oral presentation competition for Keck School of Medicine PhD students
+* Jul 2021: Schlegel Family Endowed Fellowship Recipient, Awarded by the University for 2021-2022
+* 2020 HHMI Gilliam Fellowhip Nominee, One of 2 University-wide nominated student-advisor pair
+* March 2020: 2nd place at PIBBS Sci-5, Annual Research Presentation competition, Keck School of Medicine
 * 2017 PhD GEM Associate Fellow, The National GEM Consortium and University of Southern California
 * 2017 AAAS/Science Program for Excellence in Science, University of Southern California
-* Jul 2016 F1000 Outstanding Poster Award, ISCB Student Council Symposium at ISMB. 1st out of 30 posters.
-* Jun 2015 Research Presentation Award, Novartis Slide Slam Competition. 3rd out of 21 oral flash talks.
-* May 2015 Don C. Sawyer III Community Legacy Award, to Syracuse University’s top minority graduating senior
-* Mar 2014 McNair Scholar, Elected to the Ronald E. McNair Scholars program at Syracuse University
-* Feb 2014 LSAMP Scholar, Elected to the Louis Stokes Alliance for Minority Participation program at Syracuse University
+* Jul 2016: F1000 Outstanding Poster Award, ISCB Student Council Symposium at ISMB. 1st out of 30 posters.
+* Jun 2015 Research Presentation Award, Novartis Slide Slam Competition. 3rd out of 21 flash talks.
+* May 2015: Don C. Sawyer III Community Legacy Award, to Syracuse University’s top minority graduating senior
 * Nov 2013 Syracuse University Dean’s Scholarship, Merit-based renewable $6,000 annual Scholarship
 * May 2013 Osher Initiative for Community College Scholarship. $1,000 award by Ohlone College
 * Nov 2008 Ohlone Foundation Scholarship & International Students Scholarship, variable awards
@@ -153,10 +153,8 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 * Dec 2014 – Mar 2018: Member, American Society for Pharmacology and Experimental Therapeutics (ASPET)
 
 #### Leadership & Professional Activities
-* Aug 2021 – Present: Strategy Lead, [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)
-* May 2020 – May 2021: Director of Globalization and Inclusion, Graduate Student Government Executive Board, USC
 * Sept 2017 – Present: President and Lecturer at Code On! Lead the team and teach programming to the Keck School of Medicine of USC community
 * Jul 2017 – Present: PIBBS Ambassador, Recruitment and interviewing prospective Keck SOM PhD students
-* Oct 2016 – Jun 2017: Advisory Committee Member, TutoringPlus of Cambridge. Curriculum development for science and engineering.
-* Aug 2014 – Dec 2015: Founding President, TheFirst, Syracuse University’s first generation students organization
+* Oct 2016 – Jun 2017: Advisory Committee Member, TutoringPlus of Cambridge
+* Aug 2014 – Dec 2015: Founder & President, TheFirst, Syracuse University’s first generation students organization
 * Oct 2012 – Jan 2014 Teaching Assistant for Biotechnology & Biochemistry. Learning Alliance for Bioscience (LAB) program at Ohlone College
