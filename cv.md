@@ -105,7 +105,7 @@ Title: Imaging Mass Cytometry in Liquid Biopsy: Proteomic Characterization of Ci
 Topics: introductory command line Bash scripting, Python programming, data analysis, and visualization (class of 8 post-baccalaureate scholars)
 students during a 2-day long quantitative biology bootcamp.
 * Jul 2016 Invited Seminar Speaker, Novartis Summer Scholars Weekly Seminar Series. Cambridge, MA <br>
-Topic: Scientific Communication, Chalk Talk. Led an hour long seminar to 22 undergraduate summer scholars on giving an effective chalk talk
+Topic: Science Communication, Chalk Talk. Led an hour long seminar to 22 undergraduate summer scholars on giving an effective chalk talk
 
 #### Conferences & Symposia Presentations
 * Poster. New England Science Symposium (NESS) Apr 2017 Boston, MA
@@ -133,7 +133,6 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
 * Jul 2021: Schlegel Family Endowed Fellowship Recipient, Awarded by the University for 2021-2022
-* 2020 HHMI Gilliam Fellowhip Nominee, One of 2 University-wide nominated student-advisor pair
 * March 2020: 2nd place at PIBBS Sci-5, Annual Research Presentation competition, Keck School of Medicine
 * 2017 PhD GEM Associate Fellow, The National GEM Consortium and University of Southern California
 * 2017 AAAS/Science Program for Excellence in Science, University of Southern California
