@@ -42,14 +42,14 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 * Worked with university leadership to inact and implement policies that enhance the academic experience of the student body.
 
 **Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, January 2016 - Junuary 2017**<br>
-***Postbac Intern, CBT Data Science***, *Data Science Group, Chemical Biology and Therapeutics (CBT)*
-* Developped machine learning proteochemometric models to predict drug target interactions
+***Postbac Intern, Data Science***, *CBT Data Science Group, Chemical Biology and Therapeutics (CBT)*
+* Developed machine learning proteochemometric models to predict drug target interactions
 * Explored the predictability within protein families across the targetable human proteome
 * Experimentally validated predicted interaction pairs
 * Delineated the polypharmacology of predicted targets and small molecule candidates
 
-**Novartis Institutes for BioMedical Research(NIBR), Cambridge, MA, January 2016 - June 2017**<br>
-***Intern, Computational Biology***, *Screening Informatics Group, Developemental and Molecular Pathways (DMP)*
+**Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, Jun 2015 - Aug. 2015**<br>
+***Intern, Computational Biology***, *Screening Informatics Group, Developmental and Molecular Pathways (DMP)*
 * Developped machine learning classification models to predict siRNA off-targetting
 * Investigated top features that predict off target effects in RNA interference experiments
 * Models results infomed experimental design for phenotypic screening in target ID and drug discovery
