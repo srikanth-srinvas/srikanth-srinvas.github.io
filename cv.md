@@ -9,11 +9,11 @@ Los Angeles, California
 ## Preamble
 Health and time are respectively humankind’s most valuable asset and resource. Disease afflicts health and takes away time.
 My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex maladies and my life’s work is in developing (1) computational and quantitative approaches applied to complex multimodal data to unravel disease biology in normal conditions and under therapeutic perturbation and (2) develop innovative therapeutic modalities and disease monitoring technologies with the ultimate goal of preserving health and extending life.
-
+<!---
 ## Highlights:
 * Experience: ~9 years of computational biology and bioinformatics, ~6 years of machine learning, ~5 years of drug discovery, ~4 years of single cell multiomics
 * Training background: quantitative biosciences with hybrid experimental/bench and computational knowledge and skillsets within biotechnology, biophysics, and therapeutics
-
+--->
 ## Education
 ***Ph.D. — Medical Biophysics*, Keck School of Medicine of USC**, Los Angeles, CA. 2017 - Present<br>
 ***B.Sc. — Biotechnology*, Syracuse University**, Syracuse, NY. 2015<br>
@@ -41,14 +41,14 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 * Oversaw all advocacy initiatives for undocu+ and international graduate students at USC.
 * Worked with university leadership to inact and implement policies that enhance the academic experience of the student body.
 
-**Novatis Institutes for BioMedical Research, Cambridge, MA, January 2016 - Junuary 2017**<br>
+**Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, January 2016 - Junuary 2017**<br>
 ***Postbac Intern, CBT Data Science***, *Data Science Group, Chemical Biology and Therapeutics (CBT)*
 * Developped machine learning proteochemometric models to predict drug target interactions
 * Explored the predictability within protein families across the targetable human proteome
 * Experimentally validated predicted interaction pairs
 * Delineated the polypharmacology of predicted targets and small molecule candidates
 
-**Novatis Institutes for BioMedical Research, Cambridge, MA, January 2016 - June 2017**<br>
+**Novartis Institutes for BioMedical Research(NIBR), Cambridge, MA, January 2016 - June 2017**<br>
 ***Intern, Computational Biology***, *Screening Informatics Group, Developemental and Molecular Pathways (DMP)*
 * Developped machine learning classification models to predict siRNA off-targetting
 * Investigated top features that predict off target effects in RNA interference experiments
