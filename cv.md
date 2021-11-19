@@ -7,8 +7,7 @@ permalink: /cv/index.html
 <!---[nalibere@gmail.com](mailto:nalibere@gmail.com) --->
 Los Angeles, California
 ## Preamble
-Health and time are respectively humankind’s most valuable asset and resource. Disease afflicts health and takes away time.
-My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex maladies and my life’s work is in developing (1) computational and quantitative approaches applied to complex multimodal data to unravel disease biology in normal conditions and under therapeutic perturbation and (2) develop innovative therapeutic modalities and disease monitoring technologies with the ultimate goal of preserving health and extending life.
+Health and time are respectively humankind’s most valuable asset and resource. Disease afflicts health and takes away time. My scientific curiosity is rooted in understanding the spatiotemporal pathogenesis of complex maladies. My life’s work is in (1) developing quantitative methods to deconvolute complex multimodal data and unravel disease biology in (2) developing innovative therapeutic modalities with the ultimate goal of preserving health and extending life.
 <!---
 ## Highlights:
 * Experience: ~9 years of computational biology and bioinformatics, ~6 years of machine learning, ~5 years of drug discovery, ~4 years of single cell multiomics
@@ -50,26 +49,26 @@ My scientific curiosity is rooted in the spatiotemporal pathogenesis of complex 
 
 **Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, Jun 2015 - Aug. 2015**<br>
 ***Intern, Computational Biology***, *Screening Informatics Group, Developmental and Molecular Pathways (DMP)*
-* Developped machine learning classification models to predict siRNA off-targetting
+* Developed machine learning classification models to predict siRNA off-targetting
 * Investigated top features that predict off target effects in RNA interference experiments
-* Models results infomed experimental design for phenotypic screening in target ID and drug discovery
+* Modeling predictions infomed experimental design for phenotypic screening in target ID and drug discovery
 
-**Syracuse University, Syracyse, NY, 2014 - December 2015**<br>
-***Undergraduate Researcher***, [Lab of Yan-Yeung Luk](https://biomaterials.syr.edu/research/luk/), *Department of Chemistry*
-* Investigated protein targets for novel disaccharide derivatives(DSDs)
-* Sampled the protein comformations of identified adhesion proteins and their binding affinity and bioactivity to DSDs
-* Explored the utility of DSDs as inhibitors of biofilm formation in *in vitro* models of cystic firbosis
+**Syracuse University, Syracuse, NY, 2014 - December 2015**<br>
+***McNair Scholar Undergraduate Researcher***, [Lab of Yan-Yeung Luk](https://biomaterials.syr.edu/research/luk/), *Department of Chemistry*
+* Investigated protein targets for novel disaccharide derivatives (DSDs)
+* Sampled the protein conformations of identified adhesion proteins and their binding affinity and bioactivity to DSDs
+* Explored the utility of DSDs as inhibitors of biofilm formation in *in vitro* models of Cystic Fibrosis
 
 **University of California San Francisco, San Francisco, CA, Summer 2014**<br>
 ***Undergraduate Researcher***, *[Lab of Michael Grabe](https://www.grabelab.org/), Cardiovascular Research Institute*<br>
 * Homology modeled the structure of human sodium-glucose transporters (hSGLTs) based on structure of bacterial homologues
-* Explored various comformations of hSGLT1 and hSGLT2 structure
+* Explored various conformations of hSGLT1 and hSGLT2 structural models.
 * Investigated inhibitors of human SGLTs by molecular docking and computational screening of library of active compounds
 
 **The Wadsworth Center, New York State Department of Health, Albany, NY. Summer 2013**<br>
 ***NSF-REU Undergraduate Researcher***, *[Labs of Nilesh Banavali and Hongmin Li](https://www.wadsworth.org/senior-staff/nilesh-banavali)*
-* Molecular docking and computational screening of small molecule inhibiors of Dengue NS2/NS3 protease complex
-* Culturing and purification of DENV NS2/NS3 protease
+* Molecular docking and computational screening of small molecule inhibitors of Dengue NS2/NS3 protease complex
+* ultured and purified the DENV NS2/NS3 protease complex
 * Performed *In vitro* screening and validation of top inhibitors
 
 **University of California Berkeley, Berkeley, CA. Summer 2012**<br>
