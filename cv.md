@@ -8,11 +8,12 @@ permalink: /cv/index.html
 Los Angeles, California
 ## Preamble
 Health and time are respectively humankind’s most valuable asset and resource. Disease afflicts health and takes away time. My scientific curiosity is rooted in understanding the spatiotemporal pathogenesis of complex maladies. My life’s work is in (1) developing quantitative methods to deconvolute complex multimodal data and unravel disease biology in (2) developing innovative therapeutic modalities with the ultimate goal of preserving health and extending life.
-<!---
+
+<!--
 ## Highlights:
 * Experience: ~9 years of computational biology and bioinformatics, ~6 years of machine learning, ~5 years of drug discovery, ~4 years of single cell multiomics
-* Training background: quantitative biosciences with hybrid experimental/bench and computational knowledge and skillsets within biotechnology, biophysics, and therapeutics
---->
+* Training background: quantitative biosciences with hybrid experimental/bench and computational knowledge and skillsets within biotechnology, biophysics, and therapeutics. -->
+
 ## Education
 ***Ph.D. — Medical Biophysics*, Keck School of Medicine of USC**, Los Angeles, CA. 2017 - Present<br>
 ***B.Sc. — Biotechnology*, Syracuse University**, Syracuse, NY. 2015<br>
