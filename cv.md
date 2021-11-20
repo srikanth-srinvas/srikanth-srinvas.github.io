@@ -86,11 +86,13 @@ Health and time are respectively humankind’s most valuable asset and resource.
 ## Publications
 1. **Ndacayisaba L.J.**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter in *Circulating Tumor Cells: Advances in Liquid Biopsy Technologies, Springer, 2nd Ed.* `In review.`<br>
 2. **Ndacayisaba L.J.**, et al. (2021). Morphogenomic Detection and Characterization of Circulating Rare Single Cells in Multiple Myeloma. `in preparation.`<br>
+
 <!--
 3. **Ndacayisaba L.J.**, et al. [Project Tempest manuscript] `in preparation`
 4. **Ndacayisaba L.J.**, et al. [Project Concorde manuscript] `in preparation`
 4. **Ndacayisaba L.J.**, et al. [Project Dragonfly manuscript] `in preparation`
-6. **Ndacayisaba L.J.**, et al. [Project Osprey manuscript] `in preparation`-->
+6. **Ndacayisaba L.J.**, et al. [Project Osprey manuscript] `in preparation`
+7. -->
 
 ## Selected Presentations
 #### Invited Talks and Lectures
