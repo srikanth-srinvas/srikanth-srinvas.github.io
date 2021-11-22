@@ -136,7 +136,8 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
 * Jul 2021: Schlegel Family Endowed Fellowship Recipient, Awarded by the University for 2021-2022
-* March 2020: 2nd place at PIBBS Sci-5, Annual Research Presentation competition, Keck School of Medicine
+* Oct 2019: 2nd place at PIBBS Sci-5, Annual Research Presentation competition, Keck School of Medicine
+* Oct 2019: Winner of Alix Venture Award and Finalist, Health++ hackaton at Stanford University
 * 2017 PhD GEM Associate Fellow, The National GEM Consortium and University of Southern California
 * 2017 AAAS/Science Program for Excellence in Science, University of Southern California
 * Jul 2016: F1000 Outstanding Poster Award, ISCB Student Council Symposium at ISMB. 1st out of 30 posters.
@@ -149,8 +150,8 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 ## Service to the Profession
 #### Society Membership
 * Jun 2019 – Present: Member, Society of Hematology Oncology (SOHO)
-* Jul 2017 – Present: Member, American Association for the Advancement of Science (AAAS)
 * Oct 2015 – Present: Member, International Society for Computational Biology (ISCB) & ISCB Student Council
+* Jul 2017 – 2018: Member, American Association for the Advancement of Science (AAAS)
 * Dec 2014 – Mar 2018: Member, American Society for Pharmacology and Experimental Therapeutics (ASPET)
 
 #### Leadership & Professional Activities
