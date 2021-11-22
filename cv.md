@@ -135,17 +135,16 @@ Identification of Orthosteric Dengue Protease Inhibitors using Computer-aided Dr
 Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
-* Jul 2021: Schlegel Family Endowed Fellowship Recipient, Awarded by the University for 2021-2022
-* Oct 2019: 2nd place at PIBBS Sci-5, Annual Research Presentation competition, Keck School of Medicine
-* Oct 2019: Winner of Alix Venture Award and Finalist, Health++ hackaton at Stanford University
-* 2017 PhD GEM Associate Fellow, The National GEM Consortium and University of Southern California
-* 2017 AAAS/Science Program for Excellence in Science, University of Southern California
-* Jul 2016: F1000 Outstanding Poster Award, ISCB Student Council Symposium at ISMB. 1st out of 30 posters.
-* Jun 2015 Research Presentation Award, Novartis Slide Slam Competition. 3rd out of 21 flash talks.
-* May 2015: Don C. Sawyer III Community Legacy Award, to Syracuse University’s top minority graduating senior
-* Nov 2013 Syracuse University Dean’s Scholarship, Merit-based renewable $6,000 annual Scholarship
-* May 2013 Osher Initiative for Community College Scholarship. $1,000 award by Ohlone College
-* Nov 2008 Ohlone Foundation Scholarship & International Students Scholarship, variable awards
+* Jul 2021: *Recipient*, Schlegel Family Endowed Fellowship awarded by USC
+* * Oct 2019: *Winner* of Alix Venture Award and [Finalist at Health++ hackaton](https://healthplusplus19.devpost.com/) by Stanford University
+* Oct 2019: *2nd place Award*, PIBBS Sci-5: Annual Research Presentation competition by Keck School of Medicine
+* 2017 *PhD GEM Associate Fellow*, The National GEM Consortium and University of Southern California
+* 2017 *Univeristy Nominee*, AAAS/Science Program for Excellence in Science, by USC
+* Jul 2016: *F1000 Outstanding Poster Award*, ISCB Student Council Symposium at ISMB. 1st out of 30 posters.
+* Jun 2015: *Research Presentation Award*, Novartis Slide Slam Competition. 3rd out of 21 flash talks.
+* May 2015: *Don C. Sawyer III Community Legacy Award*, to Syracuse University’s top minority graduating senior
+* Nov 2013: *Dean’s Scholarship*, Syracuse University merit-based renewable annual Scholarship
+* 2008-2013: *Various Scholarship Awards*, by Ohlone Foundation, Osher Initiative for Community College Scholarship, and International Students Office
 
 ## Service to the Profession
 #### Society Membership
@@ -155,7 +154,7 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 * Dec 2014 – Mar 2018: Member, American Society for Pharmacology and Experimental Therapeutics (ASPET)
 
 #### Leadership & Professional Activities
-* Sept 2017 – Present: President and Lecturer at Code On! Lead the team and teach programming to the Keck School of Medicine of USC community
+* Sept 2017 – Present: President and lecturer at Code On! Lead the team and teach programming to the Keck School of Medicine of USC community
 * Jul 2017 – Present: PIBBS Ambassador, Recruitment and interviewing prospective Keck SOM PhD students
 * Oct 2016 – Jun 2017: Advisory Committee Member, TutoringPlus of Cambridge
 * Aug 2014 – Dec 2015: Founder & President, TheFirst, Syracuse University’s first generation students organization
