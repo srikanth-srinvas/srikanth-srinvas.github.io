@@ -7,7 +7,7 @@ permalink: /cv/index.html
 <!---[nalibere@gmail.com](mailto:nalibere@gmail.com) --->
 Los Angeles, California
 ## Preamble
-Health and time are respectively humankind’s most valuable asset and resource. Disease afflicts health and takes away time. My scientific curiosity is rooted in understanding the spatiotemporal pathogenesis of complex maladies. My life’s work is in (1) developing quantitative methods to deconvolute complex multimodal data and unravel disease biology in (2) developing innovative therapeutic modalities with the ultimate goal of preserving health and extending life.
+Humankind's most valuable asset and resource are health and time, respectively. Disease afflicts health and depletes time. There is no greater life purpose than the eradication of maladies and the betterment of human health. Humbled by the multiscale and spatiotemporal complexity of disease pathogenesis, I'm inspired by innovative science and technologies to decipher disease biology and make new medicines, and passionately committed to making therapeutic discovery more precise, predictable, and programmable.
 
 <!--
 ## Highlights:
@@ -21,12 +21,11 @@ Health and time are respectively humankind’s most valuable asset and resource.
 ## Experience
 **USC Michelson Convergent Science Institute in Cancer, Los Angeles, CA, May 2018 - Present**<br>
 ***Ph.D. Graduate Research Assistant***, *[Convergent Science Institute in Cancer (CSI-Cancer)](https://kuhn.usc.edu/)*<br>
-*Thesis:* Predictive deconvolution of multiple myeloma progression from precursor disease
 
-* Leading a research team combining computational and experimental methods to map and predict the progression of multiple myeloma from precursor disease
-* Leading multiple research projects in predictive math modeling and single cell assay development
-* Developing liquid biopsy immunoassays for single cell detection and morphoproteogenomic characterization of plasma cells and committed B lymphocytes
-* Building machine learning models to predict patient outcomes
+* Heading up a research team combining data science and single cell multiomics to map and predict cancer progression.
+* Leading multiple research projects in machine/deep learning to predict patient outcomes in solid tumors and blood cancers.
+* Developing feed-forward neural networkm odels using multimodal data to predict survival in breast and prostate cancers.
+* Developing immunoassays for single cell morphoproteogenomics to characterize and subtype cancer cells in the blood and bone marrow.
 
 **Nucleate, Los Angeles CA, August 2021 - Present** <br>
 ***Strategy Lead***, *[Nucleate, Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)*
