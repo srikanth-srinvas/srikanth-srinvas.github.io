@@ -64,23 +64,24 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 * Explored various conformations of hSGLT1 and hSGLT2 structural models.
 * Investigated inhibitors of human SGLTs by molecular docking and computational screening of library of active compounds
 
-**The Wadsworth Center, New York State Department of Health, Albany, NY. Summer 2013**<br>
-***NSF-REU Undergraduate Researcher***, *[Labs of Nilesh Banavali and Hongmin Li](https://www.wadsworth.org/senior-staff/nilesh-banavali)*
+**New York State Department of Health, Albany, NY. Summer 2013**<br>
+***NSF-REU Undergraduate Researcher***, *[Labs of Nilesh Banavali and Hongmin Li](https://www.wadsworth.org/senior-staff/nilesh-banavali), The Wadsworth Center*
 * Molecular docking and computational screening of small molecule inhibitors of Dengue NS2/NS3 protease complex
 * ultured and purified the DENV NS2/NS3 protease complex
 * Performed *In vitro* screening and validation of top inhibitors
 
 **University of California Berkeley, Berkeley, CA. Summer 2012**<br>
-***Undergraduate Researcher***, *Environmental Leadership Pathway, [ESPM](https://ourenvironment.berkeley.edu/)*
+***Undergraduate Researcher***, *Environmental Leadership Pathway, [ESPM Department](https://ourenvironment.berkeley.edu/)*
 * Performed DNA extraction, amplification, and sequencing of two evolutionarily conserved genes
 * Applied Bayesian Inference methods for molecular taxonomy analysis
 * Investigated the speciation of Tahitian plant bugs and identified five candidate new species
 
 ## Skills
+**Machine Learning:** Supervised and unsupervised learning, classification, regression, neural networks<br>
 **Programming:** Python, R, SQL, Bash, Visual Studio, Atom, LaTeX<br>
 **Data Science & Analytics:** Linear and non-linear models, multivariate analysis, time series models<br>
-**Machine Learning:** Supervised and unsupervised learning, classification, regression, neural networks<br>
 **Experimental Biology**: Single cell multiomics, microscopy, imaging mass cytometry, molecular biology methods<br>
+**Spoken Languages**: English, French, Kirundi, elementary Swahili
 
 ## Publications
 1. **Ndacayisaba L.J.**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter in *Circulating Tumor Cells: Advances in Liquid Biopsy Technologies, Springer, 2nd Ed.* `In review.`<br>
@@ -135,7 +136,7 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
 * Jul 2021: **Recipient**, Schlegel Family Endowed Fellowship awarded by USC
-* * Oct 2019: **Winner** of Alix Venture Award and [Finalist at Health++ hackaton](https://devpost.com/software/guardian-8wgcz1#updates) by Stanford University
+* * Oct 2019: **Winner** of Alix Ventures Award and [Finalist at Health++ hackaton](https://devpost.com/software/guardian-8wgcz1#updates) by Stanford University
 * Oct 2019: **2nd place Award**, PIBBS Sci-5: Annual Research Presentation competition by Keck School of Medicine
 * 2017 **PhD GEM Associate Fellow**, The National GEM Consortium and University of Southern California
 * 2017 **Univeristy Nominee**, AAAS/Science Program for Excellence in Science, by USC
