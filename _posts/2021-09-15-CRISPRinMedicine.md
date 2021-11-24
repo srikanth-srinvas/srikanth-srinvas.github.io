@@ -11,8 +11,6 @@ blog: true
 description: "Genome Engineering for Biomedicine"
 ---
 
-`under construction`
-
 ## The extraordinary rise of CRISPR as the principal toolbox for genome engineering
 
 Back in 2014 when I was studying Biotechnology at Syracuse University, the ideas of gene and cell therapies were still in their infancy and clinical applications of these technologies remained mostly within academic discourse and confined in the four walls of academic labs. Zinc Finger Nuclease and TALENs reigned mighty as the go-to tools for genetic modification.

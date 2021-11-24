@@ -1,4 +1,4 @@
-My website built with Jekyll and [Sergio Kopplin's Indigo theme](https://github.com/sergiokopplin/indigo/fork)
+Personal site built with Jekyll and [Sergio Kopplin's Indigo theme](https://github.com/sergiokopplin/indigo/fork)
 
 ---
 ## License

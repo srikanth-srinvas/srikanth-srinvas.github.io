@@ -1,6 +1,6 @@
 # main text of home
 name: Libère Jensen Ndacayisaba
-bio: 'Ph.D. Candidate in Medical Biophysics, University of Southern California.  Explore of the Immune System · To Understand Disease Complexity · To Make Innovative Medicines'
+bio: 'Ph.D. Candidate in Medical Biophysics & University of Southern California.  Explorer of the Immune System · To Understand Disease Complexity · To Make Innovative Medicines'
 
 # if it's an external image, update below for true
 external-image: false
@@ -52,11 +52,12 @@ width: large
 # if you don't need "about" or "blog", comment them out below
 # likewise, comment out lists, research, or bookshelf pages
 about: true
-blog: true
+blog: false
 cv: true
 projects: true
+modalities: false
+maverick: false
 research: false
-kunstkabinett: true
 bookshelf: false
 
 # do you want to show the "read time" of the posts?
