@@ -1,5 +1,5 @@
 ---
-title: "HDSCA for Morphogenomic Characterization of Rare Single Cells in Myeloma"
+title: "HDSCA for Single Cell Morphogenomics in Myeloma"
 layout: post
 date: 2021-09-20
 tag:
@@ -12,7 +12,7 @@ projects: true
 description: "Morphogenomic Characterization of Rare Single Cells in Myeloma"
 ---
 
-**Paper to appear in:**
+**University of Southern California. Paper to appear in:**
 
 ---
 
