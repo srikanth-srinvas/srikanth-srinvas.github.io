@@ -76,10 +76,10 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 * Investigated the morphological and genetic speciation of Pseudoloxops (Hemiptera: Miridae) and identified 5 candidate new species.
 
 ## Skills
-**Machine Learning:** Supervised and unsupervised learning, classification, regression, neural networks<br>
+**Machine Learning:** Supervised and unsupervised learning, classification and regression (RF, NB, SVm), deep neural networks<br>
+**Data Analytics:** Linear and non-linear models, multivariate analysis, time series models, data visualization<br>
 **Programming:** Python, R, SQL, Bash, Visual Studio, Atom, LaTeX<br>
-**Data Science & Analytics:** Linear and non-linear models, multivariate analysis, time series models<br>
-**Experimental Biology**: Single cell multiomics, microscopy, imaging mass cytometry, molecular biology methods<br>
+**Experimental Biology**: Single cell multiomics, microscopy, imaging mass cytometry, protein purification, immunofluorescence, molecular biology methods<br>
 **Spoken Languages**: English, French, Kirundi, elementary Swahili
 
 ## Publications
