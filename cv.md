@@ -29,52 +29,51 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 
 **Nucleate, Los Angeles CA, August 2021 - Present** <br>
 ***Strategy Lead***, *[Nucleate, Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)*
-* Create a long-lasting strategic vision for enabling the creation and growth of early-stage life science companies in LA
-* Map and connect the LA biontrepreneurial ecosystem to empower the formation of trainee-led bioventures
-* Source promising technologies and facilitate caliber teams for the 1st cohort of Nucleate biotech founders
+* Creating a long-lasting strategic vision for enabling the creation and growth of early-stage life science companies in Los Angeles.
+* Mapping and connecting the LA biontrepreneurial ecosystem to empower the formation of trainee-led bioventures.
+* Sourcing top-caliber biotech ideas and business trainees and facilitating formation of founding teams via Nucleate Activator program.
 
 **USC Graduate Student Government, Los Angeles, CA May 2020 - May 2021**<br>
 ***Director of Globalization and Inclusion***, *[USC GSG](https://gsg.usc.edu/)* <br>
-* Served on the executive board of the university-wide governing body for graduate and professional students
-* Oversaw all advocacy initiatives for undocu+ and international graduate students at USC.
-* Worked with university leadership to inact and implement policies that enhance the academic experience of the student body.
+* Served on the Executive Board governing a body of over 27,000 graduate and professional students.
+* Oversaw all advocacy and strategic initiatives for undocu+ and international graduate students across 22 schools, colleges, and academic units.
+* Worked with university leadership to implement strategic national and global policies that impact and enhance the academic experience.
 
 **Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, January 2016 - Junuary 2017**<br>
 ***Postbac Intern, Data Science***, *CBT Data Science Group, Chemical Biology and Therapeutics (CBT)*
-* Developed machine learning proteochemometric models to predict drug target interactions
-* Explored the predictability within protein families across the targetable human proteome
-* Experimentally validated predicted interaction pairs
-* Delineated the polypharmacology of predicted targets and small molecule candidates
+* Developed proteochemometric machine learning models for predictive drug discovery, target identification, and polypharmacology.
+* Evaluated the model performance and therapeutic predictability within and across protein families of the targetable human proteome.
+* Experimentally validated predicted interactions and delineated the polypharmacology of predicted targets and small molecule candidates.
 
 **Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, Jun 2015 - Aug. 2015**<br>
 ***Intern, Computational Biology***, *Screening Informatics Group, Developmental and Molecular Pathways (DMP)*
-* Developed machine learning classification models to predict siRNA off-targetting
-* Investigated top features that predict off target effects in RNA interference experiments
-* Modeling predictions infomed experimental design for phenotypic screening in target ID and drug discovery
+* Developed machine learning models to predict siRNA off-targetting and discover pathway nodes in phenotypic screening.
+* Investigated top features of miRNA and siRNA that predict off target effects in RNA interference experiments.
+* Demonstrated the utility of prediction models for optimizing experimental design for phenotypic screening in target ID and drug discovery.
 
 **Syracuse University, Syracuse, NY, 2014 - December 2015**<br>
 ***McNair Scholar Undergraduate Researcher***, [Lab of Yan-Yeung Luk](https://biomaterials.syr.edu/research/luk/), *Department of Chemistry*
-* Investigated protein targets for novel disaccharide derivatives (DSDs)
-* Sampled the protein conformations of identified adhesion proteins and their binding affinity and bioactivity to DSDs
-* Explored the utility of DSDs as inhibitors of biofilm formation in *in vitro* models of Cystic Fibrosis
+* Computationally investigated protein targets for novel disaccharide derivatives (DSDs) with optimally active stereochemistry.
+* Sampled the protein conformations of identified adhesion proteins and their binding affinity to bioactive DSDs.
+* Explored the utility of DSDs as inhibitors of biofilm formation in *Pseudomonas aeruginosa*, as a `in vitro` model of Cystic Fibrosis.s
 
 **University of California San Francisco, San Francisco, CA, Summer 2014**<br>
 ***Undergraduate Researcher***, *[Lab of Michael Grabe](https://www.grabelab.org/), Cardiovascular Research Institute*<br>
-* Homology modeled the structure of human sodium-glucose transporters (hSGLTs) based on structure of bacterial homologues
-* Explored various conformations of hSGLT1 and hSGLT2 structural models.
-* Investigated inhibitors of human SGLTs by molecular docking and computational screening of library of active compounds
+* * Homology modeled the structure of human sodium-glucose co-transporters (hSGLTs) based on structure of bacterial homologues.
+* Explored structural conformations of hSGLT1 and hSGLT2 models for optimal binding of Phlorizin, a competitive binder of D-glucose.
+* Investigated inhibitors of human SGLTs by computational screening libraries of active compounds and molecular docking of candidates.
 
 **New York State Department of Health, Albany, NY. Summer 2013**<br>
 ***NSF-REU Undergraduate Researcher***, *[Labs of Nilesh Banavali and Hongmin Li](https://www.wadsworth.org/senior-staff/nilesh-banavali), The Wadsworth Center*
-* Molecular docking and computational screening of small molecule inhibitors of Dengue NS2/NS3 protease complex
-* ultured and purified the DENV NS2/NS3 protease complex
-* Performed *In vitro* screening and validation of top inhibitors
+* Computationally analyzed the structural and biophysical properties of the Dengue virus (DENV) NS2/NS3 protease complex.
+* Performed molecular screening, docking, binding affinity analysis, and identified top 40 candidate inhibitors.
+  - Cultured and purified the NS2/NS3 complex and performed `in vitro` screening for experimental validation of top DENV protease inhibitors.
 
 **University of California Berkeley, Berkeley, CA. Summer 2012**<br>
 ***Undergraduate Researcher***, *Environmental Leadership Pathway, [ESPM Department](https://ourenvironment.berkeley.edu/)*
-* Performed DNA extraction, amplification, and sequencing of two evolutionarily conserved genes
-* Applied Bayesian Inference methods for molecular taxonomy analysis
-* Investigated the speciation of Tahitian plant bugs and identified five candidate new species
+* Performed DNA extraction, amplification, and sequencing of COX1 and 28S, two evolutionarily conserved genes in Tahitian plant bugs.
+* Applied bioinformatics with Bayesian inference methods to calculate phylogenetic probabilities of speciation
+* Investigated the morphological and genetic speciation of Pseudoloxops (Hemiptera: Miridae) and identified 5 candidate new species.
 
 ## Skills
 **Machine Learning:** Supervised and unsupervised learning, classification, regression, neural networks<br>
