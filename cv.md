@@ -59,7 +59,7 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 
 **University of California San Francisco, San Francisco, CA, Summer 2014**<br>
 ***Undergraduate Researcher***, *[Lab of Michael Grabe](https://www.grabelab.org/), Cardiovascular Research Institute*<br>
-* * Homology modeled the structure of human sodium-glucose co-transporters (hSGLTs) based on structure of bacterial homologues.
+* Homology modeled the structure of human sodium-glucose co-transporters (hSGLTs) based on structure of bacterial homologues.
 * Explored structural conformations of hSGLT1 and hSGLT2 models for optimal binding of Phlorizin, a competitive binder of D-glucose.
 * Investigated inhibitors of human SGLTs by computational screening libraries of active compounds and molecular docking of candidates.
 
@@ -67,7 +67,7 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 ***NSF-REU Undergraduate Researcher***, *[Labs of Nilesh Banavali and Hongmin Li](https://www.wadsworth.org/senior-staff/nilesh-banavali), The Wadsworth Center*
 * Computationally analyzed the structural and biophysical properties of the Dengue virus (DENV) NS2/NS3 protease complex.
 * Performed molecular screening, docking, binding affinity analysis, and identified top 40 candidate inhibitors.
-  - Cultured and purified the NS2/NS3 complex and performed `in vitro` screening for experimental validation of top DENV protease inhibitors.
+* Cultured and purified the NS2/NS3 complex and performed `in vitro` screening for experimental validation of top DENV protease inhibitors.
 
 **University of California Berkeley, Berkeley, CA. Summer 2012**<br>
 ***Undergraduate Researcher***, *Environmental Leadership Pathway, [ESPM Department](https://ourenvironment.berkeley.edu/)*
