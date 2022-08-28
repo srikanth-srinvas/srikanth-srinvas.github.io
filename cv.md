@@ -14,24 +14,31 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 * Experience: ~9 years of computational biology and bioinformatics, ~6 years of machine learning, ~5 years of drug discovery, ~4 years of single cell multiomics -->
 
 ## Education
-***Ph.D. — Medical Biophysics*, Keck School of Medicine of USC**, Los Angeles, CA. 2017 - Present<br>
+***Ph.D. — Medical Biophysics*, Keck School of Medicine of USC**, Los Angeles, CA. Aug 2017 - May 2022<br>
 ***B.Sc. — Biotechnology*, Syracuse University**, Syracuse, NY. 2015<br>
 ***Associate's degree - Natural Science: Math & Technology emphasis*, Ohlone College**, Fremont, CA. 2014
 
 ## Experience
-**USC Michelson Convergent Science Institute in Cancer, Los Angeles, CA, May 2018 - Present**<br>
+**NextRNA Therapeutics, Boston, MA, May 2022 - Present**<br>
+***Computational Biologist II***, *[NextRNA Therapeutics](http://nextrna.com/)*<br>
+
+* Developping machine intelligence capabilities for lncRNA-directed therapeutics.
+* Applying advanced data science and computational modeling for target identification and drug discovery efforts.
+
+**USC Michelson Convergent Science Institute in Cancer, Los Angeles, CA, May 2018 - May 2022**<br>
 ***Ph.D. Graduate Research Assistant***, *[Convergent Science Institute in Cancer (CSI-Cancer)](https://kuhn.usc.edu/)*<br>
 
-* Heading up a research team combining data science and single cell multiomics to map and predict cancer progression.
-* Leading multiple research projects in machine/deep learning to predict patient outcomes in solid tumors and blood cancers.
-* Developing feed-forward neural networkm odels using multimodal data to predict survival in breast and prostate cancers.
-* Developing immunoassays for single cell morphoproteogenomics to characterize and subtype cancer cells in the blood and bone marrow.
+* Headed up a research team combining data science and single cell multiomics to map and predict cancer progression.
+* Led multiple research projects in machine/deep learning to predict patient outcomes in solid tumors and blood cancers.
+* Developped feed-forward neural network models using multimodal data to predict survival in breast and prostate cancers.
+* Developed immunoassays for single cell morphoproteogenomics to characterize and subtype cancer cells in the blood and bone marrow.
 
-**Nucleate, Los Angeles CA, August 2021 - Present** <br>
+**Nucleate, Los Angeles CA, August 2021 - May 2022** <br>
 ***Strategy Lead***, *[Nucleate, Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)*
-* Creating a long-lasting strategic vision for enabling the creation and growth of early-stage life science companies in Los Angeles.
-* Mapping and connecting the LA biontrepreneurial ecosystem to empower the formation of trainee-led bioventures.
-* Sourcing top-caliber biotech ideas and business trainees and facilitating formation of founding teams via Nucleate Activator program.
+* Created a long-lasting strategic vision for enabling the creation and growth of early-stage life science companies in Los Angeles.
+* Mapped and connected the LA biontrepreneurial ecosystem to empower the formation of trainee-led bioventures.
+* Sourced top-caliber biotech ideas and business trainees and facilitating formation of founding teams via Nucleate Activator program.
+* Co-led efforts for expanding the innovation fellowship, creation of the NADP program, and research initiatives
 
 **USC Graduate Student Government, Los Angeles, CA May 2020 - May 2021**<br>
 ***Director of Globalization and Inclusion***, *[USC GSG](https://gsg.usc.edu/)* <br>
@@ -39,7 +46,7 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 * Oversaw all advocacy and strategic initiatives for undocu+ and international graduate students across 22 schools, colleges, and academic units.
 * Worked with university leadership to implement strategic national and global policies that impact and enhance the academic experience.
 
-**Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, January 2016 - Junuary 2017**<br>
+**Novartis Institutes for BioMedical Research (NIBR), Cambridge, MA, Jan 2016 - Jun 2017**<br>
 ***Postbac Intern, Data Science***, *CBT Data Science Group, Chemical Biology and Therapeutics (CBT)*
 * Developed proteochemometric machine learning models for predictive drug discovery, target identification, and polypharmacology.
 * Evaluated the model performance and therapeutic predictability within and across protein families of the targetable human proteome.
@@ -51,7 +58,7 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 * Investigated top features of miRNA and siRNA that predict off target effects in RNA interference experiments.
 * Demonstrated the utility of prediction models for optimizing experimental design for phenotypic screening in target ID and drug discovery.
 
-**Syracuse University, Syracuse, NY, 2014 - December 2015**<br>
+**Syracuse University, Syracuse, NY, 2014 - Dec 2015**<br>
 ***McNair Scholar Undergraduate Researcher***, [Lab of Yan-Yeung Luk](https://biomaterials.syr.edu/research/luk/), *Department of Chemistry*
 * Computationally investigated protein targets for novel disaccharide derivatives (DSDs) with optimally active stereochemistry.
 * Sampled the protein conformations of identified adhesion proteins and their binding affinity to bioactive DSDs.
@@ -83,13 +90,13 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 **Spoken Languages**: English, French, Kirundi, elementary Swahili
 
 ## Publications
-1. **Ndacayisaba L.J.**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter in *Circulating Tumor Cells: Advances in Liquid Biopsy Technologies, Springer, 2nd Ed.* `In review.`<br>
-2. **Ndacayisaba L.J.**, et al. (2021). Morphogenomic Detection and Characterization of Circulating Rare Single Cells in Multiple Myeloma. `in preparation.`<br>
+1. **Ndacayisaba L.J.** et al., Enrichment-Free Single-Cell Detection and Morphogenomic Profiling of Myeloma Patient Samples to Delineate Circulating Rare Plasma Cell Clones. `Current Oncology`. **2022**; 29(5):2954-2972.[doi.org/10.3390/curroncol29050242](https://doi.org/10.3390/curroncol29050242) <br>
+2. **Ndacayisaba L.J.**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter in *Circulating Tumor Cells: Advances in Liquid Biopsy Technologies, Springer, 2nd Ed.* `Being edited by publisher.`<br>
+3. **Ndacayisaba L.J.**, et al. Project Tempest manuscript. `in revision` (update coming soon)
+4. **Ndacayisaba L.J.**, et al. Project Dragonfly manuscript `in preparation`(update coming soon)
 
 <!--
-3. **Ndacayisaba L.J.**, et al. [Project Tempest manuscript] `in preparation`
 4. **Ndacayisaba L.J.**, et al. [Project Concorde manuscript] `in preparation`
-4. **Ndacayisaba L.J.**, et al. [Project Dragonfly manuscript] `in preparation`
 6. **Ndacayisaba L.J.**, et al. [Project Osprey manuscript] `in preparation`
 7. -->
 
@@ -135,7 +142,7 @@ Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
 * Jul 2021: **Recipient**, Schlegel Family Endowed Fellowship awarded by USC
-* * Oct 2019: **Winner** of Alix Ventures Award and [Finalist at Health++ hackaton](https://devpost.com/software/guardian-8wgcz1#updates) by Stanford University
+* Oct 2019: **Winner** of Alix Ventures Award and [Finalist at Health++ hackaton](https://devpost.com/software/guardian-8wgcz1#updates) by Stanford University
 * Oct 2019: **2nd place Award**, PIBBS Sci-5: Annual Research Presentation competition by Keck School of Medicine
 * 2017 **PhD GEM Associate Fellow**, The National GEM Consortium and University of Southern California
 * 2017 **Univeristy Nominee**, AAAS/Science Program for Excellence in Science, by USC
