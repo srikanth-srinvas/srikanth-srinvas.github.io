@@ -5,7 +5,7 @@ permalink: /cv/index.html
 ---
 ## Libère Jensen Ndacayisaba
 <!---[nalibere@gmail.com](mailto:nalibere@gmail.com) --->
-Los Angeles, California
+Boston, MA
 ## Preamble
 Humankind's most valuable asset and resource are health and time, respectively. Disease afflicts health and depletes time. There is no greater life purpose than the eradication of maladies and the betterment of human health. Humbled by the multiscale and spatiotemporal complexity of disease pathogenesis, I'm inspired by innovative science and technologies to decipher disease biology and make new medicines, and passionately committed to making therapeutic discovery more precise, predictable, and programmable.
 
