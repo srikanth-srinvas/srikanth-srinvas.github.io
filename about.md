@@ -9,7 +9,7 @@ permalink: /about/index.html
 
 ---**The basics**
 
-I'm currently a Computational Biologist II at [NextRNA Therapeutics](nextrnatx.com) working on RNA-directed medicines.
+I'm currently a Computational Biologist II at [NextRNA Therapeutics](http://nextrna.com/), working on RNA-directed medicines.
 Prior to my current role, I earned a Ph.D. in Medical Biophysics from the [Keck School of Medicine of University of Southern California](https://keck.usc.edu/). In my doctoral research at [USC Michelson Convergent Science Institute in Cancer](https://kuhn.usc.edu/), I lead a research program developping multiparametric single cell assays and machine learning models for the spatiotemporal characterization of lymphoid cancers.
 I also served as Strategy Lead at [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/) with the mission to empower the next-generation of biotech founders.
 
