@@ -90,10 +90,10 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 **Spoken Languages**: English, French, Kirundi, elementary Swahili
 
 ## Publications
-1. **Ndacayisaba L.J.** et al., Enrichment-Free Single-Cell Detection and Morphogenomic Profiling of Myeloma Patient Samples to Delineate Circulating Rare Plasma Cell Clones. `Current Oncology`. **2022**; 29(5):2954-2972.[doi.org/10.3390/curroncol29050242](https://doi.org/10.3390/curroncol29050242) <br>
+1. **Ndacayisaba L.J.** et al., Enrichment-Free Single-Cell Detection and Morphogenomic Profiling of Myeloma Patient Samples to Delineate Circulating Rare Plasma Cell Clones. *Current Oncology*. **2022**; 29(5):2954-2972.[doi.org/10.3390/curroncol29050242](https://doi.org/10.3390/curroncol29050242) <br>
 2. **Ndacayisaba L.J.**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter in *Circulating Tumor Cells: Advances in Liquid Biopsy Technologies, Springer, 2nd Ed.* `Being edited by publisher.`<br>
-3. **Ndacayisaba L.J.**, et al. (2022). Characterization of BCMA Expression in Circulating Rare Single Cells of Patients with Plasma Cell Neoplasms. `IJMS`. `in revision`
-4. **Ndacayisaba L.J.**, et al. Project Dragonfly manuscript `in preparation`(update coming soon)
+3. **Ndacayisaba L.J.**, et al. (2022). Characterization of BCMA Expression in Circulating Rare Single Cells of Patients with Plasma Cell Neoplasms. *IJMS*. `in revision`
+4. **Ndacayisaba L.J.**, et al. Project Dragonfly manuscript `in preparation` (update coming soon)
 
 <!--
 4. **Ndacayisaba L.J.**, et al. [Project Concorde manuscript] `in preparation`
