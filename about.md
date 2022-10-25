@@ -7,15 +7,15 @@ permalink: /about/index.html
 
 ![greeting gif](https://github.com/alansmathew/alansmathew/raw/master/lang.gif)
 
----**The basics**
+---**Basics**
 
 I'm currently a Computational Biologist II at [NextRNA Therapeutics](http://nextrna.com/), working on RNA-directed medicines.
 Prior to my current role, I earned a Ph.D. in Medical Biophysics from the [Keck School of Medicine of University of Southern California](https://keck.usc.edu/). In my doctoral research at [USC Michelson Convergent Science Institute in Cancer](https://kuhn.usc.edu/), I lead a research program developping multiparametric single cell assays and machine learning models for the spatiotemporal characterization of lymphoid cancers.
 I also served as Strategy Lead at [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/) with the mission to empower the next-generation of biotech founders.
 
----**The larger mission**
+---**Vocation**
 
-Driven by scientific curiosity and humbled by the multiscale complexity of disease biology, I'm constantly inspired by the opportunity to leverage innovative science and technology to develop new medicines for the eradication of maladies and the betterment of human health.
+Driven by scientific curiosity and humbled by the multiscale complexity of disease biology, I'm inspired by the opportunity to leverage innovative science and technology to develop new medicines for the eradication of maladies and the betterment of human health.
 
 As a champion of the extraordinary potential of biotechnology and AI/machine learning, I'm passionately committed to making biomedicine and therapeutics discovery more precise, predictable, and programmable.
 
@@ -29,4 +29,4 @@ Trained as a multidisciplinary scientist, I champion team science and find excit
 
 In my free time, I like to play football (aka soccer), learn about aircrafts and aviation, read history and philosophy, and explore the vast outdoors--locally and internationally.
 
-Connect and say hi on [LinkeIn](https://www.linkedin.com/in/ndacayisaba/) and [Twitter](https://twitter.com/libertatemn?lang=en)
+Connect and say hi on [LinkedIn](https://www.linkedin.com/in/ndacayisaba/) and [Twitter](https://twitter.com/libertatemn?lang=en)

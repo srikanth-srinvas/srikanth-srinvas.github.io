@@ -92,7 +92,7 @@ Humankind's most valuable asset and resource are health and time, respectively. 
 ## Publications
 1. **Ndacayisaba L.J.** et al., Enrichment-Free Single-Cell Detection and Morphogenomic Profiling of Myeloma Patient Samples to Delineate Circulating Rare Plasma Cell Clones. `Current Oncology`. **2022**; 29(5):2954-2972.[doi.org/10.3390/curroncol29050242](https://doi.org/10.3390/curroncol29050242) <br>
 2. **Ndacayisaba L.J.**, Mason J, Kuhn P. (2021). Mathematical Oncology to Integrate Multimodal Clinical and Liquid Biopsy Data for the Prediction of Survival.<br> Book Chapter in *Circulating Tumor Cells: Advances in Liquid Biopsy Technologies, Springer, 2nd Ed.* `Being edited by publisher.`<br>
-3. **Ndacayisaba L.J.**, et al. Project Tempest manuscript. `in revision` (update coming soon)
+3. **Ndacayisaba L.J.**, et al. (2022). Characterization of BCMA Expression in Circulating Rare Single Cells of Patients with Plasma Cell Neoplasms. `IJMS`. `in revision`
 4. **Ndacayisaba L.J.**, et al. Project Dragonfly manuscript `in preparation`(update coming soon)
 
 <!--
@@ -141,6 +141,8 @@ Identification of Orthosteric Dengue Protease Inhibitors using Computer-aided Dr
 Molecular Taxonomy: Exploring the Speciation of Tahitian Plant Bugs
 
 ## Awards and Honors
+* May 2022: **PhD Commencement Speaker**, Keck School of Medicine of USC's 2022 graduation
+* May 2022: **Recipient**, Order of Arete, USC
 * Jul 2021: **Recipient**, Schlegel Family Endowed Fellowship awarded by USC
 * Oct 2019: **Winner** of Alix Ventures Award and [Finalist at Health++ hackaton](https://devpost.com/software/guardian-8wgcz1#updates) by Stanford University
 * Oct 2019: **2nd place Award**, PIBBS Sci-5: Annual Research Presentation competition by Keck School of Medicine
