@@ -7,26 +7,25 @@ permalink: /about/index.html
 
 ![greeting gif](https://github.com/alansmathew/alansmathew/raw/master/lang.gif)
 
----**Basics**
+---**Prelude**
 
-I'm currently a Computational Biologist II at [NextRNA Therapeutics](http://nextrna.com/), working on RNA-directed medicines.
-Prior to my current role, I earned a Ph.D. in Medical Biophysics from the [Keck School of Medicine of University of Southern California](https://keck.usc.edu/). In my doctoral research at [USC Michelson Convergent Science Institute in Cancer](https://kuhn.usc.edu/), I lead a research program developping multiparametric single cell assays and machine learning models for the spatiotemporal characterization of lymphoid cancers.
-I also served as Strategy Lead at [Nucleate Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/) with the mission to empower the next-generation of biotech founders.
+I'm currently a Computational Biology - Data Science Co-op at [NextRNA Therapeutics](http://nextrna.com/), working on RNA-directed medicines.
+Prior to my current role, I earned a MAsters degree in Bioinformatics from [Northeastern University](https://cos.northeastern.edu/master-of-science-in-bioinformatics/). I previously worked as a research assistant at the [Dong lab](https://sijiadong.com/), where I designed python scripts for the automation of enzyme-cofactor reactions analysis from research papers. I also mentored and provided guidance to bioinformatics graduate students to help understand programming in Bioinformatics as the teaching assistant for a python programming course for two consecutive semesters. During the course of my Bachelor's in Biotechnology, I gained the domain knowledge of cancer biology, RNA biology, genomics, proteomics, drug designing and structural biology among many others. 
 
----**Vocation**
+---**Niche** 
 
-Driven by scientific curiosity and humbled by the multiscale complexity of disease biology, I'm inspired by the opportunity to leverage innovative science and technology to develop new medicines for the eradication of maladies and the betterment of human health.
+It’s an incontrovertible fact that research has served as the fulcrum for igniting ideas and thoughts in most people, if not all. This aspect of research is precisely what makes me consider bioinformatics such a fascinating, engrossing field of science. There are numerous ways of solving a research problem and bioinformatics paves the way, giving rise to endless possibilities and unconventional ways of looking at a research problem. 
 
-As a champion of the extraordinary potential of biotechnology and AI/machine learning, I'm passionately committed to making biomedicine and therapeutics discovery more precise, predictable, and programmable.
+The interdisciplinary facet of biotechnology—its predisposition to overlap with other scientific fields such as computer science, physics, and chemistry—is instrumental in engendering breakthroughs in order to solve real-world problems afflicting the current society. Computational biology possesses the power to make biological studies happen faster and more efficiently, considering the plethora of information that can be obtained from an individual's DNA. 
 
-I hold a Bachelor of Science in Biotechnology from Syracuse University and have led research projects in molecular and computational biology focusing on drug discovery, target identification, machine learning to predict off-targeting in gene editing and to deconvolute polypharmacology in drug target interactions.
+I am driven by the scientific curiosity to make a dent, if not a difference, in the field of medical drug designing. Motivated by a profound passion towards this unique field and humbled by the intricate complexity of disease biology, I am driven to utilize cutting-edge science and technology to create novel therapeutic agents that can eliminate afflictions and enhance human health.
 
-Trained as a multidisciplinary scientist, I champion team science and find excitement in emerging biotechnologies and innovation in areas that hybridize computational and bench lab methods and strive to enable the next generation of innovators in biomedicine.
+As an ardent advocate of the remarkable capabilities of computational biology, machine learning and drug discovery, I am deeply devoted to advancing the field of biomedicine and therapeutics discovery by making it more accurate, consistent, and customizable.
 
 <!---  in the biopharmaceutical industry developing machine learning models to predict (1) [off-targeting in gene silencing/editing](https://en.calameo.com/read/0041626681a7296f0e0a8) and (2) [drug-target interactions](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5166585/).-->
 
 ---**Hobbies**
 
-In my free time, I like to play football (aka soccer), learn about aircrafts and aviation, read history and philosophy, and explore the vast outdoors--locally and internationally.
+During my leisure hours, I enjoy indulging in various creative pursuits, such as crafting digital illustrations that allow me to express my artistic side. Additionally, I relish the intellectual stimulation and entertainment provided by reading books, while also finding solace in the outdoors and nature by embarking on invigorating hikes. I also have a strong thirst for knowledge and am always eager to acquire new skills and expand my understanding of the world around me.
 
-Connect and say hi on [LinkedIn](https://www.linkedin.com/in/ndacayisaba/) and [Twitter](https://twitter.com/libertatemn?lang=en)
+Connect and say hi on [LinkedIn](https://www.linkedin.com/in/amoolya-srinivasa) or reach out via [Email](amoolyasrinivasa@gmail.com)
