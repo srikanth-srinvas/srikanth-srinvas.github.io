@@ -1,12 +1,12 @@
 # main text of home
-name: Libère Jensen Ndacayisaba
-bio: 'Computational Biologist II at NextRNA Therapeutics'
+name: Amoolya Srinivasa
+bio: 'Computational Biology - Data Science Co-op at NextRNA Therapeutics'
 
 # if it's an external image, update below for true
 external-image: false
-picture: 'assets/images/Libere.jpg'
+picture: 'assets/images/Amoolya.jpg'
 
-url: http://liberendacayisaba.com
+url: http://amoolya1199.github.io
 # your url: http://USERNAME.github.io (if you don't already have a site)
 
 permalink: /:title/
@@ -31,10 +31,9 @@ disqus: false
 # pinterest: mypinterest
 # youtube: myyoutube
 # spotify: myspotify
-linkedin: ndacayisaba
-github: libertatem
-twitter: libertatemN
-email: nalibere@gmail.com
+linkedin: Amoolya Srinivasa
+github: amoolya1199
+email: amoolyasrinivasa@gmail.com
 #gscholar: O4Hrt44AAAAJ&hl=en
 #medium: medium
 #vimeo: myvimeo
