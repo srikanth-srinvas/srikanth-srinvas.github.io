@@ -29,7 +29,7 @@ It is possible that my fascination for science began from my first glance throug
 * Identified natural language processing techniques to extract and curate all possible combinations of enzymes and their corresponding substrates in the database, streamlining the process of data curation and analysis
 
 **Northestern University, Boston, MA, Jan 2022 - Dec 2022** <br>
-***Teaching Assistant***, *[Nucleate, Los Angeles](https://www.nucleate.xyz/locations/los-angeles-ca/)*
+***Teaching Assistant***, *[Northeastern University, Boston](https://cos.northeastern.edu/master-of-science-in-bioinformatics/)*
 * Assessed, mentored and graded pyhon scripts of over 80 Bioinformatics grad students for various Bioinformatics tasks and provided effective, timely feedback to help learn Python programming for Bioinformatics
 * Mentored and provided guidance to students, leveraging a deep understanding of their unique learning styles to facilitate their academic success
 * Demonstrated exemplary leadership skills by establishing three weekly office hours to provide academic support and address students' inquiries
