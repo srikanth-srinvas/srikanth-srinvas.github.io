@@ -1,7 +1,7 @@
 ---
 title: "Description of _Paenibacillus yunnanensis_ sp. nov., Isolated from a Tepid Spring"
 layout: post
-date: 2020-13-06
+date: 2020-06-13
 tag:
 - taxonomy
 - average nucleotide identity
