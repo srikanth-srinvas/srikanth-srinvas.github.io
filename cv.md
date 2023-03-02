@@ -55,4 +55,13 @@ It is possible that my fascination for science began from my first glance throug
 ## Publication
 Description of Paenibacillus yunnanensis sp. nov., Isolated from a Tepid Spring: Narsing Rao, M. P., Dong, Z. Y., **Amoolya, S.**, Neelavar, S., Liu, B. B., Guo, S. X., Hozzein, W., & Li, W. J. *Current Microbiology*. **2020**; [https://doi.org/10.1007/s00284-020-02087-z](https://doi.org/10.1007/s00284-020-02087-z)<br>
 
+## Certification courses
+Whole genome sequencing - 
+Introduction to stem cell research - 
+Data science - 
+Programming in R -
+Programming in python -
+
+
+
 
