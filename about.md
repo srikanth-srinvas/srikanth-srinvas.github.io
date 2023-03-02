@@ -3,7 +3,8 @@ title: About
 layout: page
 permalink: /about/index.html
 ---
-<img src="{{ site.url }}/{{ site.picture }}" style="width:300px;"/>
+
+<img src="{{site.url}}/assets/images/Amoolya.JPG" style="border:none" width="900" />
 
 ![greeting gif](https://github.com/alansmathew/alansmathew/raw/master/lang.gif)
 
