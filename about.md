@@ -4,7 +4,7 @@ layout: page
 permalink: /about/index.html
 ---
 
-<img src="{{site.url}}amoolya1199.github.io/assets/images/Amoolya.JPG" style="border:none" width="900" />
+<img src="{{ site.url }}/{{ site.picture }}" style="width:300px;"/>
 
 ![greeting gif](https://github.com/alansmathew/alansmathew/raw/master/lang.gif)
 
