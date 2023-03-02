@@ -1,5 +1,5 @@
 ---
-title: "Description of _Paenibacillus yunnanensis_ sp. nov., Isolated from a Tepid Spring"
+title: "Description of Paenibacillus yunnanensis sp. nov., Isolated from a Tepid Spring"
 layout: post
 date: 2020-06-13
 tag:
@@ -9,7 +9,7 @@ tag:
 - Gram stain-positive
 - SYSU G01003T
 projects: true
-description: "Proposing novel species of the genus _Paenibacillus_"
+description: "Proposing novel species of the genus Paenibacillus"
 ---
 
 **Dayananda Sagar College of Engineering, India. Summer 2020**
