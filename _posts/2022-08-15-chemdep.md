@@ -6,7 +6,7 @@ tag:
 - CRISP-DM
 - Data analysis
 - Statistical visualizations
-- OASES data
+- OASAS data
 - Substance abuse 
 projects: true
 description: "Statistical analysis of Chemical Dependence Treatment Program Admissions dataset using R"
