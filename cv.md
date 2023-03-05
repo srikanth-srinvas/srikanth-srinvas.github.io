@@ -30,7 +30,7 @@ It is possible that my fascination for science began from my first glance throug
 
 **Northestern University, Boston, MA, Jan 2022 - Dec 2022** <br>
 ***Teaching Assistant***, *[Northeastern University, Boston](https://cos.northeastern.edu/master-of-science-in-bioinformatics/)*
-* Assessed, mentored and graded pyhon scripts of over 80 Bioinformatics grad students for various Bioinformatics tasks and provided effective, timely feedback to help learn Python programming for Bioinformatics
+* Assessed, mentored and graded python scripts of over 80 Bioinformatics grad students for various Bioinformatics tasks and provided effective, timely feedback to help learn Python programming for Bioinformatics
 * Mentored and provided guidance to students, leveraging a deep understanding of their unique learning styles to facilitate their academic success
 * Demonstrated exemplary leadership skills by establishing three weekly office hours to provide academic support and address students' inquiries
 * Delivered engaging and informative lectures to the class, utilizing dynamic teaching techniques to promote active participation and foster a collaborative learning environment
