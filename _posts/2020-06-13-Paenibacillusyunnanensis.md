@@ -1,5 +1,5 @@
 ---
-title: "Description of Paenibacillus yunnanensis sp. nov., Isolated from a Tepid Spring"
+title: "Description of Paenibacillus yunnanensis sp. nov., Isolated from a Tepid Spring - Published in Springer"
 layout: post
 date: 2020-06-13
 tag:
