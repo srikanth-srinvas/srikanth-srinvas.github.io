@@ -29,7 +29,7 @@ It is possible that my fascination for science began from my first glance throug
 * Identified natural language processing techniques to extract and curate all possible combinations of enzymes and their corresponding substrates in the database, streamlining the process of data curation and analysis
 
 **Northestern University, Boston, MA, Jan 2022 - Dec 2022** <br>
-***Teaching Assistant***, *[Northeastern University, Boston](https://cos.northeastern.edu/master-of-science-in-bioinformatics/)*
+***Teaching Assistant***, *[Northeastern University](https://cos.northeastern.edu/master-of-science-in-bioinformatics/)*
 * Assessed, mentored and graded python scripts of over 80 Bioinformatics grad students for various Bioinformatics tasks and provided effective, timely feedback to help learn Python programming for Bioinformatics
 * Mentored and provided guidance to students, leveraging a deep understanding of their unique learning styles to facilitate their academic success
 * Demonstrated exemplary leadership skills by establishing three weekly office hours to provide academic support and address students' inquiries
@@ -56,7 +56,7 @@ It is possible that my fascination for science began from my first glance throug
 Description of Paenibacillus yunnanensis sp. nov., Isolated from a Tepid Spring: Narsing Rao, M. P., Dong, Z. Y., **Amoolya, S.**, Neelavar, S., Liu, B. B., Guo, S. X., Hozzein, W., & Li, W. J. *Current Microbiology*. **2020**; [https://doi.org/10.1007/s00284-020-02087-z](https://doi.org/10.1007/s00284-020-02087-z)<br>
 
 ## Certification courses
-**R Programming: Advanced Analytics In R For Data Science on Udemy, Jun June 2021**<br> 
+**R Programming: Advanced Analytics In R For Data Science on Udemy, Jun 2021**<br> 
 This course provided me with a strong foundation in data preparation techniques in R, which helped me delve deeper into data pre-processing, data manipulation, data visualization and analysis. Throughout the course, some tasks that I learned was how to identify and locate missing records in dataframes, how to apply the Median Imputation and Factual Analysis methods to replace missing records. To help work with missing data, I learned how to use some functions and techniques to minimize loss of data and how to reset the dataframe index. Additionally, I gained experience working with the gsub() and sub() functions for replacing strings. One of the most interesting concepts I learned in the course was the importance of NA as a third type of logical constant to help handle missing data in my datasets. By completing this course, I had a strong fundamental foundation for working with data in R, the multitude of functions to efficiently analyze data and apply advanced techniques to handle all kinds of data as a pre-requisite for machine learning efforts. 
 
 **Whole genome sequencing of bacterial genomes: Offered by Technical University of Denmark on Coursera, Mar 2020**<br>
