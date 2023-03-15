@@ -1,5 +1,5 @@
 ---
-title: "Production and Estimation of Ascorbic Acid in Biocatalytic Enzyme from Citrus Fruit Peels for Bioremediation of Heavy Metals in Agricultural Fields and its Effect on Spinacia oleracea
+title: "Production and Estimation of Ascorbic Acid in Biocatalytic Enzyme from Citrus Fruit Peels for Bioremediation of Heavy Metals in Agricultural Fields and in-silico docking, molcular modeling and mutational analysis
 "
 layout: post
 date: 2020-12-11
@@ -10,7 +10,6 @@ tag:
 - Heavy metal contamination
 - Chromate, Dichromate
 - Model generation, validation and refinement
-- Spinach plants
 - Docking studies
 - Mutation studies
 
