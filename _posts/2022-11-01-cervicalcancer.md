@@ -66,13 +66,11 @@ The structure of the dataset is determined using the str() function. We can see 
 
 
 ```{r, warning=FALSE}
-# Converting all columns to  numeric datatype
-cervicalrisk.df <- data.frame(lapply(cervicalrisk.df, as.numeric))
+cervicalrisk.df <- data.frame(lapply(cervicalrisk.df, as.numeric)) # Converting all columns to  numeric datatype
 ```
 
 ```{r
-# Removing columns that are not relevant 
-cervicalrisk.df <- cervicalrisk.df[ , -which(names(cervicalrisk.df) %in% c("Smokes..years.","Smokes..packs.year.", "Hormonal.Contraceptives..years.", "IUD..years.", "STDs.condylomatosis", "STDs.cervical.condylomatosis", "STDs.vaginal.condylomatosis", "STDs.vulvo.perineal.condylomatosis", "STDs.syphilis", "STDs.pelvic.inflammatory.disease", "STDs.genital.herpes", "STDs.molluscum.contagiosum", "STDs.AIDS", "STDs.HIV", "STDs.Hepatitis.B", "STDs.HPV", "STDs..Number.of.diagnosis", "Schiller", "Citology", "Biopsy"))]
+cervicalrisk.df <- cervicalrisk.df[ , -which(names(cervicalrisk.df) %in% c("Smokes..years.","Smokes..packs.year.", "Hormonal.Contraceptives..years.", "IUD..years.", "STDs.condylomatosis", "STDs.cervical.condylomatosis", "STDs.vaginal.condylomatosis", "STDs.vulvo.perineal.condylomatosis", "STDs.syphilis", "STDs.pelvic.inflammatory.disease", "STDs.genital.herpes", "STDs.molluscum.contagiosum", "STDs.AIDS", "STDs.HIV", "STDs.Hepatitis.B", "STDs.HPV", "STDs..Number.of.diagnosis", "Schiller", "Citology", "Biopsy"))] # Removing columns that are not relevant 
 ```
 
 Looking at the features in the dataset, a lot of columns seemed redundant and I have removed them by keeping only one important column regarding each redundant feature. For example, Smokes..years , Smokes..packs.year, and Smokes. seemed to be very repetitive and I have kept only the Smokes. column because it says whether or not  the individual is smoking. Similarly, Contraceptive..years. and IUD..years. and so on. BAsed on my domain knowledge, I also removed the multipe STD columns because having any type of STD (which is implied by STDs column) itself is a risk factor for cervical cancer. Further, I have converted all the columns to numeric.
