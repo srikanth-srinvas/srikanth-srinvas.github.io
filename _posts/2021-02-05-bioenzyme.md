@@ -10,7 +10,7 @@ tag:
 - Heavy metal contamination
 - Chromate, Dichromate
 - Model generation, validation and refinement
-- Docking studies
+- Docking
 - Mutation studies
 
 projects: true
