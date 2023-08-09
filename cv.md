@@ -14,13 +14,20 @@ It is possible that my fascination for science began from my first glance throug
 ***Bachelors — Biotechnology*, Dayananda Sagar College of Engineering**, Bangalore, India. Sep 2017 - Aug 2021<br>
 
 ## Experience
-**NextRNA Therapeutics, Boston, MA, Jan 2023 - Present**<br>
+**NYU Langone Health, New York, NY, Aug 2023 - Present**<br>
+***Bioinformatics Programmer***, *[NYU Langone Health](https://med.nyu.edu/centers-programs/human-genetics-genomics/)*<br>
+
+* Developing and implementing robust software for genomic and biological dataset analysis to generate new biological insights
+* Collaborating with bench scientists to understand and support their research goals, facilitating seamless integration of software tools into the biological research process
+* Creating and maintaining reliable pipelines for routine quality control and validation of data
+
+**NextRNA Therapeutics, Boston, MA, Jan 2023 - Jul 2023**<br>
 ***Computational Biology - Data Science Co-Op***, *[NextRNA Therapeutics](http://nextrna.com/)*<br>
 
-* Executing advanced computational modeling techniques to drive target identification and drug discovery initiatives
-* Employing cutting-edge machine learning methodologies to develop complex networks for comprehensive gene expression analysis and facilitating patient stratification
-* Devising computational tools to design comprehensive analyses of RNA and protein secondary and tertiary structures, with a focus on facilitating the development of lncRNA-directed therapeutics
-
+* Executed advanced computational modeling techniques to drive target identification and drug discovery initiatives
+* Employed cutting-edge machine learning methodologies to develop complex networks for comprehensive gene expression analysis and facilitated patient stratification
+* Devised computational tools to design comprehensive analyses of RNA and protein secondary and tertiary structures, with a focus on facilitating the development of lncRNA-directed therapeutics
+  
 **Dong Theoretical and Computational Chemistry Lab, Boston, MA, Jul 2022 - Dec 2022**<br>
 ***Masters Graduate Research Assistant***, *[The Dong Lab](https://sijiadong.com/)*<br>
 
