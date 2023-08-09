@@ -1,7 +1,7 @@
 # main text of home
 name: Amoolya Srinivasa
 bio: 'Bioinformatics Programmer at NYU Langone Health'
-
+ 
 # if it's an external image, update below for true
 external-image: false
 picture: 'assets/images/Amoolya.jpg'
