@@ -26,12 +26,12 @@ I am driven by the scientific curiosity to make a dent, if not a difference, in 
 During my leisure hours, I enjoy indulging in various creative pursuits, such as crafting digital illustrations that allow me to express my artistic side. Additionally, I relish the intellectual stimulation and entertainment provided by reading books, while also finding solace in the outdoors and nature by embarking on invigorating hikes. I also have a strong thirst for knowledge and am always eager to acquire new skills and expand my understanding of the world around me.
 
 ---**Photo Frolics**
-<div style="display: flex;">
-    <img src="{{site.url}}/assets/images/evronylab.jpg" style="border:none" width="200" height="200" />
-    <img src="{{site.url}}/assets/images/nextrna.jpeg" style="border:none" width="200" height="200" />
-    <img src="{{site.url}}/assets/images/grad.jpg" style="border:none" width="200" height="200" />
-</div>
 
+<div style="display: flex;">
+    <img src="{{site.url}}/assets/images/evronlylab.jpg" style="border:none; width:auto; max-height:200px;" />
+    <img src="{{site.url}}/assets/images/nextrna.jpeg" style="border:none; width:auto; max-height:200px;" />
+    <img src="{{site.url}}/assets/images/grad.jpg" style="border:none; width:auto; max-height:200px;" />
+</div>
 
 
 Connect and say hi on [LinkedIn](https://www.linkedin.com/in/amoolya-srinivasa) or reach out via [Email](srinivasa.a@northeastern.edu)
