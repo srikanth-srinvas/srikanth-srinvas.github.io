@@ -27,9 +27,9 @@ During my leisure hours, I enjoy indulging in various creative pursuits, such as
 
 ---**Photo Frolics**
 <div style="display: flex;">
-    <img src="{{site.url}}/assets/images/evronlylab.jpg" style="border:none" width="300" />
-    <img src="{{site.url}}/assets/images/nextrna.jpg" style="border:none" width="300" />
-    <img src="{{site.url}}/assets/images/grad.jpg" style="border:none" width="300" />
+    <img src="{{site.url}}/assets/images/evronylab.jpg" style="border:none" width="200" height="200" />
+    <img src="{{site.url}}/assets/images/nextrna.jpeg" style="border:none" width="200" height="200" />
+    <img src="{{site.url}}/assets/images/grad.jpg" style="border:none" width="200" height="200" />
 </div>
 
 
