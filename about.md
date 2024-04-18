@@ -44,7 +44,6 @@ During my leisure hours, I enjoy indulging in various creative pursuits, such as
     <img src="{{site.url}}/assets/images/photo11.jpg" style="border:none; width:auto; max-height:200px;" />
     <img src="{{site.url}}/assets/images/photo12.JPG" style="border:none; width:auto; max-height:200px;" />
     <img src="{{site.url}}/assets/images/photo13.jpg" style="border:none; width:auto; max-height:200px;" />
-    
 </div>
 
 
