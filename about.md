@@ -31,7 +31,7 @@ During my leisure hours, I enjoy indulging in various creative pursuits, such as
     <img src="{{site.url}}/assets/images/bbq.jpg" style="border:none; width:auto; max-height:200px;" />
      <img src="{{site.url}}/assets/images/grad.jpg" style="border:none; width:auto; max-height:200px;" />
     <img src="{{site.url}}/assets/images/bowl.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/fog.jpg" style="border:none; width:auto; max-height:200px;" />
+    <img src="{{site.url}}/assets/images/fog.jpeg" style="border:none; width:auto; max-height:200px;" />
     <img src="{{site.url}}/assets/images/nextrna.jpeg" style="border:none; width:auto; max-height:200px;" />
     <img src="{{site.url}}/assets/images/photo1.jpg" style="border:none; width:auto; max-height:200px;" />
     <img src="{{site.url}}/assets/images/photo2.jpg" style="border:none; width:auto; max-height:200px;" />
