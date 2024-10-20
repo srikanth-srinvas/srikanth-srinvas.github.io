@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-21T00:39:08+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Srikanth Srinivas</title><entry><title type="html">Leveraging Statistics to Understand Klebsiella pneumoniae: A Look at K and O Loci in an Indian Context</title><link href="http://localhost:4000/chemdep/" rel="alternate" type="text/html" title="Leveraging Statistics to Understand Klebsiella pneumoniae: A Look at K and O Loci in an Indian Context" /><published>2024-07-02T00:00:00+01:00</published><updated>2024-07-02T00:00:00+01:00</updated><id>http://localhost:4000/chemdep</id><content type="html" xml:base="http://localhost:4000/chemdep/"><![CDATA[<p><strong>Bangalore, India 2023</strong></p>
+
+<hr />
+<h2 id="introduction">Introduction</h2>
+<p><strong>This project contains R scripts associated with a study ocused on understanding the geographical distribution and diversity of <em>Klebsiella pneumoniae</em> serotypes in India. Using genomic data from <em>Klebsiella pneumoniae</em> isolates, we employed Fisher’s exact test to examine the relationship between specific serotypes and geographical regions. I employed Simpson’s diversity index to assess serotype diversity within different regions. By combining these statistical analyses with the geographical data, I was able to identify patterns in serotype distribution and uncover potential regional variations in the pathogen’s virulence and antibiotic resistance.</strong></p>
+
+<p>This work is published in the journal Microbial Genomics under the DOI: [https://doi.org/10.1099/mgen.0.001271]</p>
+
+<h2 id="step-by-step-process-to-use-fishers-exact-test-on-my-dataset">Step-by-step Process to use Fisher’s exact test on my dataset</h2>
+
+<h3 id="step-1-load-required-libraries">Step 1: Load Required Libraries</h3>
+
+<p>We load the necessary R libraries to handle data manipulation and perform Fisher’s exact tests.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load necessary libraries</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<h3 id="step-2-read-the-data">Step 2: Read the Data</h3>
+<p>The CSV file contains information on the Klebsiella pneumoniae isolates, including virulence factors and K/O loci data.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load dataset from CSV</span><span class="w">
+</span><span class="n">mr_data_2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"~/Downloads/MR_data_K &amp; O Loci _1072.csv"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<h3 id="step-3-perform-fishers-exact-test-for-virulence-factors">Step 3: Perform Fisher’s Exact Test for Virulence Factors</h3>
+<p>Here, we perform Fisher’s exact test to determine if there is a statistically significant association between the presence of specific virulence factors (Yersiniabactin, Colibactin, Aerobactin, Salmochelin, RmpADC, rmpA2) and invasive disease.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fisher's exact test for Yersiniabactin</span><span class="w">
+</span><span class="n">contingency_table_invas_yer</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Yersiniabactin</span><span class="p">)</span><span class="w">
+</span><span class="n">result_invas_yer</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_invas_yer</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">result_invas_yer</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Fisher's exact test for Colibactin</span><span class="w">
+</span><span class="n">contingency_table_invas_coli</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Colibactin</span><span class="p">)</span><span class="w">
+</span><span class="n">result_invas_coli</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_invas_coli</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">result_invas_coli</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Fisher's exact test for Aerobactin</span><span class="w">
+</span><span class="n">contingency_table_invas_aero</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Aerobactin</span><span class="p">)</span><span class="w">
+</span><span class="n">result_invas_aero</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_invas_aero</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">result_invas_aero</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Fisher's exact test for Salmochelin</span><span class="w">
+</span><span class="n">contingency_table_invas_salmo</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Salmochelin</span><span class="p">)</span><span class="w">
+</span><span class="n">result_invas_salmo</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_invas_salmo</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">result_invas_salmo</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Fisher's exact test for RmpADC</span><span class="w">
+</span><span class="n">contingency_table_invas_rmpADC</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">RmpADC</span><span class="p">)</span><span class="w">
+</span><span class="n">result_invas_rmpADC</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_invas_rmpADC</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">result_invas_rmpADC</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Fisher's exact test for rmpA2</span><span class="w">
+</span><span class="n">contingency_table_invas_rmpa2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">rmpA2</span><span class="p">)</span><span class="w">
+</span><span class="n">result_invas_rmpa2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_invas_rmpa2</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">result_invas_rmpa2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<h3 id="step-4-fishers-test-for-ko-loci-vs-invasive-disease">Step 4: Fisher’s Test for K/O Loci vs Invasive Disease</h3>
+<p>Here, we test whether there is an association between specific K and O loci (e.g., KL64, KL51, O1/O2v1) and invasive disease.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define K and O loci of interest</span><span class="w">
+</span><span class="n">k_types_of_interest</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"KL64"</span><span class="p">,</span><span class="w"> </span><span class="s2">"KL51"</span><span class="p">,</span><span class="s2">"KL2"</span><span class="p">,</span><span class="s2">"KL10"</span><span class="p">)</span><span class="w">
+</span><span class="n">o_types_of_interest</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"O1/O2v1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"O1/O2v2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"OL101"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Fisher's exact test for K loci</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">k_locus</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">k_types_of_interest</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">contingency_table_k</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">K_locus</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">k_locus</span><span class="p">)</span><span class="w">
+  </span><span class="n">fisher_result_k</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_k</span><span class="p">)</span><span class="w">
+  </span><span class="n">cat</span><span class="p">(</span><span class="s2">"Fisher's exact test for K-type"</span><span class="p">,</span><span class="w"> </span><span class="n">k_locus</span><span class="p">,</span><span class="w"> </span><span class="s2">":\n"</span><span class="p">)</span><span class="w">
+  </span><span class="n">cat</span><span class="p">(</span><span class="s2">"P-value:"</span><span class="p">,</span><span class="w"> </span><span class="n">fisher_result_k</span><span class="o">$</span><span class="n">p.value</span><span class="p">,</span><span class="w"> </span><span class="s2">"\n\n"</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="c1"># Fisher's exact test for O loci</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">o_locus</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">o_types_of_interest</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">contingency_table_o</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Invasive</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">O_locus</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">o_locus</span><span class="p">)</span><span class="w">
+  </span><span class="n">fisher_result_o</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_o</span><span class="p">)</span><span class="w">
+  </span><span class="n">cat</span><span class="p">(</span><span class="s2">"Fisher's exact test for O-type"</span><span class="p">,</span><span class="w"> </span><span class="n">o_locus</span><span class="p">,</span><span class="w"> </span><span class="s2">":\n"</span><span class="p">)</span><span class="w">
+  </span><span class="n">cat</span><span class="p">(</span><span class="s2">"P-value:"</span><span class="p">,</span><span class="w"> </span><span class="n">fisher_result_o</span><span class="o">$</span><span class="n">p.value</span><span class="p">,</span><span class="w"> </span><span class="s2">"\n\n"</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<h3 id="step-5-fishers-test-for-k-loci-vs-sequence-type-st">Step 5: Fisher’s Test for K Loci vs Sequence Type (ST)</h3>
+<p>We perform Fisher’s test to determine the relationship between Klebsiella pneumoniae sequence types (ST) and specific K loci.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fisher's exact test for K Loci vs ST</span><span class="w">
+</span><span class="n">fisher_test_results_st</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">()</span><span class="w">
+
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">st</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">unique</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">ST</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">st_subset</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mr_data_2</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">ST</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">st</span><span class="p">)</span><span class="w">
+  </span><span class="n">unique_combinations</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">st_subset</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">distinct</span><span class="p">(</span><span class="n">ST</span><span class="p">,</span><span class="w"> </span><span class="n">K_locus</span><span class="p">)</span><span class="w">
+  
+  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="n">nrow</span><span class="p">(</span><span class="n">unique_combinations</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">k_locus</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unique_combinations</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="s2">"K_locus"</span><span class="p">]</span><span class="w">
+    
+    </span><span class="n">subset_df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">st_subset</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">ST</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">st</span><span class="p">,</span><span class="w"> </span><span class="n">K_locus</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">k_locus</span><span class="p">)</span><span class="w">
+    
+    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nrow</span><span class="p">(</span><span class="n">subset_df</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="n">contingency_table</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">nrow</span><span class="p">(</span><span class="n">subset_df</span><span class="p">),</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+      </span><span class="n">contingency_table</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="s2">"Present"</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">subset_df</span><span class="o">$</span><span class="n">K_locus</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">k_locus</span><span class="p">)</span><span class="w">
+      </span><span class="n">contingency_table</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="s2">"Absent"</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">subset_df</span><span class="o">$</span><span class="n">K_locus</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">k_locus</span><span class="p">)</span><span class="w">
+      
+      </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table</span><span class="p">)</span><span class="w">
+      </span><span class="n">fisher_test_results_st</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">bind_rows</span><span class="p">(</span><span class="n">fisher_test_results_st</span><span class="p">,</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">ST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">st</span><span class="p">,</span><span class="w"> </span><span class="n">K_locus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k_locus</span><span class="p">,</span><span class="w"> </span><span class="n">p_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">result</span><span class="o">$</span><span class="n">p.value</span><span class="p">))</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">print</span><span class="p">(</span><span class="n">fisher_test_results_st</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<h3 id="step-6-fishers-test-for-ko-loci-vs-carbapenem-genes">Step 6: Fisher’s Test for K/O Loci vs Carbapenem Genes</h3>
+<p>Here, we perform Fisher’s exact test to determine the association between K and O loci and the presence of carbapenemase genes.</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fisher's exact test for K Loci vs Carbapenem Genes</span><span class="w">
+</span><span class="n">results_KL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">K_locus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">character</span><span class="p">(),</span><span class="w"> </span><span class="n">P_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numeric</span><span class="p">())</span><span class="w">
+</span><span class="n">unique_k_locus</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unique</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">K_locus</span><span class="p">)</span><span class="w">
+
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">k_locus</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">unique_k_locus</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">contingency_table_k</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Bla_Carb_acquired</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">K_locus</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">k_locus</span><span class="p">)</span><span class="w">
+  </span><span class="n">fisher_result_k</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_k</span><span class="p">,</span><span class="w"> </span><span class="n">simulate.p.value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+  </span><span class="n">results_KL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">results_KL</span><span class="p">,</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">K_locus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k_locus</span><span class="p">,</span><span class="w"> </span><span class="n">P_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fisher_result_k</span><span class="o">$</span><span class="n">p.value</span><span class="p">))</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">print</span><span class="p">(</span><span class="n">results_KL</span><span class="p">)</span><span class="w">
+</span><span class="c1"># Fisher's exact test for O Loci vs Carbapenem Genes</span><span class="w">
+</span><span class="n">results_O</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">O_locus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">character</span><span class="p">(),</span><span class="w"> </span><span class="n">P_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">numeric</span><span class="p">())</span><span class="w">
+</span><span class="n">unique_o_locus</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unique</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">O_locus</span><span class="p">)</span><span class="w">
+
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">o_locus</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">unique_o_locus</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">contingency_table_o</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">Bla_Carb_acquired</span><span class="p">,</span><span class="w"> </span><span class="n">mr_data_2</span><span class="o">$</span><span class="n">O_locus</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">o_locus</span><span class="p">)</span><span class="w">
+  </span><span class="n">fisher_result_o</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">fisher.test</span><span class="p">(</span><span class="n">contingency_table_o</span><span class="p">,</span><span class="w"> </span><span class="n">simulate.p.value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+  </span><span class="n">results_O</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">results_O</span><span class="p">,</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">O_locus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o_locus</span><span class="p">,</span><span class="w"> </span><span class="n">P_value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fisher_result_o</span><span class="o">$</span><span class="n">p.value</span><span class="p">))</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">print</span><span class="p">(</span><span class="n">results_O</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>This analysis provides insights into the relationship between virulence factors, K/O loci, and key characteristics in Klebsiella pneumoniae, leveraging Fisher’s exact test to assess statistical significance.</p>
+
+<h2 id="step-by-step-process-employed-to-use-simpsons-diversity-index-on-my-data">Step-by-step process employed to use Simpson’s diversity index on my data</h2>
+<p>This analysis calculates <strong>Simpson’s Diversity Index</strong> for the K-locus and O-locus across different regions and age groups. The script performs calculations for both the full dataset and deduplicated data, and it confirms the results using the <code class="language-plaintext highlighter-rouge">vegan</code> package.</p>
+
+<h3 id="libraries-and-data">Libraries and Data</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load necessary libraries</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">vegan</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">magrittr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="full-dataset-simpsons-diversity-index-for-k-locus-by-region">Full Dataset: Simpson’s Diversity Index for K-locus by Region</h3>
+<ul>
+  <li>Data: Full dataset of 1072 entries <br /></li>
+  <li>Calculation: Group the data by region and calculate Simpson’s Diversity Index using the K-locus data.<br /></li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load the full dataset</span><span class="w">
+</span><span class="n">mr_all_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"~/Downloads/MR_data_K &amp; O Loci _1072.csv"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Group by region and calculate Simpson's Diversity Index for K-locus</span><span class="w">
+</span><span class="n">diversity_by_region_K_all_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mr_all_data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Regions</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">Simpson_Diversity_Index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">sum</span><span class="p">((</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)))</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print the results</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">diversity_by_region_K_all_data</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="full-dataset-simpsons-diversity-index-for-k-locus-by-age-group">Full Dataset: Simpson’s Diversity Index for K-locus by Age Group</h3>
+<ul>
+  <li>Data: Full dataset of 1072 entries <br /></li>
+  <li>Calculation: Group the data by age group and calculate Simpson’s Diversity Index for the K-locus data. <br /></li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Group by age and calculate Simpson's Diversity Index for K-locus</span><span class="w">
+</span><span class="n">diversity_by_age_K_all_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mr_all_data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Age_group</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">Simpson_Diversity_Index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">sum</span><span class="p">((</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)))</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print the results</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">diversity_by_age_K_all_data</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="full-dataset-simpsons-diversity-index-for-o-locus-by-region">Full Dataset: Simpson’s Diversity Index for O-locus by Region</h3>
+<ul>
+  <li>Data: Full dataset of 1072 entries <br /></li>
+  <li>Calculation: Group the data by region and calculate Simpson’s Diversity Index using O-locus data. <br /></li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Group by region and calculate Simpson's Diversity Index for O-locus</span><span class="w">
+</span><span class="n">diversity_by_region_O_all_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mr_all_data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Regions</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">Simpson_Diversity_Index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">sum</span><span class="p">((</span><span class="n">table</span><span class="p">(</span><span class="n">O_locus</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">table</span><span class="p">(</span><span class="n">O_locus</span><span class="p">)))</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print the results</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">diversity_by_region_O_all_data</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="deduplicated-dataset-simpsons-diversity-index-for-k-locus-by-region">Deduplicated Dataset: Simpson’s Diversity Index for K-locus by Region</h3>
+<ul>
+  <li>Data: Deduplicated dataset <br /></li>
+  <li>Calculation: Group the deduplicated data by region and calculate Simpson’s Diversity Index for K-locus. <br /></li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load deduplicated data</span><span class="w">
+</span><span class="n">derep_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"~/Downloads/Derplicated_MR.csv"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Group by region and calculate Simpson's Diversity Index for K-locus</span><span class="w">
+</span><span class="n">diversity_by_region_K_derep_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">derep_data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Regions</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">Simpson_Diversity_Index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">sum</span><span class="p">((</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)))</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print the results</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">diversity_by_region_K_derep_data</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="deduplicated-dataset-simpsons-diversity-index-for-k-locus-by-age-group">Deduplicated Dataset: Simpson’s Diversity Index for K-locus by Age Group</h3>
+<ul>
+  <li>Data: Deduplicated dataset <br /></li>
+  <li>Calculation: Group the deduplicated data by age group and calculate Simpson’s Diversity Index for K-locus. <br /></li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Group by age and calculate Simpson's Diversity Index for K-locus</span><span class="w">
+</span><span class="n">diversity_by_age_K_derep_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">derep_data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Age_group</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">Simpson_Diversity_Index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">sum</span><span class="p">((</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">table</span><span class="p">(</span><span class="n">K_locus</span><span class="p">)))</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print the results</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">diversity_by_age_K_derep_data</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="deduplicated-dataset-simpsons-diversity-index-for-o-locus-by-region">Deduplicated Dataset: Simpson’s Diversity Index for O-locus by Region</h3>
+<ul>
+  <li>Data: Deduplicated dataset <br /></li>
+  <li>Calculation: Group the deduplicated data by region and calculate Simpson’s Diversity Index for O-locus. <br /></li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Group by region and calculate Simpson's Diversity Index for O-locus</span><span class="w">
+</span><span class="n">diversity_by_region_O_derep</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">derep_data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Regions</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">Simpson_Diversity_Index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">sum</span><span class="p">((</span><span class="n">table</span><span class="p">(</span><span class="n">O_locus</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">table</span><span class="p">(</span><span class="n">O_locus</span><span class="p">)))</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print the results</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">diversity_by_region_O_derep</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="reconfirmation-using-the-vegan-package">Reconfirmation Using the Vegan Package</h3>
+<ul>
+  <li>Purpose: Reconfirm the Simpson’s Diversity Index using the vegan package.</li>
+  <li>Steps:
+    <ul>
+      <li>Create a table of counts of K-locus per region.</li>
+      <li>Use the diversity() function from the vegan package.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create a table of K-locus counts by region</span><span class="w">
+</span><span class="n">k_locus_table_derep</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">derep_data</span><span class="o">$</span><span class="n">Regions</span><span class="p">,</span><span class="w"> </span><span class="n">derep_data</span><span class="o">$</span><span class="n">K_locus</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Calculate Simpson's Diversity Index for each region using the vegan package</span><span class="w">
+</span><span class="n">simpson_diversity_derep</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">apply</span><span class="p">(</span><span class="n">k_locus_table_derep</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="n">diversity</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"simpson"</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Print the results</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">simpson_diversity_derep</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="visualizing-simpsons-diversity-index-optional">Visualizing Simpson’s Diversity Index (Optional)</h3>
+<p>You can use the ggplot2 library to visualize the diversity indices by region. <br /></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Visualize Simpson's Diversity Index by region for the deduplicated K-locus data</span><span class="w">
+</span><span class="n">ggplot</span><span class="p">(</span><span class="n">diversity_by_region_K_derep_data</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Regions</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Simpson_Diversity_Index</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">geom_bar</span><span class="p">(</span><span class="n">stat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"identity"</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"skyblue"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">labs</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Regions"</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Simpson's Diversity Index"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">ggtitle</span><span class="p">(</span><span class="s2">"Simpson's Diversity Index by Region for K-locus"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">theme_minimal</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">theme</span><span class="p">(</span><span class="n">axis.text.x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element_text</span><span class="p">(</span><span class="n">angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">45</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="conclusion-1">Conclusion</h3>
+<p>In this analysis, we calculated the Simpson’s Diversity Index across different groupings (region and age group) for both the full dataset and the deduplicated data. We confirmed the results using the vegan package, and visualized them using ggplot2.</p>]]></content><author><name></name></author><category term="R" /><category term="Klebsiella pneumoniae" /><category term="K loci" /><category term="O loci" /><category term="Capsule serotyping" /><category term="Antibiotic resistance" /><category term="Virulence factors" /><category term="Public health" /><category term="Infectious diseases" /><summary type="html"><![CDATA[Predicting Resistance Trends of ESKAPE Pathogens using R]]></summary></entry><entry><title type="html">The Global Threat of ST147 Klebsiella pneumoniae</title><link href="http://localhost:4000/photo/" rel="alternate" type="text/html" title="The Global Threat of ST147 Klebsiella pneumoniae" /><published>2024-07-02T00:00:00+01:00</published><updated>2024-07-02T00:00:00+01:00</updated><id>http://localhost:4000/photo</id><content type="html" xml:base="http://localhost:4000/photo/"><![CDATA[<p><strong>Bangalore, India 2023</strong></p>
+
+<hr />
+<h2 id="introduction">Introduction</h2>
+<p><strong>ST147 Klebsiella pneumoniae has emerged as a significant global health concern due to its multidrug resistance and rapid spread. While extensively studied in European and North American settings, its prevalence and characteristics in India and Southeast Asia remain under-explored. This study aimed to comprehensively characterize ST147 isolates from India and compare them to a global dataset to understand their unique features and contribution to the global burden of MDR K. pneumoniae.</strong></p>
+
+<h2 id="background">Background</h2>
+<ul>
+  <li>ST147’s Global Rise: ST147 K. pneumoniae has been identified as a major contributor to the global burden of antimicrobial resistance, particularly in healthcare settings. <br /></li>
+  <li>India’s Unique Challenges: India faces a unique challenge due to the high prevalence of ST147 strains carrying various carbapenemase genes.<br /></li>
+  <li>Knowledge Gaps: Despite previous studies, a comprehensive understanding of ST147’s epidemiology, transmission pathways, and molecular mechanisms in India remains elusive.<br /></li>
+</ul>
+
+<h2 id="my-role-in-the-study">My Role in the Study</h2>
+<p>As a member of the Bioinformatics team, I played a crucial role in:</p>
+
+<ul>
+  <li>Literature Review: Conducting a thorough literature review to identify knowledge gaps and inform our research design.<br /></li>
+  <li>Methodology Development: Contributing to the development of the research methodology, including data collection and analysis techniques.<br /></li>
+  <li>Data Analysis: Actively participating in the analysis of genomic data to characterize ST147 isolates and identify their unique features.</li>
+  <li>Manuscript Preparation: Contributing to the writing and editing of the research manuscript<br />
+    <h2 id="methods">Methods</h2>
+  </li>
+  <li><strong>Genome Sequencing:</strong> Whole-genome sequencing of ST147 isolates using the Illumina MiSeq platform.<br /></li>
+  <li><strong>Genomic Characterization:</strong> De novo assembly and genomic characterization using Kleborate.<br /></li>
+  <li><strong>Antimicrobial Resistance Analysis:</strong> In silico prediction of antimicrobial resistance using Kleborate and AMRfinderPlus.<br /></li>
+  <li><strong>Plasmid Analysis:</strong> Identification of plasmid replicon types and their association with resistance genes.<br /></li>
+  <li><strong>Global Comparison:</strong> Comparison of Indian ST147 isolates with a global dataset to identify unique features.<br /></li>
+</ul>
+
+<h2 id="results">Results</h2>
+<p><strong>Global Phylogeny and Time-Scaled Analysis</strong><br />
+I played a pivotal role in constructing the time-scaled phylogeny using the GHRU-SNP phylogeny pipeline and removing recombinations using the Gubbins software. By carefully analyzing the genomic data, we were able to identify multiple introduction events of ST147 into India, suggesting ongoing clonal expansion. Additionally, we employed the BactDating R package to estimate the time of the most recent common ancestor (MRCA), finding it to be around 1987.<br />
+<strong>Plasmid Replicon Types and Resistance Gene Associations</strong>
+I also contributed to the analysis of plasmid replicon types and their association with resistance genes. Using tools like Plasmidfinder and Mobsuite, We were able to identify the nature of contigs containing AMR genes and determine whether they were carried on plasmids or chromosomes. This analysis provided valuable insights into the molecular mechanisms underlying the observed multidrug resistance phenotype facilitated by hybrid plasmids carrying carbapenemase genes.</p>
+
+<h2 id="here-are-some-r-scripts-that-i-have-written-to-contribute-to-this-study">Here are some R scripts that I have written to contribute to this study:</h2>
+<h3 id="phylogenetic-tree-plot-with-metadata-bars">Phylogenetic Tree Plot with Metadata Bars</h3>
+
+<p>In this section, we load the phylogenetic tree data and metadata, create a plot using the <code class="language-plaintext highlighter-rouge">ggtree</code> package, and overlay bars for each gene from the metadata.</p>
+
+<h3 id="required-libraries">Required Libraries</h3>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load required libraries</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggtree</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ape</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">tidyr</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p>Libraries: We load ggtree for phylogenetic tree visualization, ape for handling tree objects, and tidyr for data manipulation.</p>
+
+<h3 id="reading-metadata-and-tree-file">Reading Metadata and Tree File</h3>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Read the metadata from the CSV file</span><span class="w">
+</span><span class="n">metadata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"/data/internship_data/srikanth_kpn/global_st147_fastqs/metadata/lj.csv"</span><span class="p">,</span><span class="w"> </span><span class="n">stringsAsFactors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Read the tree file (assuming it's in Newick format)</span><span class="w">
+</span><span class="n">tree</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.tree</span><span class="p">(</span><span class="s2">"/data/internship_data/srikanth_kpn/global_st147_fastqs/new_fastqs/snp_phylogeny_output/2023/gubbins_new/mid_point_rooted_ape.nwk"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<ul>
+  <li>Metadata: We read the metadata file containing information about the phylogenetic tree tips.<br /></li>
+  <li>Tree File: The phylogenetic tree is read in Newick format using read.tree. <br /></li>
+</ul>
+
+<h3 id="preparing-the-tree-data-frame">Preparing the Tree Data Frame</h3>
+
+<pre><code class="language-{r}"># Initialize vectors to store tip labels and branch lengths
+tip_labels &lt;- character(length = 2 * tree$Nnode + 1)
+branch_lengths &lt;- numeric(length = length(tip_labels))
+
+# Assign tip labels and branch lengths
+tip_labels[tree$edge[, 1]] &lt;- tree$tip.label
+branch_lengths[tree$edge[, 1]] &lt;- tree$edge.length
+
+# Create the tree_df data frame
+tree_df &lt;- data.frame(tip.label = tip_labels[tip_labels != ""], branch = branch_lengths[tip_labels != ""])
+
+# Save the data frame to a CSV file
+write.csv(tree_df, file = "/data/internship_data/srikanth_kpn/global_st147_fastqs/metadata/tree_df.csv")
+</code></pre>
+
+<ul>
+  <li>Tree Data: We extract the tip labels and branch lengths from the tree and store them in a data frame tree_df.<br /></li>
+  <li>Save Data: The data frame is saved as a CSV file for future use.<br /></li>
+</ul>
+
+<h3 id="merging-metadata-with-tree-data">Merging Metadata with Tree Data</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Calculate y-coordinates for the bars</span><span class="w">
+</span><span class="n">y_coords</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">-1</span><span class="p">,</span><span class="w"> </span><span class="n">length.out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nrow</span><span class="p">(</span><span class="n">metadata</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># Merge filtered metadata with the tree data based on sample IDs</span><span class="w">
+</span><span class="n">tree_with_metadata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">left_join</span><span class="p">(</span><span class="n">tree_df</span><span class="p">,</span><span class="w"> </span><span class="n">metadata</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="o">=</span><span class="s2">"tip.label"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>Y-Coordinates: We generate y_coords for plotting bars based on the number of metadata rows.<br /></li>
+  <li>Merge Data: The tree_df and metadata are merged on the tip.label column.<br /></li>
+</ul>
+
+<h3 id="plotting-the-tree-with-metadata-bars">Plotting the Tree with Metadata Bars</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Make the original tree plot</span><span class="w">
+</span><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggtree</span><span class="p">(</span><span class="n">tree_with_metadata</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Create bars for each gene</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">gene</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">colnames</span><span class="p">(</span><span class="n">metadata</span><span class="p">)[</span><span class="m">-1</span><span class="p">])</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1"># Exclude the 'ids' column</span><span class="w">
+  </span><span class="n">tree_with_metadata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">mutate</span><span class="p">(</span><span class="n">tree_with_metadata</span><span class="p">,</span><span class="w"> </span><span class="o">!!</span><span class="n">paste0</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span><span class="w"> </span><span class="s2">"_y"</span><span class="p">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">y_coords</span><span class="p">)</span><span class="w">
+  
+  </span><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_segment</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tree_with_metadata</span><span class="p">,</span><span class="w">
+                        </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">branch</span><span class="p">,</span><span class="w"> </span><span class="n">xend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">branch</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!!</span><span class="n">sym</span><span class="p">(</span><span class="n">paste0</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span><span class="w"> </span><span class="s2">"_y"</span><span class="p">)),</span><span class="w">
+                            </span><span class="n">yend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!!</span><span class="n">sym</span><span class="p">(</span><span class="n">paste0</span><span class="p">(</span><span class="n">gene</span><span class="p">,</span><span class="w"> </span><span class="s2">"_y"</span><span class="p">)),</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!!</span><span class="n">sym</span><span class="p">(</span><span class="n">gene</span><span class="p">)),</span><span class="w">
+                        </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">scale_color_manual</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gene</span><span class="p">,</span><span class="w"> </span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"yes"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="s2">"no"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"white"</span><span class="p">),</span><span class="w"> </span><span class="n">guide</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"none"</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="c1"># Show the plot</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>Plot: A base tree plot is created using ggtree.<br /></li>
+  <li>Bars: For each gene in the metadata, colored bars (red for ‘yes’, white for ‘no’) are added to the plot, representing the presence or absence of the gene.&lt;br</li>
+</ul>
+
+<h2 id="script-2-bactdating-phylogenetic-analysis">Script 2: BactDating Phylogenetic Analysis</h2>
+<h2 id="bactdating-phylogenetic-analysis">BactDating Phylogenetic Analysis</h2>
+
+<p>This section demonstrates how to run <strong>BactDating</strong> to estimate the divergence times in a phylogenetic tree, including loading the tree, merging metadata, and visualizing the results.</p>
+
+<h3 id="required-libraries-and-reading-data">Required Libraries and Reading Data</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load libraries</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ape</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">BactDating</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Read the tree file and metadata</span><span class="w">
+</span><span class="n">t</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.tree</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"~/pw_fastqs/snp_phylogeny_output/gubbin_out/aligned_pseudogenome.node_labelled.final_tree.tre"</span><span class="p">)</span><span class="w">
+</span><span class="n">metadata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s2">"~/Kpn_data/bactdating/dates.csv"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>Libraries: ape is used for handling phylogenetic trees, and BactDating is used for dating trees.<br /></li>
+  <li>Tree and Metadata: The phylogenetic tree and metadata with date information are loaded.<br />
+    <h3 id="merging-metadata-with-tree-labels">Merging Metadata with Tree Labels</h3>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Extract tree tip labels and merge with metadata</span><span class="w">
+</span><span class="n">tree_labels</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">t</span><span class="o">$</span><span class="n">tip.label</span><span class="p">)</span><span class="w">
+</span><span class="n">merged</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">merge</span><span class="p">(</span><span class="n">tree_labels</span><span class="p">,</span><span class="w"> </span><span class="n">metadata</span><span class="p">,</span><span class="w"> </span><span class="n">by.x</span><span class="o">=</span><span class="s1">'t$tip.label'</span><span class="p">,</span><span class="w"> </span><span class="n">by.y</span><span class="o">=</span><span class="s1">'name'</span><span class="p">,</span><span class="w"> </span><span class="n">all.x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">all.y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Reorder to match the tree tip order</span><span class="w">
+</span><span class="n">merged2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">merged</span><span class="p">[</span><span class="n">match</span><span class="p">(</span><span class="n">t</span><span class="o">$</span><span class="n">tip.label</span><span class="p">,</span><span class="w"> </span><span class="n">merged</span><span class="o">$</span><span class="n">`t$tip.label`</span><span class="p">),]</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>Merge: The tip labels from the tree are merged with the metadata based on sample names.</li>
+  <li>Reordering: The merged data is reordered to match the order of the tree tip labels.
+    <h3 id="initializing-and-running-bactdating">Initializing and Running BactDating</h3>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Initialize the rooted tree</span><span class="w">
+</span><span class="n">rooted</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">initRoot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">merged2</span><span class="o">$</span><span class="n">date</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Root-to-tip regression for time estimates</span><span class="w">
+</span><span class="n">r</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">roottotip</span><span class="p">(</span><span class="n">rooted</span><span class="p">,</span><span class="w"> </span><span class="n">merged2</span><span class="o">$</span><span class="n">date</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Run BactDating with a relaxed gamma model</span><span class="w">
+</span><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">bactdate</span><span class="p">(</span><span class="n">unroot</span><span class="p">(</span><span class="n">t</span><span class="p">),</span><span class="w"> </span><span class="n">merged2</span><span class="o">$</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">nbIts</span><span class="o">=</span><span class="m">10000</span><span class="p">,</span><span class="w"> </span><span class="n">initSigma</span><span class="o">=</span><span class="m">0.000005</span><span class="p">,</span><span class="w"> 
+                </span><span class="n">updateSigma</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">updateRoot</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">updateAlpha</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+                </span><span class="n">updateMu</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">model</span><span class="o">=</span><span class="s2">"relaxedgamma"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>Rooting the Tree: We initialize the rooted tree with the date metadata.<br /></li>
+  <li>Root-to-Tip Regression: roottotip() performs a regression to estimate divergence times.<br /></li>
+  <li>BactDating: bactdate() is used to estimate dates using the relaxedgamma model, running for 10,000 iterations.<br />
+    <h3 id="visualizing-the-bactdating-results">Visualizing the BactDating Results</h3>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Plot the results with confidence intervals</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="n">res</span><span class="p">,</span><span class="w"> </span><span class="s1">'treeCI'</span><span class="p">,</span><span class="w"> </span><span class="n">show.tip.label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Additional BactDating run on previously rooted tree</span><span class="w">
+</span><span class="n">res0</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">bactdate</span><span class="p">(</span><span class="n">rooted</span><span class="p">,</span><span class="w"> </span><span class="n">merged2</span><span class="o">$</span><span class="n">date</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Run BactDating again on unrooted tree from root-to-tip regression</span><span class="w">
+</span><span class="n">res2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">bactdate</span><span class="p">(</span><span class="n">unroot</span><span class="p">(</span><span class="n">r</span><span class="p">),</span><span class="w"> </span><span class="n">merged2</span><span class="o">$</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">nbIts</span><span class="o">=</span><span class="m">10000</span><span class="p">,</span><span class="w"> </span><span class="n">initSigma</span><span class="o">=</span><span class="m">0.000005</span><span class="p">,</span><span class="w"> 
+                 </span><span class="n">updateSigma</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">updateRoot</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">updateAlpha</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> 
+                 </span><span class="n">updateMu</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">model</span><span class="o">=</span><span class="s2">"relaxedgamma"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Plot second set of results</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="n">res0</span><span class="p">,</span><span class="w"> </span><span class="s1">'treeCI'</span><span class="p">,</span><span class="w"> </span><span class="n">show.tip.label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>Plot: The BactDating results are visualized with confidence intervals around the divergence time estimates.</li>
+  <li>Additional Runs: Additional BactDating analyses are performed and plotted, including both rooted and unrooted tree versions.</li>
+</ul>]]></content><author><name></name></author><category term="machine learning" /><category term="R" /><category term="ESKAPE pathogens" /><category term="public health" /><category term="healthcare" /><category term="epidemiology" /><category term="global health" /><category term="infectious diseases" /><category term="bacteria" /><category term="antibiotic resistance" /><summary type="html"><![CDATA[The Global Threat of ST147 Klebsiella pneumoniae]]></summary></entry><entry><title type="html">Benchmarking Combinations of different Polishing Tools to Optimise Hybrid Genome Assembly Quality</title><link href="http://localhost:4000/Paenibacillusyunnanensis/" rel="alternate" type="text/html" title="Benchmarking Combinations of different Polishing Tools to Optimise Hybrid Genome Assembly Quality" /><published>2024-03-31T00:00:00+00:00</published><updated>2024-03-31T00:00:00+00:00</updated><id>http://localhost:4000/Paenibacillusyunnanensis</id><content type="html" xml:base="http://localhost:4000/Paenibacillusyunnanensis/"><![CDATA[<p><strong>Bangalore, India 2024</strong></p>
+
+<hr />
+
+<p><strong>I was tasked with improving the quality and accuracy of our hybrid assemblies. To achieve this, I studied how different polishing models integrated into the pipeline worked and developed a suite of scripts to automate the evaluation of different combinations. These scripts compare assemblies based on key metrics, allowing us to optimize our workflow and ensure the reliability of our genomic data.</strong></p>
+
+<p><strong>Objective</strong>
+The purpose of this analysis is to systematically evaluate the impact of different polishing model combinations on the quality and completeness of hybrid genome assemblies constructed from both Illumina and Nanopore reads, generated by the Dragonflye pipeline. By employing various combinations of polishing models such as Racon, Medaka, Pilon, and Polypolish, we aim to identify the most effective strategy for enhancing assembly accuracy, contiguity, and overall quality. This analysis is crucial for optimizing the workflow, and ensuring the robustness of genome assemblies.</p>
+
+<p><strong>Polishing models</strong></p>
+
+<ul>
+  <li>
+    <p>Racon: Corrects base errors and improves consensus accuracy in reads obtained from initial draft assemblies without a consensus step. (Canu v2.2 Manual: https://github.com/marbl/canu)</p>
+  </li>
+  <li>
+    <p>Medaka: Improves base calling accuracy and reduces insertion/deletions (indels) in Nanopore reads by using Neural networks. (Oxford Nanopore Technologies: https://github.com/nanoporetech/medaka)</p>
+  </li>
+  <li>
+    <p>Pilon: Corrects indels and improves assembly continuity by aligning Illumina reads to the draft assembly for further error correction. (Walker et al. (2014). Pilon: An integrative tool for reference genome improvement. PLoS ONE 9(11): e112963. (DOI: 10.1371/journal.pone.0112963))</p>
+  </li>
+  <li>
+    <p>Polypolish: Polishes contigs from hybrid assemblies by using evidence from both Illumina and Nanopore reads to improve base quality and potentially resolve complex regions. (Wick et al. (2017) [DOI: 10.1093/bioinformatics/btx516])</p>
+  </li>
+</ul>
+
+<p><strong>Equipment and Software</strong></p>
+
+<p>Dragonflye pipeline (version 1.1.1) 
+Racon (version 1.5.0) 
+Medaka (version 1.8.0)
+ Pilon (version 1.24) 
+Polypolish (version v0.5.0) 
+QUAST (version 5.0.2) 
+BUSCO (version 5.5.0)</p>
+
+<h1 id="assembly-and-polishing-procedure-with-dragonflye-metrics-collection-and-analysis">Assembly and Polishing Procedure with Dragonflye, Metrics Collection, and Analysis</h1>
+
+<h2 id="1-sample-preparation">1. Sample Preparation:</h2>
+<p>Ensure a consistent set of FastQ files for both Illumina and Nanopore reads for all polishing model combinations.</p>
+
+<h2 id="2-assembly-generation">2. Assembly Generation:</h2>
+<h3 id="installing-dragonflye-from-bioconda">Installing Dragonflye from Bioconda:</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># With conda</span>
+conda create <span class="nt">-n</span> dragonflye <span class="nt">-c</span> conda-forge <span class="nt">-c</span> bioconda dragonflye
+
+<span class="c"># With Mamba (faster)</span>
+mamba create <span class="nt">-n</span> dragonflye <span class="nt">-c</span> conda-forge <span class="nt">-c</span> bioconda dragonflye
+</code></pre></div></div>
+<h2 id="3-running-the-dragonflye-pipeline">3. Running the Dragonflye pipeline:</h2>
+<p>Use the following script to run Dragonflye with multiple polishing combinations:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Script for Running Dragonflye Assembly Pipeline</span>
+
+<span class="c"># Define variables</span>
+<span class="nv">IDS_FILE</span><span class="o">=</span><span class="s2">"ids"</span>
+<span class="nv">BASE_DIR</span><span class="o">=</span><span class="s2">"/mnt/d/assembly_evaluation_cgps/fastqs/KPN"</span>
+<span class="nv">G_SIZE</span><span class="o">=</span><span class="s2">"5.5M"</span>
+<span class="nv">CPUS</span><span class="o">=</span><span class="s2">"16"</span>
+<span class="nv">RAM</span><span class="o">=</span><span class="s2">"15"</span>
+<span class="nv">MODEL</span><span class="o">=</span><span class="s2">"r941_min_sup_g507"</span>
+
+<span class="c"># Function to execute Dragonflye command</span>
+run_dragonflye<span class="o">()</span> <span class="o">{</span>
+   <span class="nb">local </span><span class="nv">command_num</span><span class="o">=</span><span class="nv">$1</span>
+   <span class="nb">local </span><span class="nv">out_dir</span><span class="o">=</span><span class="s2">"</span><span class="nv">$BASE_DIR</span><span class="s2">/dragonflye_out_</span><span class="nv">$command_num</span><span class="s2">"</span>
+
+   <span class="nb">echo</span> <span class="s2">"Executing Command </span><span class="nv">$command_num</span><span class="s2">"</span>
+
+   <span class="k">for </span>f <span class="k">in</span> <span class="si">$(</span><span class="nb">cat</span> <span class="nv">$IDS_FILE</span><span class="si">)</span><span class="p">;</span> <span class="k">do
+       </span>dragonflye <span class="nt">--trim</span> <span class="nt">--gsize</span> <span class="nv">$G_SIZE</span> <span class="nt">--reads</span> <span class="k">${</span><span class="nv">f</span><span class="k">}*</span><span class="nt">-ont</span>.fastq.gz <span class="se">\</span>
+           <span class="nt">--outdir</span> <span class="s2">"</span><span class="nv">$out_dir</span><span class="s2">/</span><span class="nv">$f</span><span class="s2">"</span> <span class="nt">--prefix</span> <span class="nv">$f</span> <span class="nt">--R1</span> <span class="s2">"</span><span class="nv">$f</span><span class="s2">"</span><span class="k">*</span><span class="nt">-R1</span>.fastq.gz <span class="se">\</span>
+           <span class="nt">--R2</span> <span class="s2">"</span><span class="nv">$f</span><span class="s2">"</span><span class="k">*</span><span class="nt">-R2</span>.fastq.gz <span class="nt">--cpus</span> <span class="nv">$CPUS</span> <span class="nt">--ram</span> <span class="nv">$RAM</span> <span class="nv">$2</span>
+   <span class="k">done</span>
+
+   <span class="c"># Check the exit status of the Dragonflye command</span>
+   <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-eq</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">then
+       </span><span class="nb">echo</span> <span class="s2">"Command </span><span class="nv">$command_num</span><span class="s2"> succeeded"</span>
+   <span class="k">else
+       </span><span class="nb">echo</span> <span class="s2">"Command </span><span class="nv">$command_num</span><span class="s2"> failed, skipping remaining commands"</span>
+       <span class="nb">exit </span>1
+   <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="c"># Command 1</span>
+run_dragonflye 1 <span class="s2">"--racon 1 --medaka 1 --pilon 1 --polypolish 1"</span>
+
+<span class="c"># Command 2</span>
+run_dragonflye 2 <span class="s2">"--racon 1 --polypolish 1"</span>
+
+<span class="c"># Command 3</span>
+run_dragonflye 3 <span class="s2">"--racon 1"</span>
+
+<span class="c"># Command 4</span>
+run_dragonflye 4 <span class="s2">"--racon 1 --medaka 1 --model </span><span class="nv">$MODEL</span><span class="s2"> --pilon 1"</span>
+
+<span class="c"># Command 5</span>
+run_dragonflye 5 <span class="s2">"--medaka 1 --model </span><span class="nv">$MODEL</span><span class="s2"> --pilon 1 --polypolish 1"</span>
+
+<span class="nb">echo</span> <span class="s2">"All Dragonflye commands executed successfully"</span>
+</code></pre></div></div>
+<h2 id="3-polishing">3. Polishing:</h2>
+<p>Apply Racon, Medaka, Pilon, and Polypolish rounds according to your analysis needs.</p>
+
+<h2 id="4-metrics-collection">4. Metrics Collection:</h2>
+<p>For each assembly, report the following metrics:</p>
+
+<ul>
+  <li>Complete and single-copy BUSCOs (%)</li>
+  <li>GC content (%)</li>
+  <li>N50</li>
+  <li>Depth</li>
+  <li>Total number of base pairs</li>
+  <li>Average contig length</li>
+  <li>Number of contigs</li>
+  <li>Number of circular contigs</li>
+  <li>Average depth of contigs</li>
+</ul>
+
+<ol>
+  <li><strong>Data Analysis:</strong>
+The following scripts can be used to automate the capturing of these metrics from the resulting assemblies obtained by different polishing model combinations.</li>
+</ol>
+
+<p><strong>1. Complete and single-copy BUSCOs (%)</strong></p>
+
+<p>Install BUSCO using Conda or Docker</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># With Mamba</span>
+mamba <span class="nb">install </span>busco
+<span class="c"># or update with</span>
+mamba update busco
+</code></pre></div></div>
+
+<p>Alternatively, use the docker container:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker pull quay.io/biocontainers/busco:&lt;tag&gt;
+
+<span class="o">(</span>see <span class="sb">`</span>busco/tags<span class="sb">`</span>_ <span class="k">for </span>valid values <span class="k">for</span> <span class="sb">``</span>&lt;tag&gt;<span class="sb">``</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Running BUSCO in a loop on multiple FASTA files:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Example:</span>
+<span class="k">for </span>f <span class="k">in</span> <span class="k">*</span>/<span class="k">*</span>.fa<span class="p">;</span> <span class="k">do </span>busco <span class="nt">-i</span> <span class="nv">$f</span> <span class="nt">-o</span> <span class="nv">$f</span> <span class="nt">--out_path</span> /path/to/busco_output <span class="nt">-m</span> geno <span class="nt">-c</span> 45 <span class="nt">-l</span> /path/to/lineages/pseudomonadales_odb10/<span class="p">;</span> <span class="k">done</span>
+</code></pre></div></div>
+
+<p><strong>Summarizing BUSCO results</strong></p>
+<ul>
+  <li>Parse multiple BUSCO output text files and append the results to a combined form.</li>
+  <li>Execute the script: busco_summarise_results.py</li>
+  <li>This script captures required metrics from BUSCO summary files generated by the BUSCO tool. It parses the summary files and outputs the results to a CSV file.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">def</span> <span class="nf">parse_busco_summary</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+       <span class="n">lines</span> <span class="o">=</span> <span class="nb">file</span><span class="p">.</span><span class="n">readlines</span><span class="p">()</span>
+   <span class="n">species_name</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file_path</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">'short_summary.specific.enterobacterales_odb10.'</span><span class="p">,</span> <span class="s">''</span><span class="p">).</span><span class="n">replace</span><span class="p">(</span><span class="s">'.txt'</span><span class="p">,</span> <span class="s">''</span><span class="p">)</span>
+   <span class="n">summary_line</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">if</span> <span class="s">'C:'</span> <span class="ow">in</span> <span class="n">line</span><span class="p">)</span>
+   <span class="n">complete_percentage</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">re</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s">'C:(\d+\.\d+)%'</span><span class="p">,</span> <span class="n">summary_line</span><span class="p">).</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+   <span class="n">single_percentage</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">re</span><span class="p">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s">'S:(\d+\.\d+)%'</span><span class="p">,</span> <span class="n">summary_line</span><span class="p">).</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+   <span class="k">return</span> <span class="p">[</span><span class="n">species_name</span><span class="p">,</span> <span class="n">complete_percentage</span><span class="p">,</span> <span class="n">single_percentage</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+   <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+       <span class="k">print</span><span class="p">(</span><span class="s">"Usage: python busco_summarise_results.py /path/to/busco_summaries/"</span><span class="p">)</span>
+       <span class="n">sys</span><span class="p">.</span><span class="nb">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+   <span class="n">busco_directory</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+   <span class="n">output_csv</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">busco_directory</span><span class="p">,</span> <span class="s">"output_new.csv"</span><span class="p">)</span>
+   <span class="n">busco_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">busco_directory</span><span class="p">,</span> <span class="nb">file</span><span class="p">)</span> <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">busco_directory</span><span class="p">)</span> <span class="k">if</span> <span class="nb">file</span><span class="p">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">".txt"</span><span class="p">)]</span>
+   <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">parse_busco_summary</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span> <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">busco_files</span><span class="p">]</span>
+
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_csv</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+       <span class="n">csv_file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"Species,Complete_Percentage,Single_Percentage</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+       <span class="k">for</span> <span class="n">species</span><span class="p">,</span> <span class="n">c_percentage</span><span class="p">,</span> <span class="n">s_percentage</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+           <span class="n">csv_file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">species</span><span class="si">}</span><span class="s">,</span><span class="si">{</span><span class="n">c_percentage</span><span class="si">}</span><span class="s">,</span><span class="si">{</span><span class="n">s_percentage</span><span class="si">}</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+   <span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+<ul>
+  <li>
+    <p>Compare and analyze the metrics for each assembly to identify trends and variations in performance.</p>
+  </li>
+  <li>
+    <p>Utilize graphical representations for a comprehensive analysis by generating plots to summarise the results
+https://gitlab.com/ezlab/busco/-/blob/master/scripts/generate_plot.py?ref_type=heads</p>
+  </li>
+</ul>
+
+<p><strong>2. GC content (%) &amp; N50</strong></p>
+<ul>
+  <li>Install QUAST</li>
+  <li>Given that you already have a conda environment in which you want to have this package, install with:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mamba <span class="nb">install </span>quast
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>and update with::</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   mamba update quast
+</code></pre></div></div>
+<ul>
+  <li>To create a new environment, run:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mamba create <span class="nt">--name</span> myenvname quast
+</code></pre></div>    </div>
+  </li>
+  <li>Alternatively, use the docker container:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull quay.io/biocontainers/quast:&lt;tag&gt;
+</code></pre></div>    </div>
+    <p>(see <code class="language-plaintext highlighter-rouge">quast/tags</code>_ for valid values for <code class="language-plaintext highlighter-rouge">&lt;tag&gt;</code>)</p>
+  </li>
+  <li>Example of running QUAST on your assembled fasta files
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> quast <span class="k">*</span>/<span class="k">*</span>.fa <span class="nt">--threads</span> n <span class="nt">-o</span> /mnt/d/assembly_evaluation_cgps/fastqs/ABA/dragonflye_out_1/QUAST
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>3. Estimated Sequencing Depth:</strong></p>
+<ul>
+  <li>extract_depth_from_logs.py</li>
+  <li>This script extracts estimated sequencing depth and total number of base pairs from Dragonflye log files. Usage Replace ‘your_parent_directory’ with the actual path to the parent directory containing subdirectories. Replace ‘depth_out.csv’ with the desired output CSV file name.</li>
+  <li>Execute the script: python extract_depth_from_logs.py
+```python
+import os
+import csv
+import re
+import glob</li>
+</ul>
+
+<p>def extract_values_from_log(log_file_path):
+   with open(log_file_path, ‘r’) as log_file:
+       content = log_file.read()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   # Extracting values using regular expressions
+   total_bp_match = re.search(r'\[dragonflye\] Read stats: total_bp = (\d+)', content)
+   depth_match = re.search(r'\[dragonflye\] Estimated sequencing depth: (\d+)x', content)
+  
+   if total_bp_match and depth_match:
+       total_bp = total_bp_match.group(1)
+       sequencing_depth = depth_match.group(1)
+      
+       return total_bp, sequencing_depth
+   else:
+       return None, None
+</code></pre></div></div>
+
+<p>def process_directory(directory_path, output_csv_path):
+   with open(output_csv_path, ‘w’, newline=’’) as csvfile:
+       csv_writer = csv.writer(csvfile)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   # Write header to the CSV file
+   csv_writer.writerow(['Directory', 'Total_BP', 'Sequencing_Depth'])
+  
+   # Iterate through directories
+   for root, dirs, files in os.walk(directory_path):
+       for d in dirs:
+           log_file_path = os.path.join(root, d, 'dragonflye_out_1', d, '*.log')
+           log_file_matches = glob.glob(log_file_path)
+          
+           if log_file_matches:
+               log_file_path = log_file_matches[0]  # Assuming there's only one matching log file
+              
+               total_bp, sequencing_depth = extract_values_from_log(log_file_path)
+              
+               if total_bp is not None and sequencing_depth is not None:
+                   csv_writer.writerow([d, total_bp, sequencing_depth])
+</code></pre></div></div>
+
+<h1 id="replace-your_directory_path-with-the-actual-path-to-the-parent-directory-containing-subdirectories">Replace ‘your_directory_path’ with the actual path to the parent directory containing subdirectories</h1>
+<p>directory_path = ‘/path/to/your/parent_directory’</p>
+
+<h1 id="replace-outputcsv-with-the-desired-output-csv-file-name">Replace ‘output.csv’ with the desired output CSV file name</h1>
+<p>output_csv_path = ‘/path/to/your/output_directory/depth_out.csv’</p>
+
+<p>process_directory(directory_path, output_csv_path)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+**4. Average contig length**
+- calculate_contig_avg_length.sh
+- This script extracts contig length from an assembled FASTA file and calculates the average length for all contigs. Usage ./calculate_contig_avg_length.sh &lt;input_fasta_file&gt; Replace &lt;input_fasta_file&gt; with the path to your assembled FASTA file.
+```bash
+#!/bin/bash
+
+# Check for the correct number of command-line arguments
+if [ "$#" -ne 1 ]; then
+   echo "Usage: $0 &lt;input_fasta_file&gt;"
+   exit 1
+fi
+
+# Input FASTA file
+fasta_file="$1"
+
+# Check if the input file exists
+if [ ! -f "$fasta_file" ]; then
+   echo "Error: File $fasta_file not found."
+   exit 1
+fi
+
+# Extract file name without extension
+file_prefix=$(basename "$fasta_file" .fasta)
+
+# Create a directory named "length" inside the directory of the input FASTA file
+output_dir="$(dirname "$fasta_file")/length"
+mkdir -p "$output_dir"
+
+# Output CSV file for mean len in the "length" directory
+csv_len_file="$output_dir/${file_prefix}_mean_len.csv"
+
+# Extract len= values and calculate mean
+awk '/^&gt;/ { len_sum += gensub(/^.*len=([0-9]+).*$/, "\\1", "g", $0); len_count++; next } END { if (len_count &gt; 0) print len_sum / len_count }' "$fasta_file" &gt; "$csv_len_file"
+
+echo "Mean of len values calculated. Result saved in $csv_len_file"
+</code></pre></div></div>
+
+<p><strong>5. Average contig depth</strong></p>
+<ul>
+  <li>calculate_contig_avg_depth.sh</li>
+  <li>This script extracts contig depth from an assembled FASTA file and calculates the average depth for all contigs. Usage ./calculate_contig_avg_depth.sh <input_fasta_file> Replace <input_fasta_file> with your assembled FASTA file path.
+```bash
+#!/bin/bash</input_fasta_file></input_fasta_file></li>
+</ul>
+
+<h1 id="check-for-the-correct-number-of-command-line-arguments">Check for the correct number of command-line arguments</h1>
+<p>if [ “$#” -ne 1 ]; then
+   echo “Usage: $0 <input_fasta_file>"
+   exit 1
+fi</input_fasta_file></p>
+
+<h1 id="input-fasta-file">Input FASTA file</h1>
+<p>fasta_file=”$1”</p>
+
+<h1 id="check-if-the-input-file-exists">Check if the input file exists</h1>
+<p>if [ ! -f “$fasta_file” ]; then
+   echo “Error: File $fasta_file not found.”
+   exit 1
+fi</p>
+
+<h1 id="extract-file-name-without-extension">Extract file name without extension</h1>
+<p>file_prefix=$(basename “$fasta_file” .fasta)</p>
+
+<h1 id="output-csv-file-in-the-same-directory-as-the-input-file">Output CSV file in the same directory as the input file</h1>
+<p>csv_file=”$(dirname “$fasta_file”)/${file_prefix}_mean_cov.csv”</p>
+
+<h1 id="extract-cov-values-and-calculate-mean">Extract cov= values and calculate mean</h1>
+<p>awk ‘/^&gt;/ { sum += gensub(/^.<em>cov=([0-9.]+).</em>$/, “\1”, “g”, $0); count++; next } END { if (count &gt; 0) print sum / count }’ “$fasta_file” &gt; “$csv_file”</p>
+
+<p>echo “Mean of cov values calculated. Result saved in $csv_file”</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+**6. Number of contigs and circular contigs**
+- extract_contig_stats.sh 
+- This script extracts the number of contigs and the number of circular contigs from a FASTA file. Usage ./extract_contig_stats.sh &lt;input_fasta_file&gt;
+```bash
+#!/bin/bash
+
+# Check for the correct number of command-line arguments
+if [ "$#" -ne 1 ]; then
+   echo "Usage: $0 &lt;input_fasta_file&gt;"
+   exit 1
+fi
+
+# Input FASTA file
+fasta_file="$1"
+
+# Check if the input file exists
+if [ ! -f "$fasta_file" ]; then
+   echo "Error: File $fasta_file not found."
+   exit 1
+fi
+
+# Extract file name without extension
+file_name=$(basename "$fasta_file" .fasta)
+
+# Create a directory named "contig_info" inside the directory of the input FASTA file
+output_dir="$(dirname "$fasta_file")/contig_info"
+mkdir -p "$output_dir"
+
+# Output CSV file in the "contig_info" directory
+csv_file="$output_dir/${file_name}_contig_stats.csv"
+
+# Count the number of contigs and circular contigs
+num_contigs=$(grep -c "^&gt;" "$fasta_file")
+num_circular_contigs=$(grep -c "^&gt;.*circular=Y" "$fasta_file")
+
+# Write the result to the CSV file without column headers
+echo "$file_name,$num_contigs,$num_circular_contigs" &gt;&gt; "$csv_file"
+
+echo "Contig statistics calculated. Result saved in $csv_file"
+</code></pre></div></div>
+<p><strong>6. Reporting</strong></p>
+<ul>
+  <li>Prepare a comprehensive summary report highlighting key findings, comparisons between polishing model combinations, and any notable observations.</li>
+</ul>
+
+<p><strong>Sample results sheet</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Complete and single-copy BUSCOs (S) %</th>
+      <th>GC %</th>
+      <th>N50</th>
+      <th>Depth</th>
+      <th>Total no of bps</th>
+      <th>Avg contig length</th>
+      <th>No of contigs</th>
+      <th>No of circular contigs</th>
+      <th>Avg depth of contigs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>nigeria-acinetobacter_bauminnii-01</td>
+      <td>99.5</td>
+      <td>39.1</td>
+      <td>339622</td>
+      <td>1523</td>
+      <td>1614554</td>
+      <td>2162</td>
+      <td>0</td>
+      <td>3725</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>nigeria-acinetobacter_bauminnii-02</td>
+      <td>99.6</td>
+      <td>39.0</td>
+      <td>139727</td>
+      <td>2119</td>
+      <td>461479</td>
+      <td>7274</td>
+      <td>2</td>
+      <td>0</td>
+      <td>443</td>
+    </tr>
+    <tr>
+      <td>nigeria-acinetobacter_bauminnii-03</td>
+      <td>99.5</td>
+      <td>39.2</td>
+      <td>140085</td>
+      <td>3615</td>
+      <td>562649</td>
+      <td>9990</td>
+      <td>9</td>
+      <td>8</td>
+      <td>1064</td>
+    </tr>
+    <tr>
+      <td>nigeria-acinetobacter_bauminnii-04</td>
+      <td>99.2</td>
+      <td>39.1</td>
+      <td>240791</td>
+      <td>3955</td>
+      <td>161453</td>
+      <td>3671</td>
+      <td>3</td>
+      <td>6</td>
+      <td>877</td>
+    </tr>
+    <tr>
+      <td>nigeria-acinetobacter_bauminnii-05</td>
+      <td>99.6</td>
+      <td>39.0</td>
+      <td>39271</td>
+      <td>1918</td>
+      <td>461459</td>
+      <td>1980</td>
+      <td>8</td>
+      <td>1</td>
+      <td>902</td>
+    </tr>
+    <tr>
+      <td>nigeria-escherichia_coli-01.fa</td>
+      <td>99.5</td>
+      <td>50.3</td>
+      <td>94945</td>
+      <td>3264</td>
+      <td>218971</td>
+      <td>5773</td>
+      <td>7</td>
+      <td>7</td>
+      <td>695</td>
+    </tr>
+    <tr>
+      <td>nigeria-escherichia_coli-02.fa</td>
+      <td>99.5</td>
+      <td>50.3</td>
+      <td>94944</td>
+      <td>9334</td>
+      <td>420268</td>
+      <td>8043</td>
+      <td>9</td>
+      <td>0</td>
+      <td>608</td>
+    </tr>
+    <tr>
+      <td>nigeria-escherichia_coli-03.fa</td>
+      <td>99.3</td>
+      <td>50.3</td>
+      <td>34899</td>
+      <td>8466</td>
+      <td>428765</td>
+      <td>5073</td>
+      <td>3</td>
+      <td>3</td>
+      <td>959</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="observation-of-results">Observation of Results</h2>
+<p><strong>General Trends</strong></p>
+<ul>
+  <li>BUSCO Completeness: All combinations generally exhibit high BUSCO completeness, indicating good genome assembly quality.</li>
+  <li>GC Content: The GC content varies across the different samples, but remains relatively consistent within each combination.</li>
+  <li>Contig Length and Number: The average contig length and number of contigs appear to be influenced by the specific combination of polishing tools used.</li>
+</ul>
+
+<h2 id="specific-observations">Specific Observations:</h2>
+
+<p><strong>Combination 1 (Racon+Medaka+Pilon+Polypolish):</strong></p>
+<ul>
+  <li>This combination consistently achieves high BUSCO completeness and GC content across all samples.</li>
+  <li>The average contig length and number of contigs vary, suggesting that the combination’s effectiveness might be influenced by the specific characteristics of each sample.
+<strong>Combination 2 (Racon+Polypolish):</strong></li>
+  <li>This combination also performs well in terms of BUSCO completeness and GC content.</li>
+  <li>The average contig length and number of contigs may differ slightly compared to Combination 1, indicating that the inclusion of Medaka and Pilon in Combination 1 might have a minor impact.
+<strong>Combination 3 (Racon):</strong>
+While Racon alone can produce decent results, the addition of other polishing tools in Combinations 1 and 2 generally leads to improvements in certain metrics.</li>
+</ul>]]></content><author><name></name></author><category term="Genome Assembly" /><category term="Polishing Models" /><category term="Python" /><category term="Shell Scripting" /><category term="argparse" /><category term="glob" /><category term="subprocess" /><category term="Hybrid Assemblies" /><category term="Bioinformatics Pipelines" /><category term="Data Analysis" /><category term="Problem-Solving" /><category term="Optimization" /><summary type="html"><![CDATA[Benchmarking Combinations of different Polishing Tools to Optimise Hybrid Genome Assembly Quality]]></summary></entry><entry><title type="html">Unraveling Capsular Switching in Indian Streptococcus pneumoniae Isolates (ISPPD conference poster)</title><link href="http://localhost:4000/sarscov/" rel="alternate" type="text/html" title="Unraveling Capsular Switching in Indian Streptococcus pneumoniae Isolates (ISPPD conference poster)" /><published>2024-03-20T00:00:00+00:00</published><updated>2024-03-20T00:00:00+00:00</updated><id>http://localhost:4000/sarscov</id><content type="html" xml:base="http://localhost:4000/sarscov/"><![CDATA[<p><strong>Bangalore, India 2024</strong></p>
+
+<hr />
+<h4 id="i-presented-this-project-as-a-poster-in-the-13th-meeting-of-the-international-society-of-pneumonia-and-pneumococcal-diseases-isppd-held-in-cape-town-south-africa">I presented this project as a poster in the 13th meeting of the International Society of Pneumonia and Pneumococcal Diseases (ISPPD) held in Cape Town, South Africa</h4>
+<h2 id="introduction">Introduction</h2>
+<p><em>Streptococcus pneumoniae</em>, a common respiratory pathogen, employs a clever strategy to evade the host immune system: capsular switching. By exchanging capsule biosynthesis loci, this bacterium can change its appearance, making it harder for the immune system to recognize and attack. This study aimed to investigate capsular switching events among Indian <em>S. pneumoniae</em> isolates and explore the genetic mechanisms driving this phenomenon.</p>
+
+<h2 id="methods">Methods</h2>
+<p>We analyzed a collection of 630 <em>S. pneumoniae</em> isolates collected from various regions in India. These isolates were subjected to whole-genome sequencing to obtain their genetic information. To further analyse the data I employed the <a href="https://github.com/sanger-bentley-group/gps-pipeline">GPS pipeline</a> which is built on <a href="https://www.nextflow.io/">Nextflow</a> and integrated with the <a href="https://sanger-pathogens.github.io/seroba/">Seroba</a> pipeline for <em>in-silico</em> serotyping, we reconstructed the evolutionary history of these isolates and analyzed their capsular types by using the <a href="https://github.com/nickjcroucher/gubbins">Gubbins</a> software to predict recombination events potentially leading to Capsular switching. I also employed <a href="https://jameshadfield.github.io/phandango/#/">Phandango</a> to visualise the recombination regions on the genome and <a href="https://microreact.org/">Microreact</a> for the epidemiological visualisation.</p>
+<h2 id="results">Results</h2>
+<p>Through our analysis, we identified four distinct instances of capsular switching. This means that these bacteria changed their capsular type during their evolution. Interestingly, these switches occurred between serotypes that are typically closely related, such as 9V to 9A and 6A to 6B.</p>
+
+<p>Furthermore, we found strong genetic evidence supporting these capsular switching events. By examining the genetic makeup of the capsule genes, we identified recombination events, which are molecular processes that can lead to the exchange of genetic material. These recombinations provide compelling evidence for the occurrence of capsular switching in these isolates.</p>
+
+<h2 id="poster">Poster</h2>
+
+<h2 id="add-poster-here">ADD POSTER HERE</h2>]]></content><author><name></name></author><category term="Streptococcus pneumoniae" /><category term="Capsular switching" /><category term="Pneumococcal diseases" /><category term="Bacterial evolution" /><category term="Genomics" /><category term="Phylogenetics" /><category term="Recombination events" /><summary type="html"><![CDATA[Unraveling Capsular Switching in Indian Streptococcus pneumoniae Isolates]]></summary></entry><entry><title type="html">Insights into pbp Allelic mutations conferring resistance to Beta-Lactams in GBS isolates from India (ISSAD conference poster)</title><link href="http://localhost:4000/bioenzyme/" rel="alternate" type="text/html" title="Insights into pbp Allelic mutations conferring resistance to Beta-Lactams in GBS isolates from India (ISSAD conference poster)" /><published>2023-10-20T00:00:00+01:00</published><updated>2023-10-20T00:00:00+01:00</updated><id>http://localhost:4000/bioenzyme</id><content type="html" xml:base="http://localhost:4000/bioenzyme/"><![CDATA[<p><strong>Bangalore, India 2023</strong></p>
+
+<hr />
+<h4 id="i-presented-this-project-as-a-poster-in-the-international-symposium-on-streptococcus-agalactiae-disease-issad-conference-held-in-rio-de-janeiro-brazil">I presented this project as a poster in the International Symposium on Streptococcus agalactiae Disease (ISSAD) conference held in Rio de Janeiro, Brazil</h4>
+<h2 id="introduction">Introduction</h2>
+<p>Group B Streptococcus (GBS) is a significant pathogen causing infections in pregnant women and newborns. Despite the widespread use of β-lactam antibiotics (BLAs) for treatment, increasing antibiotic resistance poses a serious public health threat. This study aimed to investigate the role of mutations in the penicillin-binding protein (PBP) genes in conferring β-lactam resistance in GBS isolates from India.</p>
+
+<h2 id="methods">Methods</h2>
+<p>This study utilized 128 GBS isolates collected from multiple centers across India. The isolates were identified and tested for Antibiotic Sensitivity using the VITEK 2 Compact system, followed by whole genome sequencing on the Illumina platform. PBP typing was done using a Nextflow pipeline by the <a href="https://github.com/sanger-bentley-group/GBS-Typer-sanger-nf">Bentley group at The Wellcome Sanger Institute</a> and the pbp alleles were characterized using the GATK tool to identify the mutations. Statistical analysis was performed to determine associations between mutations, resistance, and clonal complexes.</p>
+<h2 id="results">Results</h2>
+<p>Our analysis revealed a significant association between a specific mutation in the pbp2x gene, Q557E, and elevated resistance to BLAs, including penicillin, cefotaxime, and ceftriaxone. This mutation corresponds to a previously described resistance-conferring mutation in pneumococci. Additionally, we observed a high prevalence of the pbp2B allele, followed by pbp1A and pbp2x. Interestingly, one isolate lacking the pbp2x allele exhibited high levels of β-lactam resistance, suggesting the involvement of other factors in resistance.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Mutations in PBP genes, particularly the Q557E mutation in pbp2x, play a crucial role in conferring β-lactam resistance in GBS isolates from India. Understanding the mechanisms underlying these mutations is essential for developing effective strategies to combat GBS infections and prevent the spread of antibiotic resistance.</p>
+
+<h2 id="poster">Poster</h2>
+
+<h2 id="add-poster-here">ADD POSTER HERE</h2>]]></content><author><name></name></author><category term="Group B Streptococcus (GBS)" /><category term="β-lactam antibiotics" /><category term="Antibiotic resistance" /><category term="PBP mutations" /><category term="Whole-genome sequencing (WGS)" /><category term="Bioinformatics" /><category term="Genomics" /><category term="Public health" /><category term="Epidemiology" /><category term="Bacterial infections" /><category term="Pbp2x gene" /><summary type="html"><![CDATA[Insights into pbp Allelic mutations conferring resistance to Beta-Lactams in GBS isolates from India]]></summary></entry><entry><title type="html">Predicting Resistance Trends of ESKAPE Pathogens using R</title><link href="http://localhost:4000/GPV1/" rel="alternate" type="text/html" title="Predicting Resistance Trends of ESKAPE Pathogens using R" /><published>2023-06-02T00:00:00+01:00</published><updated>2023-06-02T00:00:00+01:00</updated><id>http://localhost:4000/GPV1</id><content type="html" xml:base="http://localhost:4000/GPV1/"><![CDATA[<p><strong>Bangalore, India 2023</strong></p>
+
+<hr />
+
+<p><strong>This project is aimed at tackling the escalating threat of antimicrobial resistance (AMR) posed by ESKAPE pathogens. We analyze a the Pfizer ATLAS dataset (8 lakh+ isolates) from the Vivli AMR Register competition (2023) to understand their prevalence, geographical distribution, and resistance trends. Additionally, we leverage machine learning to predict future resistance patterns and the analysis is conducted on a High-Performance Computing (HPC) environment using R Studio to handle the massive dataset size effectively.</strong></p>
+
+<h2 id="sample-figures-generated-from-the-project">Sample figures generated from the project</h2>
+
+<h2 id="1-data-cleaning-and-preparation">1. Data Cleaning and Preparation</h2>
+<p>This code utilizes the dplyr and tidyr libraries to filter and manipulate the raw data based on specific criteria. You can adjust the filter conditions within the filter() function to select desired species, countries, etc. The filtered data is then saved as a new CSV file.</p>
+
+<pre><code class="language-{r}"># Sorting the raw data based on requirement
+library(dplyr)
+library(magrittr)
+library(tidyr)
+
+# Read the data from the CSV file
+raw_data &lt;- read.csv("/path/to/your/csvfile.csv")
+
+# Filter the data for a specific species and country
+# Replace "Species" and "Country" with the appropriate column names
+# Replace "Species_Name" and "Country_Name" with the desired species and country names
+filtered_data &lt;- raw_data %&gt;%
+  filter(Species == "Species_Name" &amp; Country == "Country_Name")
+
+# Save the filtered data to a new CSV file
+# Replace "/path/to/your/output/file.csv" with the desired output path and file name
+write.csv(filtered_data, '/path/to/your/output/file.csv')
+</code></pre>
+
+<ul>
+  <li>Removing Empty Columns:  
+This snippet employs the dplyr library to identify and eliminate empty columns from the dataset. The which() function locates empty columns, and these are subsequently removed using [, -empty_cols]. Finally, the modified data is saved as a new CSV file.<br /></li>
+</ul>
+
+<pre><code class="language-{r}"># Remove any empty columns
+# Load required libraries
+library(dplyr)
+
+# Read the data from the CSV file
+# Replace "/path/to/your/input/file.csv" with the actual path to your input CSV file
+data &lt;- read.csv("/path/to/your/input/file.csv")
+
+# Identify and remove empty columns
+empty_cols &lt;- which(colSums(is.na(data)) == nrow(data))
+data &lt;- data[, -empty_cols]
+
+# Save the modified data to a new CSV file
+# Replace "/path/to/your/output/modified_file.csv" with the desired output path and file name
+write.csv(data, "/path/to/your/output/modified_file.csv", row.names = FALSE)
+</code></pre>
+
+<h2 id="2-data-visualisation">2. Data Visualisation</h2>
+<ul>
+  <li>Distribution Plot of Samples:
+This code snippet leverages the ggplot2 and maps libraries to create a world map illustrating the geographical distribution of samples across the globe. The data is merged with a world map using inner_join(), and the plot is customized using various ggplot2 functions. Finally, the plot is saved as a PNG image.</li>
+</ul>
+
+<pre><code class="language-{r}"># Creating a distribution plot of samples across the world from the provided dataset 
+# Load required libraries
+library(ggplot2)
+library(maps)
+
+# Read the CSV file into a data frame
+# Replace "/path/to/your/input/file.csv" with the actual path to your input CSV file
+data &lt;- read.csv("/path/to/your/input/file.csv")
+
+# Create a world map
+world &lt;- map_data("world")
+
+# Check for missing or non-unique country names in the data
+if (any(is.na(data$Country))) {
+  stop("There are missing values in the 'Country' column.")
+}
+
+if (any(duplicated(data$Country))) {
+  stop("There are non-unique values in the 'Country' column.")
+}
+
+# Merge the data frame with the world map
+data_map &lt;- inner_join(world, data, by = c("region" = "Country"))
+
+# Create the plot using ggplot2
+plot &lt;- ggplot() +
+  geom_polygon(data = data_map, aes(x = long, y = lat, group = group, fill = SampleID)) +
+  coord_map("miller") +
+  theme_minimal() +
+  theme(axis.text = element_blank(),
+        axis.title = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) +
+  scale_fill_viridis_c() +
+  labs(title = "Distribution of Samples on World Map")
+
+# Save the plot as a PNG file
+# Replace "/path/to/your/output/sample_map.png" with the desired output path and file name
+ggsave("/path/to/your/output/sample_map.png", plot, width = 10, height = 6, dpi = 300)
+</code></pre>
+
+<p><strong>Analyzing Prevalence by Species and Year: Key Steps</strong></p>
+<ul>
+  <li>Load required libraries: ggplot2 and dplyr.</li>
+  <li>Read CSV data: Ensure correct file path and column names.</li>
+  <li>Check data quality: Verify for missing and duplicate values in ‘Year’ and ‘n’ columns.</li>
+  <li>Create line plot: Use ggplot() to define aesthetics (x, y, group, color), add lines and points, set labels, and apply a theme.</li>
+  <li>Display and save: Print the plot and save it as a PNG file.</li>
+</ul>
+
+<pre><code class="language-{r}"># To generate a plot for prevalence of species by year 
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+
+# Read the CSV file into a data frame
+# Replace "/path/to/your/input/file.csv" with the actual path to your input CSV file
+data_counts &lt;- read.csv("/path/to/your/input/file.csv")
+
+# Check for missing or non-unique values in the data
+if (any(is.na(data_counts$Year)) || any(is.na(data_counts$n))) {
+  stop("There are missing values in the 'Year' or 'n' columns.")
+}
+
+if (any(duplicated(data_counts$Year))) {
+  stop("There are non-unique values in the 'Year' column.")
+}
+
+# Create the line plot using ggplot2
+line_plot &lt;- ggplot(data_counts, aes(x = Year, y = n, group = Species, color = Species)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Prevalence of ESKAPE pathogens by species and year",
+       x = "Year",
+       y = "Number of Samples",
+       color = "Species") +
+  theme_minimal()
+
+# Display the line plot
+print(line_plot)
+
+# Save the plot as a PNG file
+# Replace "/path/to/your/output/line_plot.png" with the desired output path and file name
+ggsave("/path/to/your/output/line_plot.png", line_plot, width = 10, height = 6, dpi = 300)
+</code></pre>
+
+<h2 id="3-analyzing-mdr-isolate-count">3. Analyzing MDR Isolate Count</h2>
+<ol>
+  <li>Data Preprocessing:</li>
+</ol>
+
+<ul>
+  <li>Load Libraries: Import the dplyr library for data manipulation.</li>
+  <li>Read Raw Data: Load the CSV file containing your data using read.csv().</li>
+  <li>Convert Resistance Labels: Define a function to replace “Resistant”, “Susceptible”, and “Intermediate” with “R”, “I”, and “S” respectively.</li>
+  <li>Apply Conversion: Use mutate and across to automatically apply the conversion function to relevant columns in the data frame.</li>
+  <li>Save Modified Data (Optional): If desired, save the updated data to a new CSV file. <br />
+    <ol>
+      <li>MDR Analysis with AMR Package:</li>
+    </ol>
+  </li>
+  <li>Call mdro Function: Use the mdro function from the AMR package to calculate MDR isolate counts.
+Specify Parameters:</li>
+  <li>x: Provide the dataframe containing antibiotic columns like AMX or amox.</li>
+  <li>guideline: Set the guideline for MDR determination (e.g., “CMI2012”).</li>
+  <li>col_mo: Specify the column name for the names or codes of microorganisms.</li>
+  <li>info: Set interactive() to print progress to the console.</li>
+  <li>pct_required_classes: Adjust the minimum required percentage of antimicrobial classes for an isolate to be considered MDR.</li>
+  <li>combine_SI: If TRUE, combines “S” and “I” into one category, considering only “R” as resistant.</li>
+  <li>verbose: Set to FALSE for less verbose output.</li>
+  <li>only_sir_columns: If FALSE, detects all antibiotic columns that have been transformed to “SIR” format. <br />
+    <ol>
+      <li>Generating MDR Plot:</li>
+    </ol>
+  </li>
+  <li>Load Libraries: Import ggplot2 and tidyverse for data visualization.</li>
+  <li>Prepare Data: Create a data frame with pathogen names, total counts, and MDR counts. Calculate the MDR proportion.</li>
+  <li>Create Grouped Bar Plot:</li>
+  <li>Use ggplot() to create the plot.</li>
+  <li>Set x to the reordered pathogen names for better visualization.</li>
+  <li>Use geom_bar() to create bars for total counts and MDR counts, using different colors for each.</li>
+  <li>Add text labels for the proportion of MDR isolates.</li>
+  <li>Customize the plot with titles, labels, and theme settings as desired.</li>
+</ul>
+
+<pre><code class="language-{r}"># preparing the data for MDR analysis using the AMR package 
+# First convert the entries in the dataset columns into R,I,S format from Resistant,Intermediate,Susceptible format 
+# Load required libraries
+library(dplyr)
+
+# Read the raw data from CSV file
+# Replace "/path/to/your/input/raw_data.csv" with the actual path to your input CSV file
+raw_data &lt;- read.csv("/path/to/your/input/raw_data.csv")
+
+# Function to replace "Resistant", "Susceptible", and "Intermediate" with "R", "S", and "I" respectively
+replace_resistant_susceptible_intermediate &lt;- function(x) {
+  x &lt;- gsub("Resistant", "R", x)
+  x &lt;- gsub("Susceptible", "S", x)
+  gsub("Intermediate", "I", x)
+}
+
+# Automatically detect and replace columns containing "Resistant", "Susceptible", and "Intermediate"
+raw_data &lt;- raw_data %&gt;%
+  mutate(across(where(is.character), replace_resistant_susceptible_intermediate))
+
+# Save the updated data to a new CSV file if needed
+# Replace "/path/to/your/output/modified_data.csv" with the desired output path and file name
+write.csv(raw_data, "/path/to/your/output/modified_data.csv", row.names = FALSE)
+
+
+
+# Determine the MDR isolates count from the prepared dataset usinf AMR package https://msberends.github.io/AMR/reference/mdro.html
+
+mdro(
+  # A dataframe antibiotic columns like AMX or amox.
+  x = NULL, 
+  # A specefic supported National/International/Custom guideline to be followed 
+  guideline = "CMI2012",
+  # column name of the names or codes of the microorganisms
+  col_mo = NULL,
+  # a logical to indicate whether progress should be printed to the console
+  info = interactive(),
+  # minimal required percentage of antimicrobial classes that must be available per isolate
+  pct_required_classes = 0.5,
+  # a logical to indicate whether all values of S and I must be merged into one, so resistance is only considered when isolates are R, not I. 
+  combine_SI = TRUE,
+  # a logical to turn Verbose mode on and off (default is off).
+  verbose = FALSE,
+  # a logical to indicate whether only antibiotic columns must be detected that were transformed to class sir
+  only_sir_columns = FALSE,
+  ...
+)
+
+
+
+# Generating a plot for the MDR analysis 
+# Load required libraries
+library(ggplot2)
+library(tidyverse)
+
+# Example data: Replace these with your actual data
+pathogen_names &lt;- c("E. faecium", "S. aureus", "K. pneumoniae", "A. baumannii", "P. aeruginosa", "Enterobacter spp")
+total_counts &lt;- c(16661, 147921, 88712, 38036, 94460, 48041)
+mdr_counts &lt;- c(5710, 1596, 27327, 23077, 17165, 7549)
+
+# Combine vectors into a data frame
+mdr_data &lt;- data.frame(pathogen = pathogen_names, total_count = total_counts, mdr_count = mdr_counts)
+
+# Calculate the proportion of MDR isolates relative to total isolates
+mdr_data$mdr_proportion &lt;- mdr_data$mdr_count / mdr_data$total_count
+
+# Create the grouped bar plot with text labels
+ggplot(mdr_data, aes(x = reorder(pathogen, total_count), y = total_count, fill = "Total")) +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_bar(aes(y = mdr_count, fill = "MDR"), stat = "identity", position = "dodge") +
+  geom_text(aes(label = paste0(round(mdr_proportion * 100), "%")),
+            position = position_dodge(width = 0.9), vjust = -0.5, size = 3.5) +
+  labs(title = "MDR Isolate Count Among Total Isolates for ESKAPE Pathogens",
+       x = "Pathogen",
+       y = "Count",
+       fill = "Isolate Type") +
+  scale_fill_manual(values = c("Total" = "gray", "MDR" = "red")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.title = element_blank(),
+        axis.text = element_text(color = "black"))
+</code></pre>
+
+<h2 id="4-predicting-future-antibiotic-resistance-trends-">4. Predicting Future Antibiotic Resistance Trends <br /></h2>
+<p>This code snippet explores the possibility of predicting future resistance patterns using the AMR package. Here’s a breakdown of the steps involved:</p>
+
+<p><strong>Required Libraries</strong> <br /></p>
+
+<p>dplyr for data manipulation tasks.
+ggplot2 for creating visualizations.
+AMR for resistance prediction functionalities.</p>
+
+<p><strong>Data Loading:</strong> <br /></p>
+
+<ul>
+  <li>The code reads a CSV file containing your data into a data frame (data). Remember to replace the path (“/path/to/your/input/your_file_path.csv”) with the actual location of your data file.</li>
+  <li>Selecting Antibiotic for Prediction:</li>
+  <li>The code defines the specific antibiotic (antibiotic_column) for which resistance prediction will be performed.</li>
+  <li>Replace “Your_Antibiotic_Column_Name” with the actual column name in your data that holds antibiotic resistance information.</li>
+</ul>
+
+<p><strong>Resistance Prediction:</strong> <br /></p>
+
+<ul>
+  <li>The resistance_predict function from the AMR package is used to predict resistance patterns for the chosen antibiotic.</li>
+  <li>It takes the data frame (data), specifies the column containing date information (col_date), the antibiotic column (col_ab), and sets the model type (model = “binomial”) for this example.</li>
+  <li>The output (predict_antibiotic) is a data frame containing predictions.</li>
+</ul>
+
+<p><strong>Visualizing Predictions:</strong><br /></p>
+
+<ul>
+  <li>The code offers two approaches to visualize the predictions:
+    <ol>
+      <li>plot(predict_antibiotic) generates a basic plot based on the AMR package’s default settings.</li>
+      <li>ggplot_sir_predict(predict_antibiotic) leverages ggplot2 for a more customized plot displaying the predicted proportions of Susceptible, Intermediate, and Resistant categories for the chosen antibiotic over time.</li>
+    </ol>
+  </li>
+</ul>
+
+<pre><code class="language-{r}"># Future antimicrobial resistance prediction using regression models 
+# AMR package (https://msberends.github.io/AMR/articles/resistance_predict.html)
+# Load the necessary libraries
+library(dplyr)
+library(ggplot2)
+library(AMR)
+
+# Read the CSV file into a data frame
+# Replace "/path/to/your/input/your_file_path.csv" with the actual path to your input CSV file
+data &lt;- read.csv("/path/to/your/input/your_file_path.csv")
+
+# Specify the name of the antibiotic for resistance prediction
+# Replace "Your_Antibiotic_Column_Name" with the actual column name containing antibiotic resistance information
+antibiotic_column &lt;- "Your_Antibiotic_Column_Name"
+
+# Perform resistance prediction for the specified antibiotic
+# Replace "Year" and "Your_Antibiotic_Column_Name" with the actual column names for date and antibiotic resistance information
+predict_antibiotic &lt;- data %&gt;%
+  resistance_predict(
+    col_date = "Year",
+    col_ab = antibiotic_column,
+    model = "binomial"
+  )
+
+# Plot the resistance prediction results
+plot(predict_antibiotic)
+
+ggplot_sir_predict(predict_antibiotic)
+</code></pre>]]></content><author><name></name></author><category term="machine learning" /><category term="R" /><category term="ESKAPE pathogens" /><category term="public health" /><category term="healthcare" /><category term="epidemiology" /><category term="global health" /><category term="infectious diseases" /><category term="bacteria" /><category term="antibiotic resistance" /><summary type="html"><![CDATA[Predicting Resistance Trends of ESKAPE Pathogens using R]]></summary></entry><entry><title type="html">Green Synthesis of MgO Nanoparticles from Annona muricata Plant as a Therapeutic Aid</title><link href="http://localhost:4000/cervicalcancer/" rel="alternate" type="text/html" title="Green Synthesis of MgO Nanoparticles from Annona muricata Plant as a Therapeutic Aid" /><published>2023-02-02T00:00:00+00:00</published><updated>2023-02-02T00:00:00+00:00</updated><id>http://localhost:4000/cervicalcancer</id><content type="html" xml:base="http://localhost:4000/cervicalcancer/"><![CDATA[<p><strong>Bangalore, India 2023</strong></p>
+
+<hr />
+<h4 id="this-project-was-a-part-of-my-undergraduate-thesis-at-dayananda-sagar-college-of-engineering-with-my-wonderful-coursemates-and-co-authors-akanksha-hegde-and-viola-monteiro-under-the-guidance-of-my-professor-dr-shashank-tidke">This project was a part of my undergraduate thesis at <a href="https://www.dsce.edu.in/research/123-biotechnology">Dayananda Sagar College of Engineering</a> with my wonderful coursemates and co-authors Akanksha Hegde and Viola Monteiro under the guidance of my professor <a href="https://scholar.google.co.in/citations?user=d57csx0AAAAJ&amp;hl=en">Dr. Shashank Tidke</a></h4>
+<p><em>Annona muricata</em>, commonly known as soursop or graviola, is a tropical plant with potential health benefits. This study aimed to investigate the anti-cancer and anti-microbial potential of the plant extract using both in-silico and in-vitro approaches.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<ul>
+  <li><em>Annona muricata</em> (soursop) is a tropical plant with potential health benefits.
+Conventional cancer treatments can have severe side effects.</li>
+  <li>Nanotechnology offers promising solutions for drug delivery and treatments.</li>
+  <li>Plant extracts have been explored as alternatives to conventional antibiotics due to the rise of antibiotic resistance.
+    <h2 id="objectives">Objectives</h2>
+  </li>
+  <li>Identify potential lead molecules in Annona muricata through an <em>in-silico</em> approach (computer simulations).</li>
+  <li>Evaluate the anti-cancer and anti-microbial potential of the plant extract using <em>in-vitro</em> methods (laboratory experiments).
+    <h2 id="methodology">Methodology</h2>
+  </li>
+</ul>
+
+<h3 id="in-silico-approach"><em>In-silico</em> Approach:</h3>
+<p>Molecular docking was used to predict the interaction of plant compounds with potential anti-cancer and anti-microbial targets.</p>
+<h3 id="in-vitro-approach">In-vitro Approach:</h3>
+<ul>
+  <li>The methanolic extract of <em>Annona muricata</em> leaves was prepared using the Soxhlet extraction method.</li>
+  <li>The total phenolic and flavonoid content of the extract was estimated .
+Phytochemical profiling was performed using GC-MS to identify the bioactive compounds present.</li>
+  <li>The cytotoxic activity of the extract against a cancer cell line (KB cells) was assessed using the MTT assay.</li>
+  <li>Green synthesis of MgO nanoparticles (Magnesium Oxide Nanoparticles) was achieved using the Annona muricata leaf extract.</li>
+  <li>The synthesized nanoparticles were characterized using FTIR spectroscopy.</li>
+  <li>The anti-bacterial potential of the MgO nanoparticles was investigated against various bacterial strains.
+    <h2 id="results-and-discussion">Results and Discussion</h2>
+  </li>
+  <li>The <em>in-silico studies</em> identified potential lead molecules in the plant extract with promising anti-cancer and anti-microbial properties.</li>
+  <li>The <em>in-vitro</em> studies confirmed the presence of bioactive compounds in the extract, including phenolics and flavonoids.</li>
+  <li>The extract exhibited cytotoxic activity against cancer cells.</li>
+  <li>The green-synthesized MgO nanoparticles showed potential anti-bacterial activity.
+    <h2 id="conclusion">Conclusion</h2>
+  </li>
+</ul>
+
+<p>This study demonstrates the potential of <em>Annona muricata</em> as a source of natural bioactive compounds with anti-cancer and anti-microbial properties. Green synthesis of MgO nanoparticles using the plant extract offers a promising approach for developing novel antibacterial agents.</p>
+
+<h2 id="my-role-in-this-project">My role in this project</h2>
+<p>I played a pivotal role in the bioinformatics analysis of this project. I employed tools such as <a href="https://vina.scripps.edu/">Autodock Vina</a> and iGEMdock to conduct molecular docking simulations, predicting the interactions between the identified lead compounds from <em>Annona muricata</em> and potential target proteins. Additionally, I utilized <a href="https://www.3ds.com/products/biovia/discovery-studio">Biovia Discovery Studio</a> for visual analysis, allowing for a comprehensive understanding of the binding interactions and conformational changes induced by these compounds and I also performed ADMET analysis of the potential lead molecule structures using the <a href="http://www.swissadme.ch/">Swiss-ADME tool</a>.</p>
+
+<h2 id="insert-some-figures-here">INSERT SOME FIGURES HERE</h2>]]></content><author><name></name></author><category term="Group B Streptococcus (GBS)" /><category term="β-lactam antibiotics" /><category term="Antibiotic resistance" /><category term="PBP mutations" /><category term="Whole-genome sequencing (WGS)" /><category term="Bioinformatics" /><category term="Genomics" /><category term="Public health" /><category term="Epidemiology" /><category term="Bacterial infections" /><category term="Pbp2x gene" /><summary type="html"><![CDATA[Green Synthesis of MgO Nanoparticles from Annona muricata Plant as a Therapeutic Aid]]></summary></entry></feed>

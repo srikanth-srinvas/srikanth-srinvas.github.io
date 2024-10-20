@@ -1,1 +1,6 @@
-# srikanth-srinvas.github.io
+Personal site built with Jekyll and [Sergio Kopplin's Indigo theme](https://github.com/sergiokopplin/indigo/fork)
+
+---
+## License
+
+[MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin
