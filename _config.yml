@@ -4,7 +4,7 @@ bio: 'Bioinformatics graduate student at University of Bristol | Former Bioinfor
  
 # if it's an external image, update below for true
 external-image: false
-picture: 'assets/images/Amoolya.jpg'
+picture: 'assets/images/main_pic.jpg'
 
 url: http://srikanth-srinvas.github.io
 # your url: http://USERNAME.github.io (if you don't already have a site)
@@ -31,9 +31,9 @@ disqus: false
 # pinterest: mypinterest
 # youtube: myyoutube
 # spotify: myspotify
-linkedin: amoolya-srinivasa
-github: amoolyasrinivasa
-email: amoolyasrinivasa@gmail.com
+linkedin: srikanthsrinivas27
+github: srikanth-srinvas
+email: srikanth.srinivas.2024@bristol.ac.uk
 #gscholar: O4Hrt44AAAAJ&hl=en
 #medium: medium
 #vimeo: myvimeo
