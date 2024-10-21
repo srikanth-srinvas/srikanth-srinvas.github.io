@@ -41,5 +41,5 @@ Mutations in PBP genes, particularly the Q557E mutation in pbp2x, play a crucial
 ## Poster
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <img src="{{site.url}}/assets/images/issad_poster.png.png" style="border:none; width:auto; max-height:832px;" />
+    <img src="{{site.url}}/assets/images/issad_poster.png" style="border:none; width:auto; max-height:832px;" />
 </div>
