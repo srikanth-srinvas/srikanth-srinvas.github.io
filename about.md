@@ -8,46 +8,25 @@ permalink: /about/index.html
 
 ![greeting gif](https://github.com/alansmathew/alansmathew/raw/master/lang.gif)
 
----**Preface**
+---**About me**
 
 
-I'm am currently working as a Bioinformatics Programmer in the [Evrony Lab](https://www.evronylab.org/) at [NYU Langone Health](https://med.nyu.edu/centers-programs/human-genetics-genomics/). I previously worked as a Computational Biology-Data Science Co-op at [NextRNA Therapeutics](http://nextrna.com/), where I engaged in the development of RNA-directed medicines. My academic background includes a Master's degree in Bioinformatics from [Northeastern University](https://cos.northeastern.edu/master-of-science-in-bioinformatics/), where I was trained in the application of computational methods in the analysis of biological data. Prior to this, I worked as a Research Assistant in the [Dong Lab](https://sijiadong.com/), where I utilized my expertise in programming to design python scripts for the automated analysis of enzyme-cofactor reactions from research papers. Additionally, I served as a Teaching Assistant for a python programming course, mentoring and providing guidance to bioinformatics graduate students to enhance their understanding of programming in Bioinformatics. During my Bachelor's degree in Biotechnology, I gained comprehensive knowledge in diverse areas, including cancer biology, RNA biology, genomics, proteomics, drug designing, and structural biology. This background enables me to contribute unique insights and perspectives to my current role, where I am tasked with leveraging my knowledge in computational analysis of biological data to derive innovative insights.
+I'm currently a postgraduate [MSc Bioinformatics](https://www.bristol.ac.uk/studypostgraduate/taught/msc-bioinformatics/) student at the [University of Bristol](https://www.bristol.ac.uk/university/). I first became interested in bioinformatics during my undergraduate studies in Biotechnology. A course on bioinformatics sparked my passion for using data analysis to study biological questions. Inspired by this quote, "Our world is built on biology and once we begin to understand it, it then becomes a technology," by Ryan Bethencourt, I became fascinated to harness the combined potential of biology and data science to address pressing research questions in the modern world.
 
----**Niche** 
+I've gained hands-on bioinformatics experience by interning at a [NIHR Global Health Research Unit](https://ghru.pathogensurveillance.net/) partner lab [Central Research Laboratory, KIMS](https://www.crlkims.com/), focusing on genomic surveillance of AMR in India. Initially during this internship, I gained valuable bioinformatics skills, which I then applied to contribute to several impactful projects.
 
-It’s an incontrovertible fact that research has served as the fulcrum for igniting ideas and thoughts in most people, if not all. This aspect of research is precisely what makes me consider bioinformatics such a fascinating, engrossing field of science. There are numerous ways of solving a research problem and bioinformatics paves the way, giving rise to endless possibilities and unconventional ways of looking at a research problem. The interdisciplinary facet of biotechnology—its predisposition to overlap with other scientific fields such as computer science, physics, and chemistry—is instrumental in engendering breakthroughs in order to solve real-world problems afflicting the current society. Computational biology possesses the power to make biological studies happen faster and more efficiently, considering the plethora of information that can be obtained from an individual's DNA. 
+I have contributed to data-driven microbial informatics and genomic surveillance projects by analyzing genomic data of thousands of [WHO-priority pathogens](https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed). I've had the opportunity to communicate my research to wider audience through presentations at several international conferences.
 
-I am driven by the scientific curiosity to make a dent, if not a difference, in the field of medical drug designing. Motivated by a profound passion towards this unique field and humbled by the intricate complexity of disease biology, I am driven to utilize cutting-edge science and technology to create novel therapeutic agents that can eliminate afflictions and enhance human health. As an ardent advocate of the remarkable capabilities of computational biology, machine learning and drug discovery, I am deeply devoted to advancing the field of biomedicine and therapeutics discovery by making it more accurate, consistent, and customizable.
 
-<!---  in the biopharmaceutical industry developing machine learning models to predict (1) [off-targeting in gene silencing/editing](https://en.calameo.com/read/0041626681a7296f0e0a8) and (2) [drug-target interactions](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5166585/).-->
+Beyond the lab, I love going on hikes and playing sports, and also I’m a passionate tech enthusiast with a constant love for exploring new gadgets and innovations in the tech industry.
 
----**Hobbies**
+Thanks for stopping by!
 
-During my leisure hours, I enjoy indulging in various creative pursuits, such as crafting digital illustrations that allow me to express my artistic side. Additionally, I relish the intellectual stimulation and entertainment provided by reading books, while also finding solace in the outdoors and nature by embarking on invigorating hikes. I also have a strong thirst for knowledge and am always eager to acquire new skills and expand my understanding of the world around me.
-
----**Photo Frolics**
+---**Gallery**
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <img src="{{site.url}}/assets/images/bbq.jpg" style="border:none; width:auto; max-height:200px;" />
-     <img src="{{site.url}}/assets/images/grad.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/bowl.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/fog2.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/nextrna.jpeg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo1.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo2.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo3.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo4.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo5.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo6.JPG" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo7.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo8.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo9.JPG" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo10.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo11.jpg" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo12.JPG" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/photo13.JPG" style="border:none; width:auto; max-height:200px;" />
-    <img src="{{site.url}}/assets/images/evronylab.jpg" style="border:none; width:auto; max-height:200px;" />
+    <img src="{{site.url}}/assets/images/frame_1.jpg" style="border:none; width:auto; max-height:832px;" />
 </div>
 
 
-Connect and say hi on [LinkedIn](https://www.linkedin.com/in/amoolya-srinivasa) or reach out via [Email](srinivasa.a@northeastern.edu)
+Connect and say Hi on [LinkedIn](www.linkedin.com/in/srikanthsrinivas27) or reach out via [Email](srikanth.srinivas.2024@bristol.ac.uk)
