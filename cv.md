@@ -3,74 +3,102 @@ title: Vitae
 layout: page
 permalink: /cv/index.html
 ---
-## Amoolya Srinivasa
+## Srikanth Srinivas
 <!---[srinivasa.a@northeastern.edu](mailto:srinivasa.@northeastern.edu) --->
-Boston, MA
-## Preface
-It is possible that my fascination for science began from my first glance through the microscope at Paramecium back in the biology lab at school. Since then I have shown a predilection to learn about the world imperceptible by human eyes. As I got older I was intrigued by the interrelation of biology with computation, mathematics and technology, which led me to be inspired by the vast field of bioinformatics that perfectly amalgamates two of my most passionate fields - computer science and biology. My aim is fueled by a conviction to make a dent, if not a difference, in the field of medical drug designing, machine learning in bioinformatics, stem cell and cancer therapeutics. 
-
-## Education
-***Masters — Bioinformatics*, Northeastern University**, Boston, MA. Sep 2021 - May 2023<br>
-***Bachelors — Biotechnology*, Dayananda Sagar College of Engineering**, Bangalore, India. Sep 2017 - Aug 2021<br>
+Bristol, United Kingdom
+## Overview
+I am a current MSc Bioinformatics student at the University of Bristol with a strong background in microbial genomics research.  My passion lies in leveraging computational tools to tackle critical human health challenges. I am eager to apply and learn cutting-edge bioinformatics skills to contribute to innovative solutions and collaborate with a team at the forefront of the field.
 
 ## Experience
-**NYU Langone Health, New York, NY, Aug 2023 - Present**<br>
-***Bioinformatics Programmer***, *[NYU Langone Health](https://med.nyu.edu/centers-programs/human-genetics-genomics/)*<br>
+**Bioinformatics Intern, [NIHR Global Health Research Unit Project](https://ghru.pathogensurveillance.net/#home)**<br>
+**[Central Research Laboratory](https://www.crlkims.com/), Kempegowda Institute of Medical Sciences, Bangalore, India (May 2023 - March 2024)**
 
-* Developing and implementing robust software for genomic and biological dataset analysis to generate new biological insights
-* Collaborating with bench scientists to understand and support their research goals, facilitating seamless integration of software tools into the biological research process
-* Creating and maintaining reliable pipelines for routine quality control and validation of data
+* Contributed to data-driven microbial informatics research by analyzing whole-genome sequencing data of over 5,000 WHO priority pathogens.
+* Developed bioinformatics pipelines to streamline the extraction of valuable insights from raw sequencing data.
+* Effectively communicated research findings through presentations at two international and one national conference and periodic journal club presentations.
 
-**NextRNA Therapeutics, Boston, MA, Jan 2023 - Jul 2023**<br>
-***Computational Biology - Data Science Co-Op***, *[NextRNA Therapeutics](http://nextrna.com/)*<br>
+**Microbiology Trainee, [KIMS Hospital and Research Centre](https://www.kimsbangalore.edu.in/microbiology/) • Bangalore, India (August 2022 - September 2022)**
 
-* Executed advanced computational modeling techniques to drive target identification and drug discovery initiatives
-* Employed cutting-edge machine learning methodologies to develop complex networks for comprehensive gene expression analysis and facilitated patient stratification
-* Devised computational tools to design comprehensive analyses of RNA and protein secondary and tertiary structures, with a focus on facilitating the development of lncRNA-directed therapeutics
-  
-**Dong Theoretical and Computational Chemistry Lab, Boston, MA, Jul 2022 - Dec 2022**<br>
-***Masters Graduate Research Assistant***, *[The Dong Lab](https://sijiadong.com/)*<br>
+* Aseptic techniques, microbial culture, and identification of patient samples from various sources using both conventional and automated methods.
+* Hands-on experience with advanced microbiology lab equipment for performing identification (ID) and antimicrobial susceptibility testing (AST) using VITEK®-2. Proficiently analyzed and interpreted results for research purposes and patient report generation.
 
-* Collaborated with the team on the design of a NoSQL database for enzymes with photoactivatable biocofactors
-* Utilized advanced Python programming skills to design and implement highly efficient scripts for automating the analysis of chemical names, reactions, solvents, and other small molecule nomenclatures from abstracts of research papers
-* Identified natural language processing techniques to extract and curate all possible combinations of enzymes and their corresponding substrates in the database, streamlining the process of data curation and analysis
+## Skills Summary
+**Computational Skills**
+Python, R, Shell, Nextflow, Docker, Git, Linux, Anaconda, Miniconda, ​HPC and Slurm, Open-Source Tools and Technologies <br>
+**Open-Source Platforms**
+Bioconda, Bioconductor, CRAN, nf-core, BioPython <br>
+**Genome Assembly and QC**
+SPAdes, Velvet, Flye, QUAST, BUSCO, Trimmomatic, FASTQC, LIGHTER, MASH, Seqtk, MultiQC <br>
+**Sequence Alignment**
+MUSCLE, Clustal Omega, MAFFT <br>
+**SNP Analysis**
+BWA, GATK, SAMtools, bedtools, Snippy, SNP-sites, FreeBayes, Picard, VCFtools, BCFtools <br>
+**Phylogeny**
+Roary, Panaroo, Ggtree, Bactdating, BEAST, IQ-TREE, Gubbins, FastTree, iTOL, Microreact <br>
+**Data Mining and Retrieval**
+ NCBI, European Nucleotide Archive (ENA), NCBI Variation Viewer, Ensembl, UCSC (Genome Browser, Table Browser), Galaxy, IGV, dbSNP, ClinVar, SNPEffect and SNPedia <br>
+**AMR Analysis and Annotation**
+AMRFinderPlus, ABRICATE, ResFinder, Prokka, Bakta, Kleborate, CRISPR-CAS FINDER, Bactinspector <br>
+**Molecular docking and Drug Discovery**
+Autodock vina, Biovia Discovery studio, iGEMDock, SwissADME <br>
+**Lab Techniques**
+Basics of Sequencing using Illumina and Oxford Nanopore platforms, DNA/RNA extraction, Qubit, Nanodrop, Gel Electrophoresis, ID & AST using VITEK, Microbiology Aseptic Techniques <br>
+**Soft skills**
+Collaborative Working, Problem-Solving, Adaptability, Time Management, Attention to Detail, Scientific Writing, Critical Thinking, Research Ethics <br>
 
-**Northestern University, Boston, MA, Jan 2022 - Dec 2022** <br>
-***Teaching Assistant***, *[Northeastern University](https://cos.northeastern.edu/master-of-science-in-bioinformatics/)*
-* Assessed, mentored and graded python scripts of over 80 Bioinformatics grad students for various Bioinformatics tasks and provided effective, timely feedback to help learn Python programming for Bioinformatics
-* Mentored and provided guidance to students, leveraging a deep understanding of their unique learning styles to facilitate their academic success
-* Demonstrated exemplary leadership skills by establishing three weekly office hours to provide academic support and address students' inquiries
-* Delivered engaging and informative lectures to the class, utilizing dynamic teaching techniques to promote active participation and foster a collaborative learning environment
+## Publications
+[Geographical distribution, disease association and diversity of Klebsiella pneumoniae K/L and O antigens in India: roadmap for vaccine development: Varun Shamanna, **Srikanth Srinivas**, Natacha Couto, Geetha Nagaraj, Shyama Prasad Sajankila, Harshitha Gangaiah Krishnappa, Kavitha Arakalgud Kumar, David M. Aanensen, Ravikumar Kadahalli Lingegowda and NIHR Global Health Research Unit on genomic surveillance - India consortium Microb Genom. 2024 Jul;10(7):001271. PMID: 39037209; PMCID: PMC11316559](https://doi.org/10.1099/mgen.0.001271)
 
-**RV College of Engineering, Bangalore, India, Aug 2020 - Dec 2020**<br>
-***Research Intern***, *[RVCE](https://www.rvce.edu.in/)* <br>
-* Conducted a thorough analysis of strategies to mitigate the undesirable side effects associated with conventional drug therapies
-*  Investigated 35 naturally occuring alternative drug molecules as a potential replacement for aspirin and other traditional medications in the treatment of cardiovascular diseases to advance patient outcomes through novel drug discovery research
-* Worked with university leadership to implement strategic national and global policies that impact and enhance the academic experience.
+## Education
+***Masters — Bioinformatics*, University of Bristol**, Bristol, United Kingdom.<br>
+***Bachelors — Biotechnology Engineering*, Dayananda Sagar College of Engineering**, Bangalore, India. 2019 - 2023<br>
 
-**Sri Jayadeva Institute of Cardiovascular Sciences and Research, Bangalore, India, Jul 2019 - Oct 2019**<br>
-***Microbiology Intern***, *[Jayadeva hospital](http://jayadevacardiology.com/)*
-* Efficiently managed a high-volume workload of 100 patient samples per day at the hospital lab, performing a range of immunological, biochemical, serological and ELISA tests
-* Conducted detailed microscopic analyses of urine, nasal, and throat samples to identify the underlying causes of bacterial infections
+## Awards and Scholarships
+- Bill and Melinda Gates Foundation travel grant to present at the [13th meeting of the International Society of Pneumonia and Pneumococcal Diseases (ISPPD)](https://isppd.kenes.com/about-isppd/) held in Cape Town, South Africa - March 2024
 
-## Skills
-**Programming:** Python, BioPython, R, SQL, UNIX/LINUX shell script, Nextflow<br>
-**Machine Learning Algorithms:** Linear/multiple regression, SVM, Neural networks(GNN, CNN, LSTM), Random forest, Logistic regression, knn regression, Naive Bayes, decision trees, RIPPER, Clustering techniques<br>
-**Data Analytics:** Binary and multiple classification models, multivariate analysis, time series models, Paraller computing, data visualization<br>
-**Bioinformatics:** RNA-Seq data analysis, Molecular dynamics simulation, Trimmomatic, Trinity, DESeq2, ClustalW, edgeR, GATK, BEAST, metagenomeSeq, PLINK, Sequence alignment, Transcriptome assembly, Phylogenetic analysis, Pipeline development, protein/nucleotide secondary and tertiary structure prediction and validation<br>
+- Finalists of [The Vivli AMR Surveillance Open Data Re-use Data Challenge](https://amr.vivli.org/data-challenge/finalist-and-award-winning-solutions/), funded by Wellcome Trust, UK - October 2023
 
-## Publication
-Description of Paenibacillus yunnanensis sp. nov., Isolated from a Tepid Spring: Narsing Rao, M. P., Dong, Z. Y., **Amoolya, S.**, Neelavar, S., Liu, B. B., Guo, S. X., Hozzein, W., & Li, W. J. *Current Microbiology*. **2020**; [https://doi.org/10.1007/s00284-020-02087-z](https://doi.org/10.1007/s00284-020-02087-z)<br>
+- Wellcome Trust Travel bursary to present at the [Public Health for Genomic Epidemiology (PHA4GE) Conference](https://pha4ge.org/conferences/pha4ge-conference-2023/) at Cape Town, South Africa - November 2023
 
-## Certification courses
-**[R Programming: Advanced Analytics In R For Data Science on Udemy, Jun 2021](https://www.udemy.com/course/r-analytics/?gclid=CjwKCAjwzuqgBhAcEiwAdj5dRo-IzIGskbBdleP0G14WAEtzL2GWL3PoRdXO_FGOrI58h3PPlFnahRoCZjgQAvD_BwE)**<br> 
-This course provided me with a strong foundation in data preparation techniques in R, which helped me delve deeper into data pre-processing, data manipulation, data visualization and analysis. Throughout the course, some tasks that I learned was how to identify and locate missing records in dataframes, how to apply the Median Imputation and Factual Analysis methods to replace missing records. To help work with missing data, I learned how to use some functions and techniques to minimize loss of data and how to reset the dataframe index. Additionally, I gained experience working with the gsub() and sub() functions for replacing strings. One of the most interesting concepts I learned in the course was the importance of NA as a third type of logical constant to help handle missing data in my datasets. By completing this course, I had a strong fundamental foundation for working with data in R, the multitude of functions to efficiently analyze data and apply advanced techniques to handle all kinds of data as a pre-requisite for machine learning efforts. 
+- Bill and Melinda Gates Foundation Travel Scholarship to present at the [International Symposium on Streptococcus agalactiae Disease (ISSAD)](https://www.issad.org/the-key-highlights-of-issad-2023-you-need-to-know/) held in Rio de Janeiro, Brazil - October 2023
 
-**[Whole genome sequencing of bacterial genomes: Offered by Technical University of Denmark on Coursera, Mar 2020](https://www.coursera.org/learn/wgs-bacteria)**<br>
-In this course, I learned about Whole genome sequencing (WGS) of bacterial genomes, which has become increasingly important in the medical sector. As classical methods were being replaced by WGS technology, bioinformatic tools became essential for analyzing the data and obtaining useful results. By the end of the course, I had a solid understanding of the applications of WGS in surveillance of bacteria, including species identification, typing, and characterization of antimicrobial resistance and virulence traits, as well as plasmid characterization. Throughout the course, I had the opportunity to learn about various online tools and how to use them through demonstrations and exercises. These tools were freely available and enabled me to effectively analyze WGS data.
+- Won second place in Oral Presentation at [National Conference on Recent Trends in Biosciences and Healthcare](https://www.srmist.edu.in/events/rtbh-2023/) - August 2023
 
-**[The science of stem cells: Offered by American Museum of Natural History on Coursera, Jan 2020](https://www.coursera.org/learn/stem-cells)**<br>
-In this five-part online course, I explored the promise that stem cells hold for the treatment of medical conditions. I learned about the history and basic biology of stem cells, as well as new research techniques. Through the course, I discovered how stem cells could lead to cures for diseases and to individualized medicine. I had the opportunity to hear from Museum scientists, medical researchers at the frontiers of the field, and a panel of bioethics experts who addressed the ethical implications of stem cell research and therapy. I gained a better understanding of what has already been accomplished in the field of stem cell research, what challenges remain, and what medical breakthroughs may lie ahead.
+- Finalists of [National Level Project Competition hosted by MSRIT, Bangalore, India](https://www.msrit.edu/) consisting of 50 projects shortlisted from 250 projects across India - April 2023
 
-**[Genomic Data Science: Offered by Johns Hopkins University on Coursera, Nov 2019](https://www.coursera.org/specializations/genomic-data-science)**<br>
-Through this course, I was able to gain insights about how genomics is revolutionizing medical discoveries and that it's neccessity in understanding the genome and leverage the data and information from genomic datasets. The course covered the concepts and tools to understand, analyze, and interpret data from next-generation sequencing experiments. Through this course, I learned about the most common tools used in genomic data science, including the use of the command line, along with a variety of software implementation tools like Python, R, and Bioconductor. The course was designed to serve as both a standalone introduction to genomic data science or as a perfect complement to a primary degree or postdoc in biology, molecular biology, or genetics. As a scientist in these fields, seeking to gain familiarity in data science and statistical tools to better interact with the data in my everyday work, I found this course to be highly valuable.
+- Won first place in the poster presentation category at the [3-Day National Conference on Biotechnology for Better Life hosted by Sir MVIT](https://www.sirmvit.edu/a-3-day-national-seminar-on-biotechnology-for-better-life/) - December 2022
+
+## Certifications
+
+[Pandas by Kaggle](https://www.kaggle.com/learn/certification/srikanthsrinivas2001/pandas)<br>
+**Key Takeaways**<br>
+- Data Manipulation Proficiency: Gained expertise in reading, writing, indexing, selecting, and assigning data within Pandas DataFrames.
+- Summary Functions and Maps: Learned to effectively extract insights from data using summary functions and apply custom transformations with mapping functions.
+- Data Cleaning and Handling: Acquired proficiency in handling missing values, renaming columns, and combining data from different sources.
+- Integration with Other Bioinformatics Tools: Learned how to integrate Pandas with other bioinformatics tools and libraries for a comprehensive analysis workflow.
+
+[Drug Discovery](https://www.coursera.org/account/accomplishments/verify/PLNZXQNV9C8A) offered by UC SanDiego on Coursera Aug 2023<br>
+**Key Takeaways**<br>
+- Comprehensive understanding of the drug discovery pipeline: Gained insights into the various stages of drug development, from target identification to clinical trials.
+- Proficiency in genomics and proteomics: Developed basic skills in analyzing and interpreting genomic and proteomic data for drug target identification and efficacy assessment.
+- Data-driven decision-making: Understood the importance of data-driven approaches in drug discovery and how bioinformatics can inform decision-making throughout the process.
+
+[Drug Commercialization](https://www.coursera.org/learn/drug-commercialization?utm_medium=sem&utm_source=gg&utm_campaign=B2C_EMEA__coursera_FTCOF_career-academy_pmax-multiple-audiences-country-multi&campaignid=20858198824&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&adposition=&creativeid=&hide_mobile_promo&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL_LcxFrSIv4OfDSX_asuiKnqevWQ4O-EgTzt8vv2eNA-l6xJw3SmbBoChysQAvD_BwE#modules) offered by UC SanDiego on Coursera Aug 2023<br>
+**Key Takeaways**<br>
+- Marketing and Pricing: Learn how to develop effective marketing strategies and pricing models based on market needs and clinical data.
+- Strategic Alliance and Portfolio Management: Understand the importance of forming strategic partnerships and managing a diverse drug portfolio for successful market launch.
+- Regulatory Considerations: Gain knowledge of the regulatory landscape surrounding drug approval and post-marketing surveillance.
+- Industry Expertise: Benefit from the perspectives of faculty and industry experts, providing a comprehensive understanding of the commercialization process.
+
+[Industrial Biotechnology](https://www.coursera.org/account/accomplishments/verify/E4XUA8K9RX38) offered by University of Manchester on Coursera July 2022<br>
+**Key Takeaways**<br>
+- Strong understanding of fundamental biological concepts: The course provided a solid foundation in biotechnology, including principles of biochemistry, molecular biology, and microbiology.
+- Understanding of sustainable manufacturing: Recognized the role of industrial biotechnology in developing sustainable and environmentally friendly manufacturing processes.
+- Knowledge of bioinformatics tools and techniques: Gained familiarity with essential bioinformatics tools and techniques used in industrial biotechnology applications.
+
+## Conferences
+- 13th meeting of the International Society of Pneumonia and Pneumococcal Diseases (ISPPD) Cape Town, South Africa- Poster presentation on **"Unraveling Capsular Switching in Indian *Streptococcus pneumoniae* isolates: Insights from a Comprehensive Genomic Analysis"**
+- The 3rd International Symposium on *Streptococcus agalactiae* Disease (ISSAD), Rio de Janeiro - Poster presentation on **"Insights into pbp Allelic mutations conferring resistance to Beta-Lactams in GBS isolates from India"**
+- National Conference on Recent Trends in Biosciences and Healthcare, SRM Institute of Technology, Chennai, India - Oral Presentation on **"Genetic diversity and in silico resistance prediction of ST147 *Klebsiella pneumoniae* Indian isolates"**
+- National Level Project Competition hosted by MSRIT, Bangalore, India - Poster presentation on **"Green synthesis of MgO Nanoparticles from *Annona muricata* plant as a therapeutic aid"**
+- 3-Day National Conference on Biotechnology for Better Life hosted by Sir MVIT, Bangalore, India - Poster presentation on **"Phytochemical Screening and Assessment of Antibacterial activity using Methanolic leaf extract of *Annona muricata* plant"**
