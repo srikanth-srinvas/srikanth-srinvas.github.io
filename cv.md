@@ -14,7 +14,7 @@ I am a current MSc Bioinformatics student at the University of Bristol with a st
 **[Central Research Laboratory](https://www.crlkims.com/), Kempegowda Institute of Medical Sciences, Bangalore, India (May 2023 - March 2024)**
 
 * Contributed to data-driven microbial informatics research by analyzing whole-genome sequencing data of over 5,000 WHO priority pathogens.
-* Developed bioinformatics pipelines to streamline the extraction of valuable insights from raw sequencing data.
+* Contributed to development of bioinformatics pipelines to streamline the extraction of valuable insights from raw sequencing data from Illumina and Nanopore platforms.
 * Effectively communicated research findings through presentations at two international and one national conference and periodic journal club presentations.
 
 **Microbiology Trainee, [KIMS Hospital and Research Centre](https://www.kimsbangalore.edu.in/microbiology/) • Bangalore, India (August 2022 - September 2022)**
