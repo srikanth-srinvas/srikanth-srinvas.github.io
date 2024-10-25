@@ -62,5 +62,3 @@ This study demonstrates the potential of *Annona muricata* as a source of natura
 
 ## My role in this project
  I played a pivotal role in the bioinformatics analysis of this project. I employed tools such as [Autodock Vina](https://vina.scripps.edu/) and iGEMdock to conduct molecular docking simulations, predicting the interactions between the identified lead compounds from *Annona muricata* and potential target proteins. Additionally, I utilized [Biovia Discovery Studio](https://www.3ds.com/products/biovia/discovery-studio) for visual analysis, allowing for a comprehensive understanding of the binding interactions and conformational changes induced by these compounds and I also performed ADMET analysis of the potential lead molecule structures using the [Swiss-ADME tool](http://www.swissadme.ch/).
-
-## INSERT SOME FIGURES HERE
