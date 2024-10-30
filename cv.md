@@ -10,7 +10,7 @@ Bristol, United Kingdom
 I am a current MSc Bioinformatics student at the University of Bristol with a strong background in microbial genomics research.  My passion lies in leveraging computational tools to tackle critical human health challenges. I am eager to apply and learn cutting-edge bioinformatics skills to contribute to innovative solutions and collaborate with a team at the forefront of the field.
 
 ## Experience
-**Bioinformatics Intern, [NIHR Global Health Research Unit Project](https://ghru.pathogensurveillance.net/#home)**<br>
+**Graduate Research Assistant - Bioinformatics, [NIHR Global Health Research Unit Project](https://ghru.pathogensurveillance.net/#home)**<br>
 **[Central Research Laboratory](https://www.crlkims.com/), Kempegowda Institute of Medical Sciences, Bangalore, India (May 2023 - March 2024)**
 
 * Contributed to data-driven microbial informatics research by analyzing whole-genome sequencing data of over 5,000 WHO priority pathogens.
