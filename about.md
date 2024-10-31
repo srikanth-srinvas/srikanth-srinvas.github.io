@@ -6,6 +6,11 @@ permalink: /about/index.html
 
 <img src="{{ site.url }}/{{ site.picture }}" style="width:300px;"/>
 
+
+<div align="center">
+    <img src="https://github.com/alansmathew/alansmathew/raw/master/lang.gif" alt="Greeting GIF">
+</div>
+
 ![greeting gif](https://github.com/alansmathew/alansmathew/raw/master/lang.gif)
 
 ---**About me**
