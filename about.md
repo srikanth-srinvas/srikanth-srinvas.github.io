@@ -19,7 +19,7 @@ I'm currently a postgraduate MSc Bioinformatics student at the University of Bri
 I have contributed to data-driven microbial informatics and genomic surveillance projects by analyzing terabytes of genomic data of thousands of WHO-priority pathogens. I've had the opportunity to communicate my research to wider audience through presentations at several international conferences.<br><br>
 
 
-Beyond the lab, I love going on hikes and playing sports, and also I’m a passionate tech enthusiast with a constant love for exploring new gadgets and innovations in the tech industry.<br><br>
+Beyond the lab, I love going on hikes and playing sports, and also I love exploring new gadgets and innovations in the tech industry.<br><br>
 
 Thanks for stopping by!<br><br>
 </strong>
